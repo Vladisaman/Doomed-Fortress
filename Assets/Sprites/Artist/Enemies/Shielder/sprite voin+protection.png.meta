@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: a65432578c2f5f6429ff5e7eaee58fea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7484863574201415584
+    second: sprite voin+protection_0
+  - first:
+      213: 3614989220647628383
+    second: sprite voin+protection_1
+  - first:
+      213: -8457472721177071982
+    second: sprite voin+protection_2
+  - first:
+      213: -6236450971129999310
+    second: sprite voin+protection_3
+  - first:
+      213: -5984698607593473422
+    second: sprite voin+protection_4
+  - first:
+      213: -771757051686345189
+    second: sprite voin+protection_5
+  - first:
+      213: -7255113309027571082
+    second: sprite voin+protection_6
+  - first:
+      213: -2281034019377322253
+    second: sprite voin+protection_7
+  - first:
+      213: 6509667270029797373
+    second: sprite voin+protection_8
+  - first:
+      213: -9141640607855466713
+    second: sprite voin+protection_9
+  - first:
+      213: -1976373540709882229
+    second: sprite voin+protection_10
+  - first:
+      213: 8211297024557898674
+    second: sprite voin+protection_11
+  - first:
+      213: -3074333772664709621
+    second: sprite voin+protection_12
+  - first:
+      213: -7367019739619622636
+    second: sprite voin+protection_13
+  - first:
+      213: -4482420503622114935
+    second: sprite voin+protection_14
+  - first:
+      213: -6159572215311219248
+    second: sprite voin+protection_15
+  - first:
+      213: 7114135289830863154
+    second: sprite voin+protection_16
+  - first:
+      213: 911213219395284381
+    second: sprite voin+protection_17
+  - first:
+      213: 3207628569315649686
+    second: sprite voin+protection_18
+  - first:
+      213: -787633977746793384
+    second: sprite voin+protection_19
+  - first:
+      213: 955455721273310454
+    second: sprite voin+protection_20
+  - first:
+      213: -569944634592450774
+    second: sprite voin+protection_21
+  - first:
+      213: -1816703202734470562
+    second: sprite voin+protection_22
+  - first:
+      213: -1818311718949033943
+    second: sprite voin+protection_23
+  - first:
+      213: -1234146169319752763
+    second: sprite voin+protection_24
+  - first:
+      213: -2743911385498682625
+    second: sprite voin+protection_25
+  - first:
+      213: -5170942661526261725
+    second: sprite voin+protection_26
+  - first:
+      213: 3628803685594245295
+    second: sprite voin+protection_27
+  - first:
+      213: -2499114899975911508
+    second: sprite voin+protection_28
+  - first:
+      213: -2125566890771507984
+    second: sprite voin+protection_29
+  - first:
+      213: 4166041309890213397
+    second: sprite voin+protection_30
+  - first:
+      213: -1055066953179519327
+    second: sprite voin+protection_31
+  - first:
+      213: -5645584080108122959
+    second: sprite voin+protection_32
+  - first:
+      213: 9018819546047027371
+    second: sprite voin+protection_33
+  - first:
+      213: 156108422259544592
+    second: sprite voin+protection_34
+  - first:
+      213: 737023524895553817
+    second: sprite voin+protection_35
+  - first:
+      213: -2679373092671774063
+    second: sprite voin+protection_36
+  - first:
+      213: -6617474904742573889
+    second: sprite voin+protection_37
+  - first:
+      213: 2140515951485384756
+    second: sprite voin+protection_38
+  - first:
+      213: -7611658269302039211
+    second: sprite voin+protection_39
+  - first:
+      213: 916968419349265546
+    second: sprite voin+protection_40
+  - first:
+      213: -7887698029482666403
+    second: sprite voin+protection_41
+  - first:
+      213: -6775531408653836670
+    second: sprite voin+protection_42
+  - first:
+      213: 2228015927210730098
+    second: sprite voin+protection_43
+  - first:
+      213: -7950163471851423039
+    second: sprite voin+protection_44
+  - first:
+      213: -5177439309284808996
+    second: sprite voin+protection_45
+  - first:
+      213: -5675356678501914794
+    second: sprite voin+protection_46
+  - first:
+      213: -5268468730835676577
+    second: sprite voin+protection_47
+  - first:
+      213: -5518899155039849363
+    second: sprite voin+protection_48
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 275
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite voin+protection_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4316
+        width: 428
+        height: 1044
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a73984a3c39fd760800000000000000
+      internalID: 7484863574201415584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_1
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 4317
+        width: 428
+        height: 1043
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e619b0b850b2230800000000000000
+      internalID: 3614989220647628383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_2
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 4317
+        width: 428
+        height: 1043
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e2fa4ae5501aa80800000000000000
+      internalID: -8457472721177071982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_3
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 4325
+        width: 427
+        height: 1040
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23018a642eca379a0800000000000000
+      internalID: -6236450971129999310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_4
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 4323
+        width: 425
+        height: 1037
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27abd9e135412fca0800000000000000
+      internalID: -5984698607593473422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_5
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 4325
+        width: 425
+        height: 1035
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b162559ec0b2a45f0800000000000000
+      internalID: -771757051686345189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_6
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 4328
+        width: 425
+        height: 1032
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae33a72e8a05b90800000000000000
+      internalID: -7255113309027571082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_7
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 4336
+        width: 425
+        height: 1029
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6ee6215a32850e0800000000000000
+      internalID: -2281034019377322253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_8
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 4338
+        width: 423
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7ec1474ebf65a50800000000000000
+      internalID: 6509667270029797373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_9
+      rect:
+        serializedVersion: 2
+        x: 4801
+        y: 4336
+        width: 422
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7272d783d4e522180800000000000000
+      internalID: -9141640607855466713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3264
+        width: 422
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86a18a6cb28294e0800000000000000
+      internalID: -1976373540709882229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_11
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3267
+        width: 420
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbdef5732364f170800000000000000
+      internalID: 8211297024557898674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_12
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 3267
+        width: 420
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e5557e8b5c555d0800000000000000
+      internalID: -3074333772664709621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_13
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 3267
+        width: 420
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4118ea6349613c990800000000000000
+      internalID: -7367019739619622636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_14
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 3267
+        width: 425
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9812da30d4e3bc1c0800000000000000
+      internalID: -4482420503622114935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_15
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 3267
+        width: 428
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5420a74bdc48aa0800000000000000
+      internalID: -6159572215311219248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_16
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 3265
+        width: 427
+        height: 1021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23170729a5c7ab260800000000000000
+      internalID: 7114135289830863154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_17
+      rect:
+        serializedVersion: 2
+        x: 3732
+        y: 3267
+        width: 428
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d22b0689745ac00800000000000000
+      internalID: 911213219395284381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_18
+      rect:
+        serializedVersion: 2
+        x: 4259
+        y: 3264
+        width: 429
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69824756039c38c20800000000000000
+      internalID: 3207628569315649686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_19
+      rect:
+        serializedVersion: 2
+        x: 4787
+        y: 3259
+        width: 429
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cdf5ff113c115f0800000000000000
+      internalID: -787633977746793384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2177
+        width: 426
+        height: 1032
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc3c119ae5724d00800000000000000
+      internalID: 955455721273310454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_21
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2171
+        width: 418
+        height: 1038
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a272a71ef562718f0800000000000000
+      internalID: -569944634592450774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_22
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2166
+        width: 417
+        height: 1043
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a82baff06c9c6e0800000000000000
+      internalID: -1816703202734470562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_23
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 2166
+        width: 417
+        height: 1043
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928ec1d102f04c6e0800000000000000
+      internalID: -1818311718949033943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_24
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 2163
+        width: 417
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb79c8099e6fdee0800000000000000
+      internalID: -1234146169319752763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_25
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 2163
+        width: 417
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa733cf12babe9d0800000000000000
+      internalID: -2743911385498682625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_26
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 2163
+        width: 417
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32070d1db0f1d38b0800000000000000
+      internalID: -5170942661526261725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_27
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 2163
+        width: 415
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8297fc9b91c5230800000000000000
+      internalID: 3628803685594245295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_28
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 2163
+        width: 415
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7cc064d3c515dd0800000000000000
+      internalID: -2499114899975911508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_29
+      rect:
+        serializedVersion: 2
+        x: 4801
+        y: 2163
+        width: 415
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f49b31bc287082e0800000000000000
+      internalID: -2125566890771507984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_30
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1086
+        width: 415
+        height: 1048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516fb9baf70c0d930800000000000000
+      internalID: 4166041309890213397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_31
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1086
+        width: 415
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a62b713236ab51f0800000000000000
+      internalID: -1055066953179519327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_32
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1086
+        width: 416
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc0e83d03bd6a1b0800000000000000
+      internalID: -5645584080108122959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_33
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1086
+        width: 417
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba89b77e798492d70800000000000000
+      internalID: 9018819546047027371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_34
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 1086
+        width: 417
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0121a3f68cb9a2200800000000000000
+      internalID: 156108422259544592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_35
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 1086
+        width: 417
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9197180bdfe6a3a00800000000000000
+      internalID: 737023524895553817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_36
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 1086
+        width: 420
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1922f8e3e54f0dad0800000000000000
+      internalID: -2679373092671774063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_37
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 1086
+        width: 420
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8c1c092a10a24a0800000000000000
+      internalID: -6617474904742573889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_38
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 1086
+        width: 422
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438f75cbae3a4bd10800000000000000
+      internalID: 2140515951485384756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_39
+      rect:
+        serializedVersion: 2
+        x: 4801
+        y: 1086
+        width: 422
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d5692e125fd5690800000000000000
+      internalID: -7611658269302039211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_40
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 12
+        width: 423
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c70994be9b9bc00800000000000000
+      internalID: 916968419349265546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_41
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 12
+        width: 425
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d561329de64498290800000000000000
+      internalID: -7887698029482666403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_42
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 12
+        width: 425
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e9fa6051a78f1a0800000000000000
+      internalID: -6775531408653836670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_43
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 12
+        width: 425
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272ee476ea08bee10800000000000000
+      internalID: 2228015927210730098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_44
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 12
+        width: 425
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca7202b1785ba190800000000000000
+      internalID: -7950163471851423039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_45
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 12
+        width: 427
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd66fe3216a0628b0800000000000000
+      internalID: -5177439309284808996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_46
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 12
+        width: 428
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657a0449b251d31b0800000000000000
+      internalID: -5675356678501914794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_47
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 12
+        width: 428
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5259445a93a2e6b0800000000000000
+      internalID: -5268468730835676577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite voin+protection_48
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 12
+        width: 428
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6475a8757ee863b0800000000000000
+      internalID: -5518899155039849363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sprite voin+protection_0: 7484863574201415584
+      sprite voin+protection_1: 3614989220647628383
+      sprite voin+protection_10: -1976373540709882229
+      sprite voin+protection_11: 8211297024557898674
+      sprite voin+protection_12: -3074333772664709621
+      sprite voin+protection_13: -7367019739619622636
+      sprite voin+protection_14: -4482420503622114935
+      sprite voin+protection_15: -6159572215311219248
+      sprite voin+protection_16: 7114135289830863154
+      sprite voin+protection_17: 911213219395284381
+      sprite voin+protection_18: 3207628569315649686
+      sprite voin+protection_19: -787633977746793384
+      sprite voin+protection_2: -8457472721177071982
+      sprite voin+protection_20: 955455721273310454
+      sprite voin+protection_21: -569944634592450774
+      sprite voin+protection_22: -1816703202734470562
+      sprite voin+protection_23: -1818311718949033943
+      sprite voin+protection_24: -1234146169319752763
+      sprite voin+protection_25: -2743911385498682625
+      sprite voin+protection_26: -5170942661526261725
+      sprite voin+protection_27: 3628803685594245295
+      sprite voin+protection_28: -2499114899975911508
+      sprite voin+protection_29: -2125566890771507984
+      sprite voin+protection_3: -6236450971129999310
+      sprite voin+protection_30: 4166041309890213397
+      sprite voin+protection_31: -1055066953179519327
+      sprite voin+protection_32: -5645584080108122959
+      sprite voin+protection_33: 9018819546047027371
+      sprite voin+protection_34: 156108422259544592
+      sprite voin+protection_35: 737023524895553817
+      sprite voin+protection_36: -2679373092671774063
+      sprite voin+protection_37: -6617474904742573889
+      sprite voin+protection_38: 2140515951485384756
+      sprite voin+protection_39: -7611658269302039211
+      sprite voin+protection_4: -5984698607593473422
+      sprite voin+protection_40: 916968419349265546
+      sprite voin+protection_41: -7887698029482666403
+      sprite voin+protection_42: -6775531408653836670
+      sprite voin+protection_43: 2228015927210730098
+      sprite voin+protection_44: -7950163471851423039
+      sprite voin+protection_45: -5177439309284808996
+      sprite voin+protection_46: -5675356678501914794
+      sprite voin+protection_47: -5268468730835676577
+      sprite voin+protection_48: -5518899155039849363
+      sprite voin+protection_5: -771757051686345189
+      sprite voin+protection_6: -7255113309027571082
+      sprite voin+protection_7: -2281034019377322253
+      sprite voin+protection_8: 6509667270029797373
+      sprite voin+protection_9: -9141640607855466713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

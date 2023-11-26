@@ -1,0 +1,940 @@
+fileFormatVersion: 2
+guid: 42fed8bdb2f4d444e988ad25fd487e8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4061842945495798710
+    second: udar_fly_0
+  - first:
+      213: -7054288747609910038
+    second: udar_fly_1
+  - first:
+      213: 4872200025150001068
+    second: udar_fly_2
+  - first:
+      213: -5501183401370758509
+    second: udar_fly_3
+  - first:
+      213: 5818839922719727753
+    second: udar_fly_4
+  - first:
+      213: -1122121959818797627
+    second: udar_fly_5
+  - first:
+      213: 6379011191013824922
+    second: udar_fly_6
+  - first:
+      213: -7443267231055441643
+    second: udar_fly_7
+  - first:
+      213: -4899446161265121236
+    second: udar_fly_8
+  - first:
+      213: -5600366699349905959
+    second: udar_fly_9
+  - first:
+      213: -3828100260783065373
+    second: udar_fly_10
+  - first:
+      213: 5099246482529071715
+    second: udar_fly_11
+  - first:
+      213: 6601743816651721943
+    second: udar_fly_12
+  - first:
+      213: 6195391531675596473
+    second: udar_fly_13
+  - first:
+      213: -8281943115748015069
+    second: udar_fly_14
+  - first:
+      213: -8244805105120461894
+    second: udar_fly_15
+  - first:
+      213: 7413756818568321014
+    second: udar_fly_16
+  - first:
+      213: -2862618618999786461
+    second: udar_fly_17
+  - first:
+      213: -3633968371845425855
+    second: udar_fly_18
+  - first:
+      213: -3711800330354115184
+    second: udar_fly_19
+  - first:
+      213: -1615215604890673690
+    second: udar_fly_20
+  - first:
+      213: 5141592209237008296
+    second: udar_fly_21
+  - first:
+      213: 2151902692461984084
+    second: udar_fly_22
+  - first:
+      213: 179715850782018245
+    second: udar_fly_23
+  - first:
+      213: 2453060804786981364
+    second: udar_fly_24
+  - first:
+      213: 4742295053360917689
+    second: udar_fly_25
+  - first:
+      213: 2035030988900253181
+    second: udar_fly_26
+  - first:
+      213: -1854428683020407794
+    second: udar_fly_27
+  - first:
+      213: -607456882257470844
+    second: udar_fly_28
+  - first:
+      213: 7419186440822242682
+    second: udar_fly_29
+  - first:
+      213: 8068701765708349322
+    second: udar_fly_30
+  - first:
+      213: -2161808008426696948
+    second: udar_fly_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: udar_fly_0
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1841
+        width: 1098
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b314bb63a09e5830800000000000000
+      internalID: 4061842945495798710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_1
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1895
+        width: 1111
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae41daf52c12a1e90800000000000000
+      internalID: -7054288747609910038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_2
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 1963
+        width: 1125
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf07bddb188d9340800000000000000
+      internalID: 4872200025150001068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_3
+      rect:
+        serializedVersion: 2
+        x: 4296
+        y: 2010
+        width: 1117
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392550dc7ded7a3b0800000000000000
+      internalID: -5501183401370758509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_4
+      rect:
+        serializedVersion: 2
+        x: 5664
+        y: 2030
+        width: 1104
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9802296841ca0c050800000000000000
+      internalID: 5818839922719727753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_5
+      rect:
+        serializedVersion: 2
+        x: 7032
+        y: 2023
+        width: 1104
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdd556d50c6d60f0800000000000000
+      internalID: -1122121959818797627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_6
+      rect:
+        serializedVersion: 2
+        x: 8386
+        y: 1996
+        width: 1111
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99de9a71ecc68850800000000000000
+      internalID: 6379011191013824922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_7
+      rect:
+        serializedVersion: 2
+        x: 9734
+        y: 1963
+        width: 1111
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51192a4b3e334b890800000000000000
+      internalID: -7443267231055441643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_8
+      rect:
+        serializedVersion: 2
+        x: 11076
+        y: 1929
+        width: 1124
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2824a9bcaba10cb0800000000000000
+      internalID: -4899446161265121236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_9
+      rect:
+        serializedVersion: 2
+        x: 12429
+        y: 1902
+        width: 1125
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd6251b8208742b0800000000000000
+      internalID: -5600366699349905959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1276
+        width: 1125
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6f17f481bdfdac0800000000000000
+      internalID: -3828100260783065373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_11
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1289
+        width: 1125
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3623e4da8a924c640800000000000000
+      internalID: 5099246482529071715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_12
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1310
+        width: 1125
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc48a1160b1e9b50800000000000000
+      internalID: 6601743816651721943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_13
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 1324
+        width: 1117
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6bcf106c37af550800000000000000
+      internalID: 6195391531675596473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_14
+      rect:
+        serializedVersion: 2
+        x: 5623
+        y: 1343
+        width: 1105
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32409d7ad90a01d80800000000000000
+      internalID: -8281943115748015069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_15
+      rect:
+        serializedVersion: 2
+        x: 7025
+        y: 1357
+        width: 1105
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbb7f29071949d80800000000000000
+      internalID: -8244805105120461894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_16
+      rect:
+        serializedVersion: 2
+        x: 8420
+        y: 1364
+        width: 1098
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f715e5fb84f2e660800000000000000
+      internalID: 7413756818568321014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_17
+      rect:
+        serializedVersion: 2
+        x: 9801
+        y: 1384
+        width: 1118
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3243917688fe548d0800000000000000
+      internalID: -2862618618999786461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_18
+      rect:
+        serializedVersion: 2
+        x: 11202
+        y: 1378
+        width: 1126
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1451627f40d819dc0800000000000000
+      internalID: -3633968371845425855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_19
+      rect:
+        serializedVersion: 2
+        x: 12618
+        y: 1344
+        width: 1118
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09db018f3490d7cc0800000000000000
+      internalID: -3711800330354115184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_20
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 697
+        width: 1098
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edd2d217f99599e0800000000000000
+      internalID: -1615215604890673690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_21
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 670
+        width: 1104
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afdc7b7fda9a5740800000000000000
+      internalID: 5141592209237008296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_22
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 663
+        width: 1110
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4593767f8181ddd10800000000000000
+      internalID: 2151902692461984084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_23
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 663
+        width: 1111
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca8e563d9a7e7200800000000000000
+      internalID: 179715850782018245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_24
+      rect:
+        serializedVersion: 2
+        x: 5778
+        y: 644
+        width: 1124
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f903c91ec50b0220800000000000000
+      internalID: 2453060804786981364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_25
+      rect:
+        serializedVersion: 2
+        x: 7156
+        y: 663
+        width: 1127
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc6baba93400d140800000000000000
+      internalID: 4742295053360917689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_26
+      rect:
+        serializedVersion: 2
+        x: 8534
+        y: 663
+        width: 1125
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdbf4007e1ed3c10800000000000000
+      internalID: 2035030988900253181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_27
+      rect:
+        serializedVersion: 2
+        x: 9915
+        y: 663
+        width: 1126
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ce54f10feb346e0800000000000000
+      internalID: -1854428683020407794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_28
+      rect:
+        serializedVersion: 2
+        x: 11297
+        y: 663
+        width: 1118
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a5dac1f21e197f0800000000000000
+      internalID: -607456882257470844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_29
+      rect:
+        serializedVersion: 2
+        x: 12678
+        y: 640
+        width: 1118
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dba9762ce36f660800000000000000
+      internalID: 7419186440822242682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 10
+        width: 1111
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ffc9f8189c9ff60800000000000000
+      internalID: 8068701765708349322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: udar_fly_31
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 0
+        width: 1105
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fc121f117bff1e0800000000000000
+      internalID: -2161808008426696948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      udar_fly_0: 4061842945495798710
+      udar_fly_1: -7054288747609910038
+      udar_fly_10: -3828100260783065373
+      udar_fly_11: 5099246482529071715
+      udar_fly_12: 6601743816651721943
+      udar_fly_13: 6195391531675596473
+      udar_fly_14: -8281943115748015069
+      udar_fly_15: -8244805105120461894
+      udar_fly_16: 7413756818568321014
+      udar_fly_17: -2862618618999786461
+      udar_fly_18: -3633968371845425855
+      udar_fly_19: -3711800330354115184
+      udar_fly_2: 4872200025150001068
+      udar_fly_20: -1615215604890673690
+      udar_fly_21: 5141592209237008296
+      udar_fly_22: 2151902692461984084
+      udar_fly_23: 179715850782018245
+      udar_fly_24: 2453060804786981364
+      udar_fly_25: 4742295053360917689
+      udar_fly_26: 2035030988900253181
+      udar_fly_27: -1854428683020407794
+      udar_fly_28: -607456882257470844
+      udar_fly_29: 7419186440822242682
+      udar_fly_3: -5501183401370758509
+      udar_fly_30: 8068701765708349322
+      udar_fly_31: -2161808008426696948
+      udar_fly_4: 5818839922719727753
+      udar_fly_5: -1122121959818797627
+      udar_fly_6: 6379011191013824922
+      udar_fly_7: -7443267231055441643
+      udar_fly_8: -4899446161265121236
+      udar_fly_9: -5600366699349905959
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

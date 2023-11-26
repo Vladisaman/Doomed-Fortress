@@ -1,0 +1,2640 @@
+fileFormatVersion: 2
+guid: ec5763cf8a47e46469842fcabb876550
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2552160068188006304
+    second: sprite golem brosok_0
+  - first:
+      213: -6329443680118111698
+    second: sprite golem brosok_1
+  - first:
+      213: 2951646601236850609
+    second: sprite golem brosok_2
+  - first:
+      213: 6446337814840569086
+    second: sprite golem brosok_3
+  - first:
+      213: -614580952487653337
+    second: sprite golem brosok_4
+  - first:
+      213: 3947034402273643314
+    second: sprite golem brosok_5
+  - first:
+      213: 2198749388131771239
+    second: sprite golem brosok_6
+  - first:
+      213: -4874911928297321241
+    second: sprite golem brosok_7
+  - first:
+      213: 3768860233950461947
+    second: sprite golem brosok_8
+  - first:
+      213: -903111479230700001
+    second: sprite golem brosok_9
+  - first:
+      213: 6928410210352513567
+    second: sprite golem brosok_10
+  - first:
+      213: 7313575686044335122
+    second: sprite golem brosok_11
+  - first:
+      213: 7201133248987044843
+    second: sprite golem brosok_12
+  - first:
+      213: 4552087071430947391
+    second: sprite golem brosok_13
+  - first:
+      213: 3198000985188627504
+    second: sprite golem brosok_14
+  - first:
+      213: -4834754405129351256
+    second: sprite golem brosok_15
+  - first:
+      213: -288014250347334289
+    second: sprite golem brosok_16
+  - first:
+      213: -3072177865594919166
+    second: sprite golem brosok_17
+  - first:
+      213: 2482750866149777004
+    second: sprite golem brosok_18
+  - first:
+      213: 2339068611147018070
+    second: sprite golem brosok_19
+  - first:
+      213: -8785786973764913952
+    second: sprite golem brosok_20
+  - first:
+      213: -9131345624729916740
+    second: sprite golem brosok_21
+  - first:
+      213: -6194311894587253884
+    second: sprite golem brosok_22
+  - first:
+      213: -766435493671549133
+    second: sprite golem brosok_23
+  - first:
+      213: 5441534174231854664
+    second: sprite golem brosok_24
+  - first:
+      213: -4764736948782202444
+    second: sprite golem brosok_25
+  - first:
+      213: -1489065911360569691
+    second: sprite golem brosok_26
+  - first:
+      213: -7212360518238958138
+    second: sprite golem brosok_27
+  - first:
+      213: -6530078353071988490
+    second: sprite golem brosok_28
+  - first:
+      213: 519369257224419926
+    second: sprite golem brosok_29
+  - first:
+      213: 1843692040093318034
+    second: sprite golem brosok_30
+  - first:
+      213: 7671743386435854932
+    second: sprite golem brosok_31
+  - first:
+      213: 4728367537295544116
+    second: sprite golem brosok_32
+  - first:
+      213: 4640008652221671379
+    second: sprite golem brosok_33
+  - first:
+      213: 9100342024567852706
+    second: sprite golem brosok_34
+  - first:
+      213: 7152370154758748785
+    second: sprite golem brosok_35
+  - first:
+      213: -337977588311099068
+    second: sprite golem brosok_36
+  - first:
+      213: 3876955934199857021
+    second: sprite golem brosok_37
+  - first:
+      213: -4395225471408948258
+    second: sprite golem brosok_38
+  - first:
+      213: 6430777850460355158
+    second: sprite golem brosok_39
+  - first:
+      213: -5917814388194357839
+    second: sprite golem brosok_40
+  - first:
+      213: 619434732695742870
+    second: sprite golem brosok_41
+  - first:
+      213: 117916669592060964
+    second: sprite golem brosok_42
+  - first:
+      213: -1150475654785358786
+    second: sprite golem brosok_43
+  - first:
+      213: -4903989835472884657
+    second: sprite golem brosok_44
+  - first:
+      213: 634866198210604579
+    second: sprite golem brosok_45
+  - first:
+      213: 5501702213850027917
+    second: sprite golem brosok_46
+  - first:
+      213: 299387285897205760
+    second: sprite golem brosok_47
+  - first:
+      213: -213325109325641886
+    second: sprite golem brosok_48
+  - first:
+      213: 5084306218646119556
+    second: sprite golem brosok_49
+  - first:
+      213: -5235637990740892195
+    second: sprite golem brosok_50
+  - first:
+      213: 7520932393332808458
+    second: sprite golem brosok_51
+  - first:
+      213: -1442599227660684766
+    second: sprite golem brosok_52
+  - first:
+      213: 8072040590675133457
+    second: sprite golem brosok_53
+  - first:
+      213: -1025257424170769870
+    second: sprite golem brosok_54
+  - first:
+      213: -6811097563682913011
+    second: sprite golem brosok_55
+  - first:
+      213: 1062152514520920878
+    second: sprite golem brosok_56
+  - first:
+      213: -8423170060004832470
+    second: sprite golem brosok_57
+  - first:
+      213: 3874333961695278932
+    second: sprite golem brosok_58
+  - first:
+      213: 2023504742874666144
+    second: sprite golem brosok_59
+  - first:
+      213: 8160925266475100215
+    second: sprite golem brosok_60
+  - first:
+      213: 542290256203588824
+    second: sprite golem brosok_61
+  - first:
+      213: -1870917308851197133
+    second: sprite golem brosok_62
+  - first:
+      213: 380964216690868034
+    second: sprite golem brosok_63
+  - first:
+      213: 3308073618506103687
+    second: sprite golem brosok_64
+  - first:
+      213: 8976294972922645733
+    second: sprite golem brosok_65
+  - first:
+      213: -2874757009487113159
+    second: sprite golem brosok_66
+  - first:
+      213: -2960122969181185008
+    second: sprite golem brosok_67
+  - first:
+      213: 1896762057212095788
+    second: sprite golem brosok_68
+  - first:
+      213: 6511517924487210692
+    second: sprite golem brosok_69
+  - first:
+      213: 63884235344106608
+    second: sprite golem brosok_70
+  - first:
+      213: -7268063471334142453
+    second: sprite golem brosok_71
+  - first:
+      213: -3794084523426081395
+    second: sprite golem brosok_72
+  - first:
+      213: 5828765279679938601
+    second: sprite golem brosok_73
+  - first:
+      213: 4101513953603534459
+    second: sprite golem brosok_74
+  - first:
+      213: -6060080415176620858
+    second: sprite golem brosok_75
+  - first:
+      213: 8216903410217569816
+    second: sprite golem brosok_76
+  - first:
+      213: 384448300222740463
+    second: sprite golem brosok_77
+  - first:
+      213: -6818092049963378321
+    second: sprite golem brosok_78
+  - first:
+      213: 1236690358806852068
+    second: sprite golem brosok_79
+  - first:
+      213: 135564288424616477
+    second: sprite golem brosok_80
+  - first:
+      213: 3936993712187456339
+    second: sprite golem brosok_81
+  - first:
+      213: 7507524940314560980
+    second: sprite golem brosok_82
+  - first:
+      213: 7993946202739000026
+    second: sprite golem brosok_83
+  - first:
+      213: 5729841521191318358
+    second: sprite golem brosok_84
+  - first:
+      213: 3998247981052035025
+    second: sprite golem brosok_85
+  - first:
+      213: -3294242379781603634
+    second: sprite golem brosok_86
+  - first:
+      213: -7517797610462687757
+    second: sprite golem brosok_87
+  - first:
+      213: -502065652188951791
+    second: sprite golem brosok_88
+  - first:
+      213: -672197252636080513
+    second: sprite golem brosok_89
+  - first:
+      213: 6576361727967237356
+    second: sprite golem brosok_90
+  - first:
+      213: -1874893459038990212
+    second: sprite golem brosok_91
+  - first:
+      213: -8861434081444559218
+    second: sprite golem brosok_92
+  - first:
+      213: -3789434064667310527
+    second: sprite golem brosok_93
+  - first:
+      213: 4347462182877965647
+    second: sprite golem brosok_94
+  - first:
+      213: 7818719677539569765
+    second: sprite golem brosok_95
+  - first:
+      213: -1164943019702081418
+    second: sprite golem brosok_96
+  - first:
+      213: 1992828063433092057
+    second: sprite golem brosok_97
+  - first:
+      213: 8623529312034401503
+    second: sprite golem brosok_98
+  - first:
+      213: -8247190328419465693
+    second: sprite golem brosok_99
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 185
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite golem brosok_0
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 7954
+        width: 368
+        height: 886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a768426f081b6320800000000000000
+      internalID: 2552160068188006304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_1
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 7962
+        width: 368
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2208bcf18c4928a0800000000000000
+      internalID: -6329443680118111698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7968
+        width: 371
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7263102fa56f820800000000000000
+      internalID: 2951646601236850609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_3
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 7975
+        width: 380
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc6db3a61ef57950800000000000000
+      internalID: 6446337814840569086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_4
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 7979
+        width: 392
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720904141e19877f0800000000000000
+      internalID: -614580952487653337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_5
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 7983
+        width: 405
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b44c760eea6c630800000000000000
+      internalID: 3947034402273643314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_6
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 7984
+        width: 415
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763a3b54be6838e10800000000000000
+      internalID: 2198749388131771239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_7
+      rect:
+        serializedVersion: 2
+        x: 4698
+        y: 7984
+        width: 427
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec068afd65d85cb0800000000000000
+      internalID: -4874911928297321241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_8
+      rect:
+        serializedVersion: 2
+        x: 5337
+        y: 7984
+        width: 440
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff76bc1a6ead4430800000000000000
+      internalID: 3768860233950461947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_9
+      rect:
+        serializedVersion: 2
+        x: 5976
+        y: 7983
+        width: 453
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1660eff4e08773f0800000000000000
+      internalID: -903111479230700001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 7099
+        width: 466
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f124046c068a62060800000000000000
+      internalID: 6928410210352513567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_11
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 7099
+        width: 477
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c3b94665a0f7560800000000000000
+      internalID: 7313575686044335122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_12
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 7099
+        width: 488
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb902669809fe360800000000000000
+      internalID: 7201133248987044843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_13
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 7099
+        width: 500
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f323a4fc2134c2f30800000000000000
+      internalID: 4552087071430947391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_14
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 7099
+        width: 512
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0347489c3f4916c20800000000000000
+      internalID: 3198000985188627504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_15
+      rect:
+        serializedVersion: 2
+        x: 3313
+        y: 7098
+        width: 522
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af8202fb7087ecb0800000000000000
+      internalID: -4834754405129351256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_16
+      rect:
+        serializedVersion: 2
+        x: 3951
+        y: 7092
+        width: 535
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65fbc5b094c00cf0800000000000000
+      internalID: -288014250347334289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_17
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 7086
+        width: 541
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207a562228e6d55d0800000000000000
+      internalID: -3072177865594919166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_18
+      rect:
+        serializedVersion: 2
+        x: 5233
+        y: 7081
+        width: 553
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e96a232c0847220800000000000000
+      internalID: 2482750866149777004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_19
+      rect:
+        serializedVersion: 2
+        x: 5875
+        y: 7077
+        width: 562
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f2fa8428a067020800000000000000
+      internalID: 2339068611147018070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 6188
+        width: 574
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4fc74eb4d921680800000000000000
+      internalID: -8785786973764913952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_21
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 6188
+        width: 561
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae7a4c881f64180800000000000000
+      internalID: -9131345624729916740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_22
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 6188
+        width: 556
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b56279622690aa0800000000000000
+      internalID: -6194311894587253884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_23
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 6188
+        width: 544
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337c470baf21d55f0800000000000000
+      internalID: -766435493671549133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_24
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 6188
+        width: 531
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84efc304086348b40800000000000000
+      internalID: 5441534174231854664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_25
+      rect:
+        serializedVersion: 2
+        x: 3313
+        y: 6188
+        width: 522
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b188af5df040edb0800000000000000
+      internalID: -4764736948782202444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_26
+      rect:
+        serializedVersion: 2
+        x: 3973
+        y: 6188
+        width: 509
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aeb53a6176c55be0800000000000000
+      internalID: -1489065911360569691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_27
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 6188
+        width: 500
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd8056425c88eb90800000000000000
+      internalID: -7212360518238958138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_28
+      rect:
+        serializedVersion: 2
+        x: 5294
+        y: 6188
+        width: 487
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f02da1f5508065a0800000000000000
+      internalID: -6530078353071988490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_29
+      rect:
+        serializedVersion: 2
+        x: 5954
+        y: 6188
+        width: 475
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65abe14769b253700800000000000000
+      internalID: 519369257224419926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_30
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 5303
+        width: 466
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b3af4642c169910800000000000000
+      internalID: 1843692040093318034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_31
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 5303
+        width: 453
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452267c96f1877a60800000000000000
+      internalID: 7671743386435854932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_32
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 5303
+        width: 440
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f4df329398e9140800000000000000
+      internalID: 4728367537295544116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_33
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 5303
+        width: 427
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7696e094f946040800000000000000
+      internalID: 4640008652221671379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_34
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 5303
+        width: 414
+        height: 875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae0dec0bd8ea4e70800000000000000
+      internalID: 9100342024567852706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_35
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 5303
+        width: 405
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a3088c2c2524360800000000000000
+      internalID: 7152370154758748785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_36
+      rect:
+        serializedVersion: 2
+        x: 4085
+        y: 5303
+        width: 389
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4497ca29c234f4bf0800000000000000
+      internalID: -337977588311099068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_37
+      rect:
+        serializedVersion: 2
+        x: 4746
+        y: 5303
+        width: 375
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f33d391e6bdc530800000000000000
+      internalID: 3876955934199857021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_38
+      rect:
+        serializedVersion: 2
+        x: 5398
+        y: 5303
+        width: 375
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbbbec78b50103c0800000000000000
+      internalID: -4395225471408948258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_39
+      rect:
+        serializedVersion: 2
+        x: 6049
+        y: 5303
+        width: 371
+        height: 867
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ab32e1266be3950800000000000000
+      internalID: 6430777850460355158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_40
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 4418
+        width: 368
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdcaf8fa23bfdda0800000000000000
+      internalID: -5917814388194357839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_41
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 4418
+        width: 368
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6996ed38b9ca89800800000000000000
+      internalID: 619434732695742870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_42
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4418
+        width: 371
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424c124169ce2a100800000000000000
+      internalID: 117916669592060964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_43
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 4418
+        width: 366
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34a8c9cc70b800f0800000000000000
+      internalID: -1150475654785358786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_44
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 4418
+        width: 371
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c23822a3781fbb0800000000000000
+      internalID: -4903989835472884657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_45
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 4418
+        width: 368
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eee30917f7fc800800000000000000
+      internalID: 634866198210604579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_46
+      rect:
+        serializedVersion: 2
+        x: 4051
+        y: 4418
+        width: 418
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87d284a309f95c40800000000000000
+      internalID: 5501702213850027917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_47
+      rect:
+        serializedVersion: 2
+        x: 4662
+        y: 4418
+        width: 459
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008db2a7623a72400800000000000000
+      internalID: 299387285897205760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_48
+      rect:
+        serializedVersion: 2
+        x: 5282
+        y: 4418
+        width: 486
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26749fc71fd1a0df0800000000000000
+      internalID: -213325109325641886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_49
+      rect:
+        serializedVersion: 2
+        x: 5915
+        y: 4418
+        width: 505
+        height: 842
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48426bb61951f8640800000000000000
+      internalID: 5084306218646119556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_50
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 3534
+        width: 508
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5695dacf64757b0800000000000000
+      internalID: -5235637990740892195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_51
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 3534
+        width: 500
+        height: 839
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b94540a28bf5860800000000000000
+      internalID: 7520932393332808458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_52
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 3534
+        width: 485
+        height: 836
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222380a45abdafbe0800000000000000
+      internalID: -1442599227660684766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_53
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 3534
+        width: 462
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114c9b35626a50070800000000000000
+      internalID: 8072040590675133457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_54
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 3534
+        width: 427
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23228f40ecd85c1f0800000000000000
+      internalID: -1025257424170769870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_55
+      rect:
+        serializedVersion: 2
+        x: 3446
+        y: 3534
+        width: 384
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05c6224ade1a71a0800000000000000
+      internalID: -6811097563682913011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_56
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 3534
+        width: 381
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23be4d95168dbe00800000000000000
+      internalID: 1062152514520920878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_57
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 3534
+        width: 384
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bc4b25573ea1b80800000000000000
+      internalID: -8423170060004832470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_58
+      rect:
+        serializedVersion: 2
+        x: 5402
+        y: 3534
+        width: 387
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4573418063664c530800000000000000
+      internalID: 3874333961695278932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_59
+      rect:
+        serializedVersion: 2
+        x: 6050
+        y: 3534
+        width: 391
+        height: 875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4dc58b7dee41c10800000000000000
+      internalID: 2023504742874666144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_60
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2652
+        width: 392
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73822ca9a4e614170800000000000000
+      internalID: 8160925266475100215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_61
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2652
+        width: 390
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4ab266d1a968700800000000000000
+      internalID: 542290256203588824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_62
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2652
+        width: 388
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b6bc1ce9a2906e0800000000000000
+      internalID: -1870917308851197133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_63
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 2652
+        width: 384
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f7ef7cfe4794500800000000000000
+      internalID: 380964216690868034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_64
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 2652
+        width: 384
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bb5e9dd63a8ed20800000000000000
+      internalID: 3308073618506103687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_65
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 2652
+        width: 379
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eccd2c28b4329c70800000000000000
+      internalID: 8976294972922645733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_66
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 2652
+        width: 377
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934d4f12bbfca18d0800000000000000
+      internalID: -2874757009487113159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_67
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 2652
+        width: 375
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c1b7ac7d78be6d0800000000000000
+      internalID: -2960122969181185008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_68
+      rect:
+        serializedVersion: 2
+        x: 5402
+        y: 2652
+        width: 371
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2de093aa07a25a10800000000000000
+      internalID: 1896762057212095788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_69
+      rect:
+        serializedVersion: 2
+        x: 6036
+        y: 2652
+        width: 384
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c626a58d0f8d5a50800000000000000
+      internalID: 6511517924487210692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_70
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1768
+        width: 442
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074de62af56f2e000800000000000000
+      internalID: 63884235344106608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_71
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1768
+        width: 485
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ec22ad7c6a22b90800000000000000
+      internalID: -7268063471334142453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_72
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1768
+        width: 509
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8591655a34b85bc0800000000000000
+      internalID: -3794084523426081395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_73
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1768
+        width: 504
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9200476c32fe3e050800000000000000
+      internalID: 5828765279679938601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_74
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1768
+        width: 487
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7eb8d5c5318be830800000000000000
+      internalID: 4101513953603534459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_75
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 1768
+        width: 450
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4881758f446eba0800000000000000
+      internalID: -6060080415176620858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_76
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 1768
+        width: 401
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ec6b7dd1e480270800000000000000
+      internalID: 8216903410217569816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_77
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 1768
+        width: 371
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7774131b5d55500800000000000000
+      internalID: 384448300222740463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_78
+      rect:
+        serializedVersion: 2
+        x: 5402
+        y: 1768
+        width: 366
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69940487654161a0800000000000000
+      internalID: -6818092049963378321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_79
+      rect:
+        serializedVersion: 2
+        x: 6049
+        y: 1768
+        width: 371
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e135dd345b992110800000000000000
+      internalID: 1236690358806852068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_80
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 883
+        width: 368
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1227c7800f91e100800000000000000
+      internalID: 135564288424616477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_81
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 883
+        width: 368
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b31e11ce203a630800000000000000
+      internalID: 3936993712187456339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_82
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 883
+        width: 371
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9c5d91826103860800000000000000
+      internalID: 7507524940314560980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_83
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 883
+        width: 366
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad247d7b7b330fe60800000000000000
+      internalID: 7993946202739000026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_84
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 883
+        width: 371
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65374e9618c748f40800000000000000
+      internalID: 5729841521191318358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_85
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 883
+        width: 368
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df778aea51ac7730800000000000000
+      internalID: 3998247981052035025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_86
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 883
+        width: 368
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece741d52008842d0800000000000000
+      internalID: -3294242379781603634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_87
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 883
+        width: 371
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd471f77ea6ba790800000000000000
+      internalID: -7517797610462687757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_88
+      rect:
+        serializedVersion: 2
+        x: 5402
+        y: 883
+        width: 366
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b4a5b03fd4809f0800000000000000
+      internalID: -502065652188951791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_89
+      rect:
+        serializedVersion: 2
+        x: 6049
+        y: 883
+        width: 371
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7602a10920eba6f0800000000000000
+      internalID: -672197252636080513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_90
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 368
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce416f5062ee34b50800000000000000
+      internalID: 6576361727967237356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_91
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 0
+        width: 368
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c701746255a0bf5e0800000000000000
+      internalID: -1874893459038990212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_92
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 371
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8605fe17acd50580800000000000000
+      internalID: -8861434081444559218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_93
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 0
+        width: 366
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1468db3abc9396bc0800000000000000
+      internalID: -3789434064667310527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_94
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 0
+        width: 371
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4da2ec42d9455c30800000000000000
+      internalID: 4347462182877965647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_95
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 0
+        width: 368
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5605a121f1ca18c60800000000000000
+      internalID: 7818719677539569765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_96
+      rect:
+        serializedVersion: 2
+        x: 4101
+        y: 0
+        width: 368
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6782617ee7a45dfe0800000000000000
+      internalID: -1164943019702081418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_97
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 0
+        width: 371
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbeb53b092f7ab10800000000000000
+      internalID: 1992828063433092057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_98
+      rect:
+        serializedVersion: 2
+        x: 5402
+        y: 0
+        width: 366
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcaaf9483eeca770800000000000000
+      internalID: 8623529312034401503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite golem brosok_99
+      rect:
+        serializedVersion: 2
+        x: 6049
+        y: 0
+        width: 371
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326458f77181c8d80800000000000000
+      internalID: -8247190328419465693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sprite golem brosok_0: 2552160068188006304
+      sprite golem brosok_1: -6329443680118111698
+      sprite golem brosok_10: 6928410210352513567
+      sprite golem brosok_11: 7313575686044335122
+      sprite golem brosok_12: 7201133248987044843
+      sprite golem brosok_13: 4552087071430947391
+      sprite golem brosok_14: 3198000985188627504
+      sprite golem brosok_15: -4834754405129351256
+      sprite golem brosok_16: -288014250347334289
+      sprite golem brosok_17: -3072177865594919166
+      sprite golem brosok_18: 2482750866149777004
+      sprite golem brosok_19: 2339068611147018070
+      sprite golem brosok_2: 2951646601236850609
+      sprite golem brosok_20: -8785786973764913952
+      sprite golem brosok_21: -9131345624729916740
+      sprite golem brosok_22: -6194311894587253884
+      sprite golem brosok_23: -766435493671549133
+      sprite golem brosok_24: 5441534174231854664
+      sprite golem brosok_25: -4764736948782202444
+      sprite golem brosok_26: -1489065911360569691
+      sprite golem brosok_27: -7212360518238958138
+      sprite golem brosok_28: -6530078353071988490
+      sprite golem brosok_29: 519369257224419926
+      sprite golem brosok_3: 6446337814840569086
+      sprite golem brosok_30: 1843692040093318034
+      sprite golem brosok_31: 7671743386435854932
+      sprite golem brosok_32: 4728367537295544116
+      sprite golem brosok_33: 4640008652221671379
+      sprite golem brosok_34: 9100342024567852706
+      sprite golem brosok_35: 7152370154758748785
+      sprite golem brosok_36: -337977588311099068
+      sprite golem brosok_37: 3876955934199857021
+      sprite golem brosok_38: -4395225471408948258
+      sprite golem brosok_39: 6430777850460355158
+      sprite golem brosok_4: -614580952487653337
+      sprite golem brosok_40: -5917814388194357839
+      sprite golem brosok_41: 619434732695742870
+      sprite golem brosok_42: 117916669592060964
+      sprite golem brosok_43: -1150475654785358786
+      sprite golem brosok_44: -4903989835472884657
+      sprite golem brosok_45: 634866198210604579
+      sprite golem brosok_46: 5501702213850027917
+      sprite golem brosok_47: 299387285897205760
+      sprite golem brosok_48: -213325109325641886
+      sprite golem brosok_49: 5084306218646119556
+      sprite golem brosok_5: 3947034402273643314
+      sprite golem brosok_50: -5235637990740892195
+      sprite golem brosok_51: 7520932393332808458
+      sprite golem brosok_52: -1442599227660684766
+      sprite golem brosok_53: 8072040590675133457
+      sprite golem brosok_54: -1025257424170769870
+      sprite golem brosok_55: -6811097563682913011
+      sprite golem brosok_56: 1062152514520920878
+      sprite golem brosok_57: -8423170060004832470
+      sprite golem brosok_58: 3874333961695278932
+      sprite golem brosok_59: 2023504742874666144
+      sprite golem brosok_6: 2198749388131771239
+      sprite golem brosok_60: 8160925266475100215
+      sprite golem brosok_61: 542290256203588824
+      sprite golem brosok_62: -1870917308851197133
+      sprite golem brosok_63: 380964216690868034
+      sprite golem brosok_64: 3308073618506103687
+      sprite golem brosok_65: 8976294972922645733
+      sprite golem brosok_66: -2874757009487113159
+      sprite golem brosok_67: -2960122969181185008
+      sprite golem brosok_68: 1896762057212095788
+      sprite golem brosok_69: 6511517924487210692
+      sprite golem brosok_7: -4874911928297321241
+      sprite golem brosok_70: 63884235344106608
+      sprite golem brosok_71: -7268063471334142453
+      sprite golem brosok_72: -3794084523426081395
+      sprite golem brosok_73: 5828765279679938601
+      sprite golem brosok_74: 4101513953603534459
+      sprite golem brosok_75: -6060080415176620858
+      sprite golem brosok_76: 8216903410217569816
+      sprite golem brosok_77: 384448300222740463
+      sprite golem brosok_78: -6818092049963378321
+      sprite golem brosok_79: 1236690358806852068
+      sprite golem brosok_8: 3768860233950461947
+      sprite golem brosok_80: 135564288424616477
+      sprite golem brosok_81: 3936993712187456339
+      sprite golem brosok_82: 7507524940314560980
+      sprite golem brosok_83: 7993946202739000026
+      sprite golem brosok_84: 5729841521191318358
+      sprite golem brosok_85: 3998247981052035025
+      sprite golem brosok_86: -3294242379781603634
+      sprite golem brosok_87: -7517797610462687757
+      sprite golem brosok_88: -502065652188951791
+      sprite golem brosok_89: -672197252636080513
+      sprite golem brosok_9: -903111479230700001
+      sprite golem brosok_90: 6576361727967237356
+      sprite golem brosok_91: -1874893459038990212
+      sprite golem brosok_92: -8861434081444559218
+      sprite golem brosok_93: -3789434064667310527
+      sprite golem brosok_94: 4347462182877965647
+      sprite golem brosok_95: 7818719677539569765
+      sprite golem brosok_96: -1164943019702081418
+      sprite golem brosok_97: 1992828063433092057
+      sprite golem brosok_98: 8623529312034401503
+      sprite golem brosok_99: -8247190328419465693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

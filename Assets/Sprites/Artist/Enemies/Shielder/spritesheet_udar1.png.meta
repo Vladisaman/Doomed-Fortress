@@ -1,0 +1,1015 @@
+fileFormatVersion: 2
+guid: f9c4677e6c250f54cb7a1f516f77a605
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8320215143734607753
+    second: spritesheet_udar1_0
+  - first:
+      213: 7878581274564269831
+    second: spritesheet_udar1_1
+  - first:
+      213: -3062689228182254432
+    second: spritesheet_udar1_2
+  - first:
+      213: 8810756481667943774
+    second: spritesheet_udar1_3
+  - first:
+      213: 5531197314497852846
+    second: spritesheet_udar1_4
+  - first:
+      213: -2366166657711577119
+    second: spritesheet_udar1_5
+  - first:
+      213: -8666420373255918010
+    second: spritesheet_udar1_6
+  - first:
+      213: -1522729554766236576
+    second: spritesheet_udar1_7
+  - first:
+      213: 7107091328746532105
+    second: spritesheet_udar1_8
+  - first:
+      213: -1759668412645222197
+    second: spritesheet_udar1_9
+  - first:
+      213: 1277048274566170503
+    second: spritesheet_udar1_10
+  - first:
+      213: -3484549233904889073
+    second: spritesheet_udar1_11
+  - first:
+      213: -253227958450781173
+    second: spritesheet_udar1_12
+  - first:
+      213: -4863920865980729312
+    second: spritesheet_udar1_13
+  - first:
+      213: -8903808368867784269
+    second: spritesheet_udar1_14
+  - first:
+      213: -1033774348259605797
+    second: spritesheet_udar1_15
+  - first:
+      213: -2858650962257527486
+    second: spritesheet_udar1_16
+  - first:
+      213: -9102927866756806670
+    second: spritesheet_udar1_17
+  - first:
+      213: 21742647236541637
+    second: spritesheet_udar1_18
+  - first:
+      213: 677042643328362258
+    second: spritesheet_udar1_19
+  - first:
+      213: -6827389926633525106
+    second: spritesheet_udar1_20
+  - first:
+      213: 4751778147710308615
+    second: spritesheet_udar1_21
+  - first:
+      213: -4072576918407790146
+    second: spritesheet_udar1_22
+  - first:
+      213: 1847697062449962103
+    second: spritesheet_udar1_23
+  - first:
+      213: -3062466183315355214
+    second: spritesheet_udar1_24
+  - first:
+      213: -4844403343697562003
+    second: spritesheet_udar1_25
+  - first:
+      213: 5532554380135800549
+    second: spritesheet_udar1_26
+  - first:
+      213: -178386450510449280
+    second: spritesheet_udar1_27
+  - first:
+      213: -7649208822959017081
+    second: spritesheet_udar1_28
+  - first:
+      213: 3467305022206531871
+    second: spritesheet_udar1_29
+  - first:
+      213: 5230403655368602966
+    second: spritesheet_udar1_30
+  - first:
+      213: -345909941642094752
+    second: spritesheet_udar1_31
+  - first:
+      213: 7681744024727804668
+    second: spritesheet_udar1_32
+  - first:
+      213: 8565672057808366236
+    second: spritesheet_udar1_33
+  - first:
+      213: 6837784083100996070
+    second: spritesheet_udar1_34
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 275
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_udar1_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3123
+        width: 453
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7708fdeb868a88c80800000000000000
+      internalID: -8320215143734607753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 3123
+        width: 425
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707927c3de7565d60800000000000000
+      internalID: 7878581274564269831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_2
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 3124
+        width: 418
+        height: 1040
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac08c0bf542f75d0800000000000000
+      internalID: -3062689228182254432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_3
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 3120
+        width: 413
+        height: 1044
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dc944b658164a70800000000000000
+      internalID: 8810756481667943774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_4
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 2082
+        width: 439
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea53d39e6a2c2cc40800000000000000
+      internalID: 5531197314497852846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_5
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 3122
+        width: 411
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e76ab716ffa92fd0800000000000000
+      internalID: -2366166657711577119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_6
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 2086
+        width: 466
+        height: 1038
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e6fd15690bab780800000000000000
+      internalID: -8666420373255918010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_7
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 3122
+        width: 413
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0647b27a98d2edae0800000000000000
+      internalID: -1522729554766236576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_8
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 3122
+        width: 442
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d223498e571a260800000000000000
+      internalID: 7107091328746532105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_9
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 3124
+        width: 430
+        height: 1040
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc85ecdd6e66497e0800000000000000
+      internalID: -1759668412645222197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_10
+      rect:
+        serializedVersion: 2
+        x: 3943
+        y: 3123
+        width: 437
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787ca8eb3acf8b110800000000000000
+      internalID: 1277048274566170503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_11
+      rect:
+        serializedVersion: 2
+        x: 4435
+        y: 3124
+        width: 442
+        height: 1040
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f035db60fe464afc0800000000000000
+      internalID: -3484549233904889073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 408
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b040851738a5c7cf0800000000000000
+      internalID: -253227958450781173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_13
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 406
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028bb971eb1ef7cb0800000000000000
+      internalID: -4863920865980729312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_14
+      rect:
+        serializedVersion: 2
+        x: 4414
+        y: 1037
+        width: 432
+        height: 1046
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b94c7186715f6480800000000000000
+      internalID: -8903808368867784269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_15
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2082
+        width: 478
+        height: 1040
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2431a15bb47a1f0800000000000000
+      internalID: -1033774348259605797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_16
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2082
+        width: 442
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dbfc978180458d0800000000000000
+      internalID: -2858650962257527486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_17
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 2080
+        width: 425
+        height: 1042
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7c4f5a557eba180800000000000000
+      internalID: -9102927866756806670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_18
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 2082
+        width: 477
+        height: 1036
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccb20d82de3d4000800000000000000
+      internalID: 21742647236541637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_19
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 2083
+        width: 457
+        height: 1038
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217e06d62b6556900800000000000000
+      internalID: 677042643328362258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_20
+      rect:
+        serializedVersion: 2
+        x: 3445
+        y: 2083
+        width: 449
+        height: 1041
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80bde7e80d3041a0800000000000000
+      internalID: -6827389926633525106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_21
+      rect:
+        serializedVersion: 2
+        x: 3943
+        y: 2081
+        width: 438
+        height: 1039
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7019cb1ac05b1f140800000000000000
+      internalID: 4751778147710308615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_22
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 2092
+        width: 450
+        height: 1031
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb149d1cedc4b77c0800000000000000
+      internalID: -4072576918407790146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_23
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1045
+        width: 427
+        height: 1034
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cdcd350b654a910800000000000000
+      internalID: 1847697062449962103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_24
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1044
+        width: 439
+        height: 1031
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b987de5b3fef75d0800000000000000
+      internalID: -3062466183315355214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_25
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 1040
+        width: 434
+        height: 1040
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66313e53d835ccb0800000000000000
+      internalID: -4844403343697562003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_26
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1040
+        width: 480
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee968065e497cc40800000000000000
+      internalID: 5532554380135800549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_27
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 1041
+        width: 445
+        height: 1039
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085f498e77e368df0800000000000000
+      internalID: -178386450510449280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_28
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 1039
+        width: 465
+        height: 1041
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7837ebe4a1d88d590800000000000000
+      internalID: -7649208822959017081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_29
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 1040
+        width: 476
+        height: 1041
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f195c801c875e1030800000000000000
+      internalID: 3467305022206531871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_30
+      rect:
+        serializedVersion: 2
+        x: 3428
+        y: 1041
+        width: 485
+        height: 1041
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6557626a960269840800000000000000
+      internalID: 5230403655368602966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_31
+      rect:
+        serializedVersion: 2
+        x: 3933
+        y: 1046
+        width: 438
+        height: 1035
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0679524adb4133bf0800000000000000
+      internalID: -345909941642094752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_32
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 474
+        height: 1040
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa5169ad790b9a60800000000000000
+      internalID: 7681744024727804668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_33
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 0
+        width: 457
+        height: 1041
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a282c8a516fd670800000000000000
+      internalID: 8565672057808366236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_udar1_34
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 0
+        width: 454
+        height: 1041
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e11e0c3560b4ee50800000000000000
+      internalID: 6837784083100996070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spritesheet_udar1_0: -8320215143734607753
+      spritesheet_udar1_1: 7878581274564269831
+      spritesheet_udar1_10: 1277048274566170503
+      spritesheet_udar1_11: -3484549233904889073
+      spritesheet_udar1_12: -253227958450781173
+      spritesheet_udar1_13: -4863920865980729312
+      spritesheet_udar1_14: -8903808368867784269
+      spritesheet_udar1_15: -1033774348259605797
+      spritesheet_udar1_16: -2858650962257527486
+      spritesheet_udar1_17: -9102927866756806670
+      spritesheet_udar1_18: 21742647236541637
+      spritesheet_udar1_19: 677042643328362258
+      spritesheet_udar1_2: -3062689228182254432
+      spritesheet_udar1_20: -6827389926633525106
+      spritesheet_udar1_21: 4751778147710308615
+      spritesheet_udar1_22: -4072576918407790146
+      spritesheet_udar1_23: 1847697062449962103
+      spritesheet_udar1_24: -3062466183315355214
+      spritesheet_udar1_25: -4844403343697562003
+      spritesheet_udar1_26: 5532554380135800549
+      spritesheet_udar1_27: -178386450510449280
+      spritesheet_udar1_28: -7649208822959017081
+      spritesheet_udar1_29: 3467305022206531871
+      spritesheet_udar1_3: 8810756481667943774
+      spritesheet_udar1_30: 5230403655368602966
+      spritesheet_udar1_31: -345909941642094752
+      spritesheet_udar1_32: 7681744024727804668
+      spritesheet_udar1_33: 8565672057808366236
+      spritesheet_udar1_34: 6837784083100996070
+      spritesheet_udar1_4: 5531197314497852846
+      spritesheet_udar1_5: -2366166657711577119
+      spritesheet_udar1_6: -8666420373255918010
+      spritesheet_udar1_7: -1522729554766236576
+      spritesheet_udar1_8: 7107091328746532105
+      spritesheet_udar1_9: -1759668412645222197
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

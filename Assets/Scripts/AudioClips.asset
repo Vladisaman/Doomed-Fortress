@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd37c553cf6c758408ffd8a4898cf917, type: 3}
+  m_Name: AudioClips
+  m_EditorClassIdentifier: 
+  ballistaShotSound:
+  - {fileID: 8300000, guid: affa71a293b0aae46a13ad904930e3e4, type: 3}
+  - {fileID: 8300000, guid: 125d839d936f18e4fa97dd3719973f91, type: 3}
+  - {fileID: 8300000, guid: 39037f97b19c2a247858d7e52380c661, type: 3}
+  - {fileID: 8300000, guid: d30497f9f212fe4489f7f46d62cb8728, type: 3}
+  - {fileID: 8300000, guid: cca6a9a7e49d8064e9428bb058d5cbee, type: 3}
+  - {fileID: 8300000, guid: 90a31554114323344843ced23991e63f, type: 3}
+  - {fileID: 8300000, guid: 1d4f227961752684e9331db05a531aff, type: 3}
+  - {fileID: 8300000, guid: 7fe95664a9b95134886daa8f6549cdab, type: 3}
+  - {fileID: 8300000, guid: 71282cb2895e4cc4ca413a70dbd8ec93, type: 3}
+  - {fileID: 8300000, guid: 86c2f6456aa2f1c46afd7e7bc575dccb, type: 3}
+  - {fileID: 8300000, guid: feab739f0e7a6134dbef40511b5b4aa8, type: 3}
+  - {fileID: 8300000, guid: a4b12aa35d355514fada34ed98ade66b, type: 3}
+  mortarShotSound: {fileID: 8300000, guid: 219b67f1a46e5fa49a3188cd2b661617, type: 3}
+  bombExplosionSound: {fileID: 8300000, guid: 617e69244d3d9e94ea2556186db43c6f, type: 3}
+  firegunParticleSound: {fileID: 8300000, guid: 4319be1929a094c44ba364b5b06e0df1, type: 3}
+  ballistaAbilityShotSound:
+  - {fileID: 8300000, guid: f08c18bebbc2022468e8c82eb596465f, type: 3}
+  - {fileID: 8300000, guid: 6e9757bb17d5b4143b12ace7f6b50085, type: 3}
+  - {fileID: 8300000, guid: 02321c21beddf90478c329b63b5aaef9, type: 3}
+  - {fileID: 8300000, guid: ff40032c48c5d764bbdd631f87d0adb3, type: 3}
+  - {fileID: 8300000, guid: a94ea4bce1805e54d96f8e6fb5d21c3d, type: 3}
+  superBombExplosionSound: {fileID: 8300000, guid: 3261358ce259aa54fb9c05773bb33825, type: 3}
+  arrowHitSound: {fileID: 8300000, guid: 01f815a9b97683249951f68d84dc7141, type: 3}
+  firegunAbilitySound: {fileID: 8300000, guid: 96046eeebb0008d4bbf2e387878677a7, type: 3}

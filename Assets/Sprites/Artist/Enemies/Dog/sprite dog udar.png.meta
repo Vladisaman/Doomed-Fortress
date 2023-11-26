@@ -1,0 +1,1065 @@
+fileFormatVersion: 2
+guid: bda47a054d4c5ec44a0abbbccd292ef0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1713794823725877071
+    second: sprite dog udar_0
+  - first:
+      213: 2427901996037132393
+    second: sprite dog udar_1
+  - first:
+      213: -2116192048399840579
+    second: sprite dog udar_2
+  - first:
+      213: 1482659778538688809
+    second: sprite dog udar_3
+  - first:
+      213: 9091927797187976832
+    second: sprite dog udar_4
+  - first:
+      213: -7341932354451246397
+    second: sprite dog udar_5
+  - first:
+      213: -2543274867519377350
+    second: sprite dog udar_6
+  - first:
+      213: -6041566659052315190
+    second: sprite dog udar_7
+  - first:
+      213: 3341899871372229083
+    second: sprite dog udar_8
+  - first:
+      213: -5719054335818494637
+    second: sprite dog udar_9
+  - first:
+      213: 1888236443687400726
+    second: sprite dog udar_10
+  - first:
+      213: -6786770841638692051
+    second: sprite dog udar_11
+  - first:
+      213: -3462957805235592933
+    second: sprite dog udar_12
+  - first:
+      213: -972695168758471379
+    second: sprite dog udar_13
+  - first:
+      213: 5604704113689142723
+    second: sprite dog udar_14
+  - first:
+      213: 9218300788594691382
+    second: sprite dog udar_15
+  - first:
+      213: -1950574455146970387
+    second: sprite dog udar_16
+  - first:
+      213: -6081941295640132518
+    second: sprite dog udar_17
+  - first:
+      213: 6930003048151310836
+    second: sprite dog udar_18
+  - first:
+      213: -911304279188437639
+    second: sprite dog udar_19
+  - first:
+      213: 311241953650927245
+    second: sprite dog udar_20
+  - first:
+      213: -8085322916715682202
+    second: sprite dog udar_21
+  - first:
+      213: 7924762777445753799
+    second: sprite dog udar_22
+  - first:
+      213: 9044099967581431057
+    second: sprite dog udar_23
+  - first:
+      213: 2891510151212091566
+    second: sprite dog udar_24
+  - first:
+      213: -769415265673990881
+    second: sprite dog udar_25
+  - first:
+      213: -2877448884327363777
+    second: sprite dog udar_26
+  - first:
+      213: -8233157019377829718
+    second: sprite dog udar_27
+  - first:
+      213: -2831923661780838603
+    second: sprite dog udar_28
+  - first:
+      213: -8734377590777804293
+    second: sprite dog udar_29
+  - first:
+      213: 2985762022674711947
+    second: sprite dog udar_30
+  - first:
+      213: -4705943777796512396
+    second: sprite dog udar_31
+  - first:
+      213: -1502776255131324237
+    second: sprite dog udar_32
+  - first:
+      213: 546797548367493001
+    second: sprite dog udar_33
+  - first:
+      213: -3811801232287033990
+    second: sprite dog udar_34
+  - first:
+      213: 287870789627954925
+    second: sprite dog udar_35
+  - first:
+      213: 5685788165809242085
+    second: sprite dog udar_36
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite dog udar_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2249
+        width: 1315
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f478516ef4f98c710800000000000000
+      internalID: 1713794823725877071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_1
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2249
+        width: 1315
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96051477004a1b120800000000000000
+      internalID: 2427901996037132393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_2
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 2249
+        width: 1314
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba0f964b86c1a2e0800000000000000
+      internalID: -2116192048399840579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_3
+      rect:
+        serializedVersion: 2
+        x: 4574
+        y: 2270
+        width: 1300
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921de8e8637739410800000000000000
+      internalID: 1482659778538688809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_4
+      rect:
+        serializedVersion: 2
+        x: 6071
+        y: 2271
+        width: 1300
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e93e219240d2e70800000000000000
+      internalID: 9091927797187976832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_5
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 2267
+        width: 1300
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c27cff3c673c1a90800000000000000
+      internalID: -7341932354451246397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_6
+      rect:
+        serializedVersion: 2
+        x: 9057
+        y: 2264
+        width: 1293
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30345b9bf874bcd0800000000000000
+      internalID: -2543274867519377350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_7
+      rect:
+        serializedVersion: 2
+        x: 10517
+        y: 2267
+        width: 1306
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdd758122b082ca0800000000000000
+      internalID: -6041566659052315190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_8
+      rect:
+        serializedVersion: 2
+        x: 11970
+        y: 2271
+        width: 1300
+        height: 653
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9b0141a30d06e20800000000000000
+      internalID: 3341899871372229083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_9
+      rect:
+        serializedVersion: 2
+        x: 13452
+        y: 2256
+        width: 1301
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d8166e166d1a0b0800000000000000
+      internalID: -5719054335818494637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1512
+        width: 1304
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6153fed8a0d543a10800000000000000
+      internalID: 1888236443687400726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_11
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 1512
+        width: 1315
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b952c90eb80d1a0800000000000000
+      internalID: -6786770841638692051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_12
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 1512
+        width: 1314
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1124c2493a11ffc0800000000000000
+      internalID: -3462957805235592933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_13
+      rect:
+        serializedVersion: 2
+        x: 4539
+        y: 1512
+        width: 1313
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25a967c5ea4082f0800000000000000
+      internalID: -972695168758471379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_14
+      rect:
+        serializedVersion: 2
+        x: 6043
+        y: 1512
+        width: 1313
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5ac9742b8e7cd40800000000000000
+      internalID: 5604704113689142723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_15
+      rect:
+        serializedVersion: 2
+        x: 7531
+        y: 1512
+        width: 1315
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dc3e00abbfdef70800000000000000
+      internalID: 9218300788594691382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_16
+      rect:
+        serializedVersion: 2
+        x: 9020
+        y: 1512
+        width: 1315
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2830d1eda2ee4e0800000000000000
+      internalID: -1950574455146970387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_17
+      rect:
+        serializedVersion: 2
+        x: 10510
+        y: 1512
+        width: 1314
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5447987d9a989ba0800000000000000
+      internalID: -6081941295640132518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_18
+      rect:
+        serializedVersion: 2
+        x: 11999
+        y: 1512
+        width: 1311
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1ee693e015c2060800000000000000
+      internalID: 6930003048151310836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_19
+      rect:
+        serializedVersion: 2
+        x: 13525
+        y: 1500
+        width: 1314
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9750eac16956a53f0800000000000000
+      internalID: -911304279188437639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_20
+      rect:
+        serializedVersion: 2
+        x: 14876
+        y: 1871
+        width: 4
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86ef8668e0c15400800000000000000
+      internalID: 311241953650927245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_21
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 774
+        width: 1315
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66626d625a92bcf80800000000000000
+      internalID: -8085322916715682202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_22
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 774
+        width: 1315
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c364e642c96afd60800000000000000
+      internalID: 7924762777445753799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_23
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 774
+        width: 1314
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11520d8b009138d70800000000000000
+      internalID: 9044099967581431057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_24
+      rect:
+        serializedVersion: 2
+        x: 4559
+        y: 774
+        width: 1313
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8ce63a925b02820800000000000000
+      internalID: 2891510151212091566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_25
+      rect:
+        serializedVersion: 2
+        x: 6043
+        y: 774
+        width: 1313
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d2db474ec7255f0800000000000000
+      internalID: -769415265673990881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_26
+      rect:
+        serializedVersion: 2
+        x: 7531
+        y: 774
+        width: 1315
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bc25e2c7f3118d0800000000000000
+      internalID: -2877448884327363777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_27
+      rect:
+        serializedVersion: 2
+        x: 9020
+        y: 774
+        width: 1315
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa878ffdf43fdbd80800000000000000
+      internalID: -8233157019377829718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_28
+      rect:
+        serializedVersion: 2
+        x: 10510
+        y: 774
+        width: 1314
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537978c0f6cf2b8d0800000000000000
+      internalID: -2831923661780838603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_29
+      rect:
+        serializedVersion: 2
+        x: 11999
+        y: 774
+        width: 1313
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf98e8f9bd149c680800000000000000
+      internalID: -8734377590777804293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_30
+      rect:
+        serializedVersion: 2
+        x: 13525
+        y: 759
+        width: 1313
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85c0698dbe8f6920800000000000000
+      internalID: 2985762022674711947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_31
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 33
+        width: 1315
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475aa77311121beb0800000000000000
+      internalID: -4705943777796512396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_32
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 33
+        width: 1315
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0710045f0152be0800000000000000
+      internalID: -1502776255131324237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_33
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 33
+        width: 1314
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987bf72297d969700800000000000000
+      internalID: 546797548367493001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_34
+      rect:
+        serializedVersion: 2
+        x: 4559
+        y: 33
+        width: 1311
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75922b99f2c91bc0800000000000000
+      internalID: -3811801232287033990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_35
+      rect:
+        serializedVersion: 2
+        x: 6043
+        y: 33
+        width: 1313
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de64cfc35f8bef300800000000000000
+      internalID: 287870789627954925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite dog udar_36
+      rect:
+        serializedVersion: 2
+        x: 9403
+        y: 0
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5effd23563af7ee40800000000000000
+      internalID: 5685788165809242085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sprite dog udar_0: 1713794823725877071
+      sprite dog udar_1: 2427901996037132393
+      sprite dog udar_10: 1888236443687400726
+      sprite dog udar_11: -6786770841638692051
+      sprite dog udar_12: -3462957805235592933
+      sprite dog udar_13: -972695168758471379
+      sprite dog udar_14: 5604704113689142723
+      sprite dog udar_15: 9218300788594691382
+      sprite dog udar_16: -1950574455146970387
+      sprite dog udar_17: -6081941295640132518
+      sprite dog udar_18: 6930003048151310836
+      sprite dog udar_19: -911304279188437639
+      sprite dog udar_2: -2116192048399840579
+      sprite dog udar_20: 311241953650927245
+      sprite dog udar_21: -8085322916715682202
+      sprite dog udar_22: 7924762777445753799
+      sprite dog udar_23: 9044099967581431057
+      sprite dog udar_24: 2891510151212091566
+      sprite dog udar_25: -769415265673990881
+      sprite dog udar_26: -2877448884327363777
+      sprite dog udar_27: -8233157019377829718
+      sprite dog udar_28: -2831923661780838603
+      sprite dog udar_29: -8734377590777804293
+      sprite dog udar_3: 1482659778538688809
+      sprite dog udar_30: 2985762022674711947
+      sprite dog udar_31: -4705943777796512396
+      sprite dog udar_32: -1502776255131324237
+      sprite dog udar_33: 546797548367493001
+      sprite dog udar_34: -3811801232287033990
+      sprite dog udar_35: 287870789627954925
+      sprite dog udar_36: 5685788165809242085
+      sprite dog udar_4: 9091927797187976832
+      sprite dog udar_5: -7341932354451246397
+      sprite dog udar_6: -2543274867519377350
+      sprite dog udar_7: -6041566659052315190
+      sprite dog udar_8: 3341899871372229083
+      sprite dog udar_9: -5719054335818494637
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
