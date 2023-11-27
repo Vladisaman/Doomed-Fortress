@@ -29,7 +29,19 @@ public class Player : MonoBehaviour
 
     private DateTime WeaponUseMetric;
 
+    private bool once = true;
+
     private void Awake()
+    {
+        Setup();
+    }
+
+    private void Start()
+    {
+        SwipeDetection.OnSwipeEvent += SwapWeapon;
+    }
+
+    private void Setup()
     {
         crossBowAbility.SetActive(false);
         firegunAbility.SetActive(false);
@@ -53,11 +65,6 @@ public class Player : MonoBehaviour
         CheckBallistaSkill(upgradesMailman.isCrossbowAbilityBought);
         CheckFiregunSkill(upgradesMailman.isFireGunAbilityBought);
         CheckMortarSkill(upgradesMailman.isMortarAbilityBought);
-    }
-
-    private void Start()
-    {
-        SwipeDetection.OnSwipeEvent += SwapWeapon;
     }
 
     private void Update()
