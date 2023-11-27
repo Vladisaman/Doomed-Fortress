@@ -33,7 +33,7 @@ public class Rock : MonoBehaviour
         }
     }
 
-    public  void Attack()
+    public void Attack()
     {
         _wall.GetComponent<WallBehavior>().TakeDamage(damage);
     }

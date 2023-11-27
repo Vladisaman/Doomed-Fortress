@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2691835997481200634}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ProjectileSpawner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 589423155106903652}
   - component: {fileID: 2985702688668975018}
   - component: {fileID: 4266400997792953934}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Crossbow
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4795561565721059738}
   - component: {fileID: 3094262410434618783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3496888107168452908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainProjectileSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5103236291367473840}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ProjectileSpawner (4)
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275492832272941247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ProjectileSpawner (2)
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -344,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1206952074528342100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ProjectileSpawner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}

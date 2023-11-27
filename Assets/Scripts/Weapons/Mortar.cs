@@ -57,22 +57,25 @@ public class Mortar : Weapon
 
             if (Application.isMobilePlatform)
             {
-                Crosshair();
-                CrosshairUnHide();
-                Aim();
-                if (!isReloading)
+                if (Utils.GetTouchedObject() == null || !Utils.GetTouchedObject().CompareTag("Weapon"))
                 {
-                    if (Input.GetMouseButton(0))
+                    Crosshair();
+                    CrosshairUnHide();
+                    Aim();
+                    if (!isReloading)
                     {
-                        target = crosshair.transform.position;
+                        if (Input.GetMouseButton(0))
+                        {
+                            target = crosshair.transform.position;
 
-                        if (isSuperPowerActivated && superShootsCount > 0)
-                        {
-                            SuperShoot();
-                        }
-                        else
-                        {
-                            Shoot();
+                            if (isSuperPowerActivated && superShootsCount > 0)
+                            {
+                                SuperShoot();
+                            }
+                            else
+                            {
+                                Shoot();
+                            }
                         }
                     }
                 }

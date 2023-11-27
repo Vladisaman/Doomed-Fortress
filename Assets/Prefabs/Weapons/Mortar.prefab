@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2406319517412999862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ProjectileSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 750759449676566190}
   - component: {fileID: 7223831912674187993}
   - component: {fileID: 3744219403658576731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mortar
   m_TagString: Weapon
   m_Icon: {fileID: 0}

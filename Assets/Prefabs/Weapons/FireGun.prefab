@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4488642514004613248}
   - component: {fileID: 1125207863825918781}
   - component: {fileID: 4978505527370651228}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FireGun
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 5559873444841606599}
   - component: {fileID: 5609581436928977758}
   - component: {fileID: 2197169296939620520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightParticle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5089,7 +5089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7131389570186067699}
   - component: {fileID: 6263123072273092565}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5174,7 +5174,7 @@ GameObject:
   - component: {fileID: 6405790017090169192}
   - component: {fileID: 2911171584042163845}
   - component: {fileID: 4907091396080836642}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftParticle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10029,7 +10029,7 @@ GameObject:
   - component: {fileID: 5281062993067753108}
   - component: {fileID: 1129180492570072741}
   - component: {fileID: 8932173351838143138}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

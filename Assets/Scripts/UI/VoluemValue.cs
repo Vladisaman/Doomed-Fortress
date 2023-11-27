@@ -7,15 +7,18 @@ public class VoluemValue : MonoBehaviour
 {
     private AudioSource audioScr;
     [SerializeField] private Slider SoundSlider;
+    private AudioSource fireGunSource;
 
     private void Awake()
     {
         audioScr = GetComponent<AudioSource>();
+        fireGunSource = FindObjectOfType<FireGun>().GetComponent<AudioSource>();
         try
         {
             float volume = PlayerPrefs.GetFloat("Volume");
             audioScr.volume = volume;
             SoundSlider.value = volume;
+            fireGunSource.volume = volume;
         }
         catch
         { }
@@ -26,6 +29,7 @@ public class VoluemValue : MonoBehaviour
         if (SoundSlider.gameObject.activeSelf)
         {
             audioScr.volume = SoundSlider.value;
+            fireGunSource.volume = SoundSlider.value;
         }
     }
 

@@ -42,6 +42,7 @@ public static class Utils
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit.collider != null)
             {
+                Debug.Log(hit.collider.gameObject);
                 return hit.collider.gameObject;
             }
         }

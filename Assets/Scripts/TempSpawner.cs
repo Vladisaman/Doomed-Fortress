@@ -33,7 +33,7 @@ public class TempSpawner : MonoBehaviour
     private void Start()
     {
         _elapsedTime = nextSpawnTime;
-
+        isWaiting = false;
         if (PlayerPrefs.GetInt("WaveNumber") > 1)
         {
             WaveNumber = PlayerPrefs.GetInt("WaveNumber");
@@ -60,7 +60,6 @@ public class TempSpawner : MonoBehaviour
                         SpawnEnemy("Enemy With Shield", forBigMinY, forBigMaxY);
                         currentEnemies++;
                         _elapsedTime = 0;
-                        isWaiting = true;
                     }
 
                     if (enemyIndex <= 8 && enemyIndex > 6)
@@ -83,6 +82,8 @@ public class TempSpawner : MonoBehaviour
                     isGolemSpawned = true;
                     currentEnemies++;
                     _elapsedTime = 0;
+                    isWaiting = true;
+                    Debug.Log(isWaiting);
                 }
             }
 

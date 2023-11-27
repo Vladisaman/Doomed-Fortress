@@ -8,34 +8,40 @@ public class StoneEnemy : Enemy
     [SerializeField] private Transform _throwPoint;
 
     [Header("----------MOVEMENT PROPERTIES----------")]
-    [SerializeField] private int _stopSteps = 600; 
+    [SerializeField] private int _stopSteps = 600;
     [SerializeField] private float _stopDuration = 7f;
-    private int _steps = 0; 
-    private bool _isStopping = false; 
+    [SerializeField] private int _steps = 0;
+    private bool _isStopping = false;
     private float _stopTime = 0f;
+
+    private bool isAllowedThrowing = true;
 
     private void Update()
     {
         healthBar.value = health;
-        if (!_isStopping)
-        {
+        //if (!_isStopping)
+        //{
             Move();
             _steps++;
 
-            if (_steps >= _stopSteps)
-            {
-                animator.SetBool("IsThrowing", true);
-                Stop();
-                animator.SetBool("IsThrowing", false);
-            }
-        }
-        else
+        if (isAllowedThrowing)
         {
-            if (Time.time >= _stopTime)
-            {
-                _isStopping = false;
-            }
+            Invoke("Stop", 2);
+            isAllowedThrowing = false;
         }
+
+        //    if (_steps >= _stopSteps)
+        //    {
+
+        //    }
+        //}
+        //else
+        //{
+        //    if (Time.time >= _stopTime)
+        //    {
+        //        _isStopping = false;
+        //    }
+        //}
 
         CheckDeath();
     }
@@ -50,6 +56,7 @@ public class StoneEnemy : Enemy
 
     private void Stop()
     {
+        animator.SetBool("IsThrowing", true);
         _isStopping = true;
         _steps = 0;
         _stopTime = Time.time + _stopDuration;
@@ -61,6 +68,8 @@ public class StoneEnemy : Enemy
         GameObject rock = Instantiate(_rockPrefab, transform.position, Quaternion.identity);
         Rigidbody2D rockRigidbody = rock.GetComponent<Rigidbody2D>();
         rockRigidbody.AddForce(Vector2.left * 500f);
+        animator.SetBool("IsThrowing", false);
+        isAllowedThrowing = true;
     }
 
     public override void Die()

@@ -32,8 +32,6 @@ public abstract class Enemy : MonoBehaviour
     private Animation animationComponent;
     [SerializeField] protected Animator animator;
 
-
-
     [Header("----------DAMAGE RESIST----------")]
     [SerializeField] public float armor;
     [SerializeField] public DamageResistance arrowDamageResist;

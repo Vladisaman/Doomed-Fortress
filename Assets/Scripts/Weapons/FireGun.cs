@@ -34,17 +34,13 @@ public class FireGun : Weapon
     [SerializeField] private int currentDamageLevel;
     [SerializeField] public float damage;
 
-    private void Awake()
-    {
-        gameObject.AddComponent<AudioSource>();
-    }
-
     public override void Aim()
     {
         Vector3 mousePosition = Utils.GetMouseWorldPosition();
         Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
+
     }
 
     private void Update()
@@ -53,10 +49,13 @@ public class FireGun : Weapon
             abilityButtonUI.transform.localScale = new Vector3(buttonScale, buttonScale, 1);
             if (Application.isMobilePlatform)
             {
-                Aim();
-                if (Input.GetMouseButtonDown(0))
+                if (Utils.GetTouchedObject() == null || !Utils.GetTouchedObject().CompareTag("Weapon"))
                 {
-                    Shoot();
+                    Aim();
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        Shoot();
+                    }
                 }
             } 
             else if (Input.GetMouseButton(1)) {
