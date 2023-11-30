@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SwipeDetection : MonoBehaviour
 {
-    public static event OnSwipeInput OnSwipeEvent;
-    public delegate void OnSwipeInput(int i);
+    public UnityEvent<int> OnSwipeEvent;
+    //public delegate void OnSwipeInput(int i);
 
     private Vector2 _tapPosition;
     private Vector2 _swipeDelta;
@@ -19,6 +20,8 @@ public class SwipeDetection : MonoBehaviour
     
     private void Start()
     {
+        if (OnSwipeEvent == null)
+            OnSwipeEvent = new UnityEvent<int>();
         _isMobile = Application.isMobilePlatform;
     }
 
@@ -74,7 +77,7 @@ public class SwipeDetection : MonoBehaviour
             {
                 if (Mathf.Abs(_swipeDelta.y) > Mathf.Abs(_swipeDelta.x))
                 {
-                    OnSwipeEvent(_swipeDelta.y > 0 ? 1 : -1); 
+                    OnSwipeEvent.Invoke(_swipeDelta.y > 0 ? 1 : -1);
                 }   
             }
             ResetSwipe();

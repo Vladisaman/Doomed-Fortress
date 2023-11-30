@@ -93,4 +93,8 @@ public class UI : MonoBehaviour
         AppMetrica.Instance.ReportEvent("open_shop_button_click");
         AppMetrica.Instance.SendEventsBuffer();
     }
+    public void DeleteAll()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

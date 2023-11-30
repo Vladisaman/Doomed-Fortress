@@ -48,7 +48,6 @@ public class SoundManager : MonoBehaviour
             firegun.OnFireGunStartShooting += FireGun_OnFireGunStartShooting;
             firegun.OnFireGunStopShooting += FireGun_OnFireGunStopShooting;
             firegunAudioSource = firegun.GetComponent<AudioSource>();
-            Debug.Log(firegun.GetComponent<AudioSource>());
             firegun.OnAbilityAction += FireGun_OnAbilityAction;
         }
 

@@ -2,10 +2,12 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private UpgradesMailmanSO upgradesMailman;
+    private SwipeDetection swipeDetection;
 
     [SerializeField] private GameObject crossBowAbility;
     [SerializeField] private GameObject firegunAbility;
@@ -29,8 +31,6 @@ public class Player : MonoBehaviour
 
     private DateTime WeaponUseMetric;
 
-    private bool once = true;
-
     private void Awake()
     {
         Setup();
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        SwipeDetection.OnSwipeEvent += SwapWeapon;
+
     }
 
     private void Setup()
@@ -46,6 +46,9 @@ public class Player : MonoBehaviour
         crossBowAbility.SetActive(false);
         firegunAbility.SetActive(false);
         mortarAbility.SetActive(false);
+
+        swipeDetection = GetComponent<SwipeDetection>();
+        swipeDetection.OnSwipeEvent.AddListener(SwapWeapon);
 
         topGunObj = FindObjectOfType<Mortar>().gameObject;
         midGunObj = FindObjectOfType<Crossbow>().gameObject;
@@ -80,7 +83,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void SwapWeapon(int i)
+    public void SwapWeapon(int i)
     {
         TimeSpan WeaponUseTime = WeaponUseMetric - DateTime.Now;
         Dictionary<string, object> parameters = new Dictionary<string, object>() { { "time_seconds", WeaponUseTime.TotalSeconds } };
