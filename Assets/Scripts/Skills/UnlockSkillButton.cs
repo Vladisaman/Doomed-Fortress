@@ -22,14 +22,6 @@ namespace Assets
             AppMetrica.Instance.SendEventsBuffer();
         }
 
-        public void UnlockBoomYadro()
-        {
-            skillManager.MortitaCanBoom = true;
-
-            AppMetrica.Instance.ReportEvent("cannon_big_cannonball_skill");
-            AppMetrica.Instance.SendEventsBuffer();
-        }
-
         public void UnlockFireGunLeft()
         {
             skillManager.fireGunleftFireEnable = true;

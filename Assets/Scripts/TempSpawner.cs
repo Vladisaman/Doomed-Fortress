@@ -57,28 +57,28 @@ public class TempSpawner : MonoBehaviour
 
                     if (enemyIndex >= 9)
                     {
-                        SpawnEnemy("Enemy With Shield", forBigMinY, forBigMaxY);
+                        SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
                         currentEnemies++;
                         _elapsedTime = 0;
                     }
 
                     if (enemyIndex <= 8 && enemyIndex > 6)
                     {
-                        SpawnEnemy("FlyingEnemy", forSmallMinY, forSmallMaxY);
+                        SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
                         currentEnemies++;
                         _elapsedTime = 0;
                     }
 
                     if (enemyIndex <= 6)
                     {
-                        SpawnEnemy("Fast Enemy", forSmallMinY, forSmallMaxY);
+                        SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
                         currentEnemies++;
                         _elapsedTime = 0;
                     }
                 }
                 else
                 {
-                    SpawnEnemy("StoneEnemy", forBigMinY, forBigMaxY);
+                    SpawnEnemy(4, forBigMinY, forBigMaxY); //BOSS
                     isGolemSpawned = true;
                     currentEnemies++;
                     _elapsedTime = 0;
@@ -136,15 +136,15 @@ public class TempSpawner : MonoBehaviour
 
     }
 
-    private void SpawnEnemy(string tag, float minY, float maxY)
+    private void SpawnEnemy(int number, float minY, float maxY)
     {
-        GameObject enemyPrefab = GetPrefabByTag(tag);
+        GameObject enemyPrefab = enemyPrefabs[number].gameObject;
         float randomY = Random.Range(minY, maxY);
         Vector3 spawnPosition = new Vector3(transform.position.x, randomY, transform.position.z);
         Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
     }
 
-    private GameObject GetPrefabByTag(string tag)
+    private GameObject GetPrefabByNumber(string tag)
     {
         foreach (Enemy prefab in enemyPrefabs)
         {

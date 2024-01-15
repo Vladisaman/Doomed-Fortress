@@ -19,6 +19,7 @@ TagManager:
   - Rock
   - TapIgnoreArea
   - Weapon
+  - SkillManager
   layers:
   - Default
   - TransparentFX

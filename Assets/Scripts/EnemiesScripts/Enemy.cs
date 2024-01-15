@@ -25,11 +25,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]  protected int score;
     [SerializeField] protected GameManager gameManager;
     [SerializeField] protected TempSpawner enemySpawner;
-    [SerializeField] private AnimationClip walkAnimationClip;
     [SerializeField] private int coinsForDestroy;
     [SerializeField] private int persentCount;
-
-    private Animation animationComponent;
     [SerializeField] protected Animator animator;
 
     [Header("----------DAMAGE RESIST----------")]
@@ -73,8 +70,6 @@ public abstract class Enemy : MonoBehaviour
 
         animator = GetComponent<Animator>();
         speedValue = speed;
-        animationComponent = gameObject.AddComponent<Animation>();
-        animationComponent.AddClip(walkAnimationClip, "Walk");
     }
 
     private void Update()
@@ -130,6 +125,11 @@ public abstract class Enemy : MonoBehaviour
         speed = speedValue;
     }
 
+    public virtual void TakeDamage(float damage)
+    {
+        health -= damage;
+        healthBar.value = health;
+    }
     public virtual void TakeDamage(float weaponDamage, string weaponName)
     {
         currentDamageResist = 1;
