@@ -9,6 +9,8 @@ public class SkillPanel : MonoBehaviour
     [SerializeField] private List<SkillButton> skills;
     [SerializeField] private List<Transform> skillPlaces;
     [SerializeField] private GameObject Panel;
+    [SerializeField] public Mortar mortar;
+    [SerializeField] public Crossbow crossbow;
 
     private void OnEnable()
     {
@@ -39,6 +41,14 @@ public class SkillPanel : MonoBehaviour
                 randomSkills.Add(randomSkill);
             }
         }
+        if (mortar.blessing == 3)
+        {
+            skills.RemoveAt(9);
+        }
+        if(crossbow.blessingForCrossbow == 3)
+        {
+            skills.RemoveAt(10);
+        }
 
         return randomSkills.ToArray();
     }
@@ -51,6 +61,7 @@ public class SkillPanel : MonoBehaviour
         {
             var instance = Instantiate(skills[i], skillPlaces[i]);
             instance.button.onClick.AddListener(() => { Panel.SetActive(false); Time.timeScale = 1; });
+
         }
     }
 }

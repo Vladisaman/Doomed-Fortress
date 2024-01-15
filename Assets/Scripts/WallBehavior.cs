@@ -6,7 +6,12 @@ using System;
 
 public class WallBehavior : MonoBehaviour
 {
-    [SerializeField] private float _health;
+    public SkillManager skillManager;
+
+    public Collision2D collision;
+    [SerializeField] public float _health;
+    [SerializeField] public float time;
+    [SerializeField] public float maxhealth;
     private Renderer _renderer;
     private int _blinkCount = 5;
     public BoxCollider2D ignoredCollider;
@@ -30,16 +35,24 @@ public class WallBehavior : MonoBehaviour
         Physics2D.IgnoreLayerCollision(gameObject.layer, ignoredCollider.gameObject.layer, true);
 
         PlayTimeMetric = DateTime.Now;
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-       if(_health < 0)
+        _health += time * Time.deltaTime;
+        if (_health > maxhealth)
+        {
+            _health = maxhealth;
+        }
+        healthBar.value = _health;
+
+        if (_health < 0)
         {
             Die();
-        } 
+        }
     }
+
 
     public void TakeDamage(float damage)
     {
@@ -48,6 +61,17 @@ public class WallBehavior : MonoBehaviour
         StartCoroutine(BlinkCoroutine());
     }
 
+    public void WallAddHP()
+    {
+        if(skillManager.WallAddHP)
+        {
+            if(_health == maxhealth)
+            {
+                _health += 100f;
+                maxhealth = _health;
+            }
+        }
+    }
     private void Die()
     {
         TimeSpan secondsInGame = PlayTimeMetric - DateTime.Now;

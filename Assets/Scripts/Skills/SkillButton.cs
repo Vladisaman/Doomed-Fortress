@@ -8,5 +8,6 @@ public class SkillButton : MonoBehaviour
     [SerializeField] private string skillName = "DoublbeShooting";
     [SerializeField] private string description;
     [SerializeField] private Weapon weapon;
+    [SerializeField] private WallBehavior wall;
     public Button button;
 }

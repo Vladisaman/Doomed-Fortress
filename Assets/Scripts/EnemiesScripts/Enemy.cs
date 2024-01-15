@@ -10,12 +10,18 @@ public abstract class Enemy : MonoBehaviour
     protected bool once = true;
     [SerializeField] public Slider healthBar;
     [HideInInspector] public WallBehavior wall;
+    public SkillManager skillManager;
+    [SerializeField] public ParticleSystem burning;
+    [SerializeField] public BoxCollider2D burn;
     protected float lastAttackTime;
+    public float time;
     [HideInInspector] public bool isAttacking = false;
     [HideInInspector] public bool isAttracted = false;
 
     [Space]
     [Header("----------PROPERTIES----------")]
+    [SerializeField] public float StaggerDamage = 3f;
+    [SerializeField] public int countHit;
     [SerializeField] public float maxHealth;
     [SerializeField] public float health;
     [SerializeField] public float speed = 0.5f;
@@ -64,6 +70,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        skillManager = GameObject.FindGameObjectWithTag("SkillManager").GetComponent<SkillManager>();
         wall = GameObject.Find("Wall").GetComponent<WallBehavior>();
 
         health = maxHealth;
@@ -105,7 +112,7 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-    public  void GetStunned()
+    public void GetStunned()
     {
         speed = 0;
     }
@@ -209,8 +216,77 @@ public abstract class Enemy : MonoBehaviour
         if(collision.gameObject.name == "Wall" ) {
             isAttacking = true;
         }
+
+        if (skillManager.BlackFire)
+        {
+            if (collision.CompareTag("Burning"))
+            {
+                burning.Play();
+                burn.enabled = true;
+            }
+            else
+            {
+                burn.enabled = false;
+            }
+        }
+        if (skillManager.ColdArrow)
+        {
+            if (collision.CompareTag("ColdProjectile"))
+            {
+                countHit++;
+                StartCoroutine(SpeedDown());
+                if (countHit == 5)
+                {
+                    StartCoroutine(Coldarrow());
+                }
+            }
+        }
+        if(skillManager.PoisonArrow)
+        {
+            StartCoroutine(PoisonProjectle());
+        }
+        if (skillManager.PoisonYadro)
+        {
+            StartCoroutine(PoisonProjectle());
+        }
     }
 
+    public virtual void OnTriggerStay2D(Collider2D collision)
+    {
+        if (skillManager.Thorns)
+        {
+            if (collision.CompareTag("Thorns"))
+            {
+                health -= 2 * Time.deltaTime;
+            }
+        }
+        healthBar.value = health;
+
+        if(skillManager.BlackFire)
+        {
+            if (burn.enabled == true)
+            {
+                health -= 5f * Time.deltaTime;
+            }
+            else
+            {
+                health = healthBar.value;
+            }
+        }
+        if (skillManager.ColdYadro)
+        {
+            if (collision.CompareTag("ColdYadro"))
+            {
+                StartCoroutine(Coldyadro());
+            }
+        }
+
+    }
+
+    public abstract IEnumerator Coldyadro();
+    public abstract IEnumerator Coldarrow();
+    public abstract IEnumerator SpeedDown();
+    public abstract IEnumerator PoisonProjectle();
     public virtual void Attack()
     {
         if(Time.time - lastAttackTime < attackCooldown) {

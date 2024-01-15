@@ -13,7 +13,7 @@ public class FlyingEnemy : Enemy
     [SerializeField] private float bonusHeight = 1f; // Set higher if you want more wave intensity
 
     Vector3 startPosition;
-    private float time;
+    new private float time;
 
     
     
@@ -44,6 +44,59 @@ public class FlyingEnemy : Enemy
         }
 
         CheckDeath();
+    }
+
+    public override void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (skillManager.BlackFire)
+        {
+            if (collision.CompareTag("Burning"))
+            {
+                burning.Play();
+                burn.enabled = true;
+            }
+            else
+            {
+                burn.enabled = false;
+            }
+        }
+        if (skillManager.ColdArrow)
+        {
+            if (collision.CompareTag("ColdProjectile"))
+            {
+                countHit++;
+                StartCoroutine(SpeedDown());
+                if (countHit == 5)
+                {
+                    StartCoroutine(Coldarrow());
+                }
+            }
+        }
+        if (skillManager.PoisonArrow)
+        {
+            StartCoroutine(PoisonProjectle());
+        }
+    }
+    new public void OnTriggerStay2D(Collider2D collision)
+    {
+        if (skillManager.Thorns)
+        {
+            if (collision.CompareTag("Thorns"))
+            {
+                health = maxHealth;
+            }
+        }
+        if (skillManager.BlackFire)
+        {
+            if (burn.enabled == true)
+            {
+                health -= 5f * Time.deltaTime;
+            }
+            else
+            {
+                health = healthBar.value;
+            }
+        }
     }
     public override void Move()
     {
@@ -82,6 +135,45 @@ public class FlyingEnemy : Enemy
         }
 
         Destroy(gameObject, 0.5F);
+    }
+
+    public override IEnumerator Coldyadro()
+    {
+        GetStunned();
+        yield return new WaitForSeconds(time += 1f);
+        if (time > 1f)
+        {
+            GetUnstunned();
+            time = 0;
+            yield break;
+        }
+    }
+    public override IEnumerator Coldarrow()
+    {
+        GetStunned();
+        yield return new WaitForSeconds(time += 2f);
+        if (time > 1f)
+        {
+            GetUnstunned();
+            countHit = 0;
+            time = 0;
+            yield break;
+        }
+    }
+    public override IEnumerator SpeedDown()
+    {
+        speed = 0.7f;
+        yield return new WaitForSeconds(1f);
+        speed = 1f;
+        if (speed == 0)
+        {
+            yield break;
+        }
+    }
+    public override IEnumerator PoisonProjectle()
+    {
+        yield return new WaitForSeconds(0.4f);
+        health -= StaggerDamage % 10;
     }
 }
 
