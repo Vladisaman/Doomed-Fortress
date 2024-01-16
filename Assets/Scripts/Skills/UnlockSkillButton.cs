@@ -4,15 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using TMPro;
 
 namespace Assets
 {
     public class UnlockSkillButton: MonoBehaviour
     {
         SkillManager skillManager;
+        public Mortar mortar;
+        public Crossbow crossbow;
+        public WallBehavior wall;
+        public Enemy enemy;
+        [SerializeField] TextMeshProUGUI HPnow;
+        [SerializeField] TextMeshProUGUI HPafter;
+        public float HP;
+
         private void Awake()
         {
             skillManager = FindObjectOfType<SkillManager>();
+            mortar = GameObject.Find("Mortar").GetComponent<Mortar>();
+            crossbow = GameObject.Find("Crossbow").GetComponent<Crossbow>();
+            wall = GameObject.Find("Wall").GetComponent<WallBehavior>();
         }
         public void UnlockDoubleShotForCrossbow()
         {
@@ -148,6 +160,114 @@ namespace Assets
             skillManager.cursedArrow = true;
 
             AppMetrica.Instance.ReportEvent("crossbow_cursed_arrow_skill");
+		}
+		
+        public void UnlockAddHP()
+        {
+            skillManager.WallAddHP = true;
+            HP = wall.maxhealth;
+            HPnow.text = HP.ToString();
+            HP = wall._health;
+            if(skillManager.WallAddHP)
+            {
+                HP = wall.maxhealth + 100f;
+                HPafter.text = HP.ToString();
+                HP = wall._health;
+            }
+
+            AppMetrica.Instance.ReportEvent("WallAddHP");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockThorns()
+        {
+            skillManager.Thorns = true;
+
+            AppMetrica.Instance.ReportEvent("Thorns");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockBlackFire()
+        {
+            skillManager.BlackFire = true;
+
+            AppMetrica.Instance.ReportEvent("BlackFire");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockBlessing()
+        {
+            skillManager.Blessing = true;
+            mortar.blessing++;
+            if(skillManager.Blessing)
+            {
+                mortar.projectileSpeed += 1.3f;
+                mortar.projectileDamage += 1.3f;
+            }
+
+            AppMetrica.Instance.ReportEvent("Blessing");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockBlessingForCrossbow()
+        {
+            skillManager.BlessingForCrossbow = true;
+            crossbow.blessingForCrossbow++;
+            if(skillManager.BlessingForCrossbow)
+            {
+                crossbow.projectileSpeed += 1.3f;
+                crossbow.projectileDamage += 1.3f;
+            }
+
+            AppMetrica.Instance.ReportEvent("BlessingForCrossbow");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockColdArrow()
+        {
+            skillManager.ColdArrow = true;
+
+            AppMetrica.Instance.ReportEvent("ColdArrow");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockColdYadro()
+        {
+            skillManager.ColdYadro = true;
+
+            AppMetrica.Instance.ReportEvent("ColdYadro");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockPhantomArrow()
+        {
+            skillManager.PhantomArrow = true;
+
+            AppMetrica.Instance.ReportEvent("PhantomArrow");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockPoisonArrow()
+        {
+            skillManager.PoisonArrow = true;
+
+            AppMetrica.Instance.ReportEvent("PoisonArrow");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockPoisonYadro()
+        {
+            skillManager.PoisonYadro = true;
+
+            AppMetrica.Instance.ReportEvent("PoisonYadro");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+		
+        public void UnlockVampirism()
+        {
+            skillManager.Vampirism = true;
+
+            AppMetrica.Instance.ReportEvent("Vampirism");
             AppMetrica.Instance.SendEventsBuffer();
         }
     }

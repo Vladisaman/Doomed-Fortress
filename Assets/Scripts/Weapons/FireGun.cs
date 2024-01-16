@@ -13,9 +13,12 @@ public class FireGun : Weapon
     [SerializeField] ParticleSystem fireParticle;
     [SerializeField] ParticleSystem leftFireParticle;
     [SerializeField] ParticleSystem rightFireParticle;
+    [SerializeField] ParticleSystem BlackFireParticle;
     [SerializeField] PolygonCollider2D fireCollider;
     [SerializeField] PolygonCollider2D leftfireCollider;
     [SerializeField] PolygonCollider2D rightfireCollider;
+    [SerializeField] PolygonCollider2D BlackFireCollider;
+    [SerializeField] BoxCollider2D burn;
     private string NAME_OF_WEAPON = "FireGun";
 
     [Header("----------DOT PROPERTIES----------")]
@@ -89,11 +92,21 @@ public class FireGun : Weapon
             rightFireParticle.Play();
             rightfireCollider.enabled = true;
         }
-
-        fireParticle.Play();
-        fireCollider.enabled = true;
-
+        if (skillsManager.BlackFire)
+        {
+            BlackFireParticle.Play();
+            fireParticle.Stop();
+            fireCollider.enabled = true;
+            BlackFireCollider.enabled = true;
+            burn.enabled = true;
+        }
+        else
+        {
+            fireParticle.Play();
+            fireCollider.enabled = true;
+        }
         OnFireGunStartShooting?.Invoke();
+
     }
 
     public void StopShoot()
@@ -107,6 +120,12 @@ public class FireGun : Weapon
         {
             rightFireParticle.Stop();
             rightfireCollider.enabled = false;
+        }
+        if (skillsManager.BlackFire)
+        {
+            BlackFireParticle.Stop();
+            BlackFireCollider.enabled = false;
+            burn.enabled = false;
         }
 
         fireParticle.Stop();
@@ -152,8 +171,6 @@ public class FireGun : Weapon
                 if (enemy.GetComponent<ShieldEnemy>() != null || enemy.GetComponent<StoneEnemy>() != null) {
                     float onePercentHealth = enemy.maxHealth / 100;
                     enemy.health -= onePercentHealth * percentOfBigEnemies;
-                } else if (enemy.GetComponent<Shield>() != null) {
-                    // no damage to shield
                 } else {
                     float onePercentHealth = enemy.maxHealth / 100;
                     enemy.health -= onePercentHealth * percentOfSmallEnemies;

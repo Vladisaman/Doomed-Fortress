@@ -11,6 +11,7 @@ public class Crossbow : Weapon
     public SkillManager skillsManager;
 
     [HideInInspector] public Vector3 target;
+    [SerializeField] public ParticleSystem cold;
     //GameObject sentProjectile;
     //bool isSentProjectileDropped = true;
 
@@ -18,6 +19,9 @@ public class Crossbow : Weapon
     [Header("----------PROPERTIES----------")]
     [SerializeField] public float projectileSpeed = 10f;
     [SerializeField] float reloadTime = 2f;
+    [SerializeField] public int blessingForCrossbow;
+    [SerializeField] public GameObject coldProjectile;
+    [SerializeField] public GameObject poisonProjectile;
 
     [SerializeField] GameObject superProjectile;
     [SerializeField] SpriteRenderer spriteRenderer;
@@ -29,12 +33,15 @@ public class Crossbow : Weapon
     [SerializeField] private CrossbowAbilityButton abilityButton;
 
     bool isReloading = false;
+    bool isCoroutineShoot = false;
     bool isSuperPowerActivated = false;
 
     [Header("----------UPGRADING----------")]
     [SerializeField] private int currentDamageLevel;
     [SerializeField] public float projectileDamage;
 
+    [SerializeField] private Transform ProjectileForCold;
+    [SerializeField] private Transform ProjectileForPoison;
     [SerializeField] private Transform FirstProjectileSpawnerTransform;
     [SerializeField] private Transform SecondProjectileSpawnerTransform;
     [SerializeField] private Transform ThirdProjectileSpawnerTransform;
@@ -110,15 +117,21 @@ public class Crossbow : Weapon
             isSuperPowerActivated = false;
             StartCoroutine(Cooldown());
         }
+        if (skillsManager.ColdArrow)
+        {
+            cold.Play();
+        }
     }
 
-    public override void Shoot()
+    public void Shoot(bool isCoroutine = false)
     {
-        if (isReloading)
+        if (!isCoroutine)
         {
-            return;
+            if (isReloading)
+            {
+                return;
+            }
         }
-
         else if (skillsManager.crossbowPlusOneArrow)
         {
             CreateProjectile(projectile, FirstProjectileSpawnerTransform.position, Quaternion.Euler(0, 0, 30));
@@ -147,7 +160,6 @@ public class Crossbow : Weapon
                 CreateProjectile(projectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
             }
         }
-
         if (skillsManager.crossbowCanDoubleShot)
         {
             DoubleShoot();
@@ -157,10 +169,30 @@ public class Crossbow : Weapon
             CreateProjectile(projectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
         }
 
+        if (skillsManager.ColdArrow)
+        {
+            CreateProjectile(coldProjectile, ProjectileForCold.position, projectileSpawnerTransform.rotation);
+        }
+
         isReloading = true;
         StartCoroutine(Reload());
 
+        if (skillsManager.PhantomArrow && !isCoroutine)
+        {
+            StartCoroutine(PhantomArrowShoot());
+        }
+        if (skillsManager.PoisonArrow)
+        {
+            CreateProjectile(poisonProjectile, ProjectileForPoison.position, projectileSpawnerTransform.rotation);
+        }
+
         OnBallistaDefaultShot?.Invoke();
+    }
+
+    private IEnumerator PhantomArrowShoot()
+    {
+        yield return new WaitForSeconds(0.25f);
+        Shoot(true);
     }
 
     private void DoubleShoot()
@@ -274,5 +306,10 @@ public class Crossbow : Weapon
     public float GetCurrentDamage()
     {
         return projectileDamage;
+    }
+
+    public override void Shoot()
+    {
+        throw new NotImplementedException();
     }
 }

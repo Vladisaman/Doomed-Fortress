@@ -30,9 +30,6 @@ public class ArrowProjectile : Projectile
 
             enemy.TakeDamage(damage, NAME_OF_WEAPON);
 
-            if (enemy.GetComponent<Shield>() == null && enemy.GetComponent<StoneEnemy>() == null) {
-                OnArrowHit?.Invoke();
-            }
             hasEntered = true;
 
             if (skillManager.holyArrow)

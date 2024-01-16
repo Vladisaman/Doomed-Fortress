@@ -2971,7 +2971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinsForEnergy: 0
-  coins: 1
+  coins: 100000
 --- !u!4 &425387023
 Transform:
   m_ObjectHideFlags: 0
