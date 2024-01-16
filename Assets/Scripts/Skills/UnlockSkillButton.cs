@@ -94,5 +94,61 @@ namespace Assets
             AppMetrica.Instance.ReportEvent("ballista_five_arrow_skill");
             AppMetrica.Instance.SendEventsBuffer();
         }
+
+        public void UnlockFireMortar()
+        {
+            skillManager.fireBomb = true;
+
+            AppMetrica.Instance.ReportEvent("mortar_fire_bomb_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public void UnlockHolyMortar()
+        {
+            skillManager.holyBomb = true;
+
+            AppMetrica.Instance.ReportEvent("mortar_holy_bomb_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public void UnlockCursedMortar()
+        {
+            skillManager.cursedBomb = true;
+
+            AppMetrica.Instance.ReportEvent("mortar_cursed_bomb_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public void UnlockSuckingMortar()
+        {
+            skillManager.suckingCannonball = true;
+
+            AppMetrica.Instance.ReportEvent("mortar_sucking_bomb_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public void UnlockKnockbackMortar()
+        {
+            skillManager.knockbackCannonball = true;
+
+            AppMetrica.Instance.ReportEvent("mortar_knockback_bomb_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public void UnlockHolyCrossbow()
+        {
+            skillManager.holyArrow = true;
+
+            AppMetrica.Instance.ReportEvent("crossbow_holy_arrow_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public void UnlockCursedCrossbow()
+        {
+            skillManager.cursedArrow = true;
+
+            AppMetrica.Instance.ReportEvent("crossbow_cursed_arrow_skill");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
     }
 }

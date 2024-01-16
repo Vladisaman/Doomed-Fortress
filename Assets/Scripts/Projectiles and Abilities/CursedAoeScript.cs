@@ -5,7 +5,6 @@ using UnityEngine;
 public class CursedAoeScript : MonoBehaviour
 {
     public Transform FollowedObject;
-    private bool hasExploded = false;
     private Coroutine firstBomb;
 
     // Start is called before the first frame update
@@ -27,21 +26,18 @@ public class CursedAoeScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1.25f);
         GetComponent<SpriteRenderer>().enabled = true;
-        hasExploded = true;
+        GetComponent<CircleCollider2D>().enabled = true;
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (hasExploded)
-        {
-            Enemy enemy = collision.GetComponent<Enemy>();
+        Enemy enemy = collision.GetComponent<Enemy>();
 
-            if (enemy != null)
-            {
-                enemy.TakeDamage(5f);
-            }
+        if (enemy != null)
+        {
+            enemy.TakeDamage(5f);
         }
     }
 }

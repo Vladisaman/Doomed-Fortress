@@ -219,16 +219,13 @@ public class ShopUI : MonoBehaviour
 
     private void UpdateAllButtons()
     {
-        firegunDamagePrice += firegun.GetCurrentDamageLevel() * 2;
-        upgradeFiregunDamageText.text = $"Базовая атака: {firegun.GetCurrentDamage()}";
+        upgradeFiregunDamageText.text = $"Базовая атака: { Math.Round(firegun.GetCurrentDamage(), 2)}";
         upgradeFiregunDamagePriceText.text = $"{firegunDamagePrice}";
 
-        crossbowDamagePrice += crossbow.GetCurrentDamageLevel() * 2;
-        upgradeCrossbowDamageText.text = $"Базовая атака: {crossbow.GetCurrentDamage()}";
+        upgradeCrossbowDamageText.text = $"Базовая атака: {Math.Round(crossbow.GetCurrentDamage(), 2)}";
         upgradeCrossbowDamagePriceText.text = $"{crossbowDamagePrice}";
 
-        mortarDamagePrice += mortar.GetCurrentDamageLevel() * 2;
-        upgradeMortarDamageText.text = $"Базовая атака: {mortar.GetCurrentDamage()}";
+        upgradeMortarDamageText.text = $"Базовая атака: {Math.Round(mortar.GetCurrentDamage(), 2)}";
         upgradeMortarDamagePriceText.text = $"{mortarDamagePrice}";
     }
 

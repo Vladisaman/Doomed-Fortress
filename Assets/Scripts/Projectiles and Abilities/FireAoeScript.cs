@@ -22,7 +22,7 @@ public class FireAoeScript : MonoBehaviour
 
         if (enemy != null)
         {
-            enemy.TakeDamage(5f);
+            enemy.TakeDamage(0.5f);
         }
     }
 }
