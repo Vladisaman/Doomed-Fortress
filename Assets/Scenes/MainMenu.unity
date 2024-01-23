@@ -1155,6 +1155,9 @@ MonoBehaviour:
   mortarAbilityPrice: 500
   firegunAbilityPrice: 500
   crossbowAbilityPrice: 500
+  firegunDamagePrice: 10
+  crossbowDamagePrice: 10
+  mortarDamagePrice: 10
   firegun: {fileID: 549328165}
   upgradeFiregunDamageButton: {fileID: 582247971}
   upgradeFiregunDamageText: {fileID: 473896494}
@@ -1167,6 +1170,7 @@ MonoBehaviour:
   upgradeMortarDamageButton: {fileID: 557176459}
   upgradeMortarDamageText: {fileID: 1600830746}
   upgradeMortarDamagePriceText: {fileID: 2058161317}
+  setupScript: {fileID: 845028266}
 --- !u!224 &143926735
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1188,10 +1192,10 @@ RectTransform:
   - {fileID: 1223752015}
   m_Father: {fileID: 845028264}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
-  m_SizeDelta: {x: 1120, y: 553.41}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &143926736
 CanvasRenderer:
@@ -4508,6 +4512,7 @@ GameObject:
   - component: {fileID: 845028262}
   - component: {fileID: 845028261}
   - component: {fileID: 845028265}
+  - component: {fileID: 845028266}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4620,6 +4625,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPauseActive: 0
   pauseObject: {fileID: 0}
+--- !u!114 &845028266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845028260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b093c63075b7f05468f9b852b3408d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mailman: {fileID: 11400000, guid: cd88c676b61975543babdfd766f08eb0, type: 2}
+  shop: {fileID: 143926734}
 --- !u!1 &852374857
 GameObject:
   m_ObjectHideFlags: 0
@@ -4638,7 +4657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &852374858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8448,7 +8467,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361533683
 MonoBehaviour:
@@ -11782,8 +11801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1, y: 0.00390625}
-  m_SizeDelta: {x: -959, y: -474.36}
+  m_AnchoredPosition: {x: 1, y: 0.0009765625}
+  m_SizeDelta: {x: -959, y: -540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738966323
 MonoBehaviour:

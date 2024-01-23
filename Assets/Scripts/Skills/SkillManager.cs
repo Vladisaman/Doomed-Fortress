@@ -7,8 +7,8 @@ public class SkillManager : MonoBehaviour
     public bool crossbowPlusTwoArrow;
     public bool crossbowPlusThreeArrow;
     public bool crossbowPlusFourArrow;
-    public bool crossbowPlusFiveArrow;
-    public bool RicochetArrow;
+    public bool FanArrows;
+    //public bool RicochetArrow;
     public bool cursedArrow;
     public bool holyArrow;
     public bool ColdArrow;
@@ -16,9 +16,13 @@ public class SkillManager : MonoBehaviour
     public bool PoisonArrow;
     public int CrossbowBlessing;
 
+    [Space(20)]
+
     public bool fireGunleftFireEnable;
     public bool fireGunrightFireEnable;
     public bool BlackFire;
+
+    [Space(20)]
 
     public bool bigYadroEnable;
     public bool smallYadroEnable;
@@ -30,6 +34,8 @@ public class SkillManager : MonoBehaviour
     public bool ColdYadro;
     public bool PoisonYadro;
     public int MortarBlessing;
+
+    [Space(20)]
 
     public int WallHp;
     public bool Vampirism;

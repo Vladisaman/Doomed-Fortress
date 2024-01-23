@@ -20,12 +20,12 @@ public class WallBehavior : MonoBehaviour
     private DateTime PlayTimeMetric;
 
     [SerializeField] private Slider healthBar;
-
-    private UI ui;
+    private bool isAlive;
 
     // Start is called before the first frame update
     void Start()
     {
+        isAlive = true;
         _health = maxhealth;
         ignoredCollider = myGameObject.GetComponentInChildren<IgnoredCollider>().GetComponent<BoxCollider2D>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -46,7 +46,7 @@ public class WallBehavior : MonoBehaviour
         }
         healthBar.value = _health;
 
-        if (_health < 0)
+        if (_health < 0 && isAlive)
         {
             Die();
         }
@@ -62,12 +62,14 @@ public class WallBehavior : MonoBehaviour
 
     private void Die()
     {
+        isAlive = false;
+
         TimeSpan secondsInGame = PlayTimeMetric - DateTime.Now;
         Dictionary<string, object> parameters = new Dictionary<string, object>() { { "time_seconds", secondsInGame.TotalSeconds } };
         AppMetrica.Instance.ReportEvent("one_game_play_time", parameters);
         AppMetrica.Instance.SendEventsBuffer();
 
-        Time.timeScale = 0.0f;
+        Time.timeScale = 0;
         gameManager.GameOver();
     }
 

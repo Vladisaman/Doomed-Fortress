@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 public class StoryScript : MonoBehaviour
 {
     [SerializeField] Scene panelScene;
-    private void Start()
-    {
-        Time.timeScale = 0;
-    }
 
     public void CloseStory1()
     {
@@ -33,6 +29,10 @@ public class StoryScript : MonoBehaviour
             if (PlayerPrefs.GetInt("ClosedStory1") == 1)
             {
                 gameObject.SetActive(false);
+            } 
+            else
+            {
+                Time.timeScale = 0;
             }
         }
         if (SceneManager.GetActiveScene().buildIndex == 1 && panelScene == Scene.one)
@@ -40,6 +40,10 @@ public class StoryScript : MonoBehaviour
             if (PlayerPrefs.GetInt("ClosedStory2") == 1)
             {
                 gameObject.SetActive(false);
+            } 
+            else
+            {
+                Time.timeScale = 0;
             }
         }
     }

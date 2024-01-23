@@ -42,38 +42,37 @@ public class ArrowProjectile : Projectile
                 Instantiate(cursedAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity).GetComponent<CursedAoeScript>().FollowedObject = enemy.transform;
             }
         }
-
-        if (skillManager.RicochetArrow && hasEntered)
-        {
-            if (!DidRicochet)
-            {
-                GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
-                if (enemies.Length > 0)
-                {
-                    for (int i = 0; i < (3 > enemies.Length ? 3 : enemies.Length); i++)
-                    {
-                        float minDist = float.MaxValue;
-                        GameObject closestObj = null;
-                        foreach (GameObject obj in enemies)
-                        {
-                            if (Vector2.Distance(transform.position, obj.transform.position) < minDist)
-                            {
-                                closestObj = obj;
-                                minDist = Vector2.Distance(transform.position, obj.transform.position);
-                            }
-                            targetList.Add(closestObj);
-                        }
-                    }
-                    DidRicochet = true;
-                }
-            }
-        } 
-        else if (!skillManager.RicochetArrow && hasEntered)
+        else if (hasEntered)
         {
             Destroy(gameObject);
         }
 
+        //if (skillManager.RicochetArrow && hasEntered)
+        //{
+        //    if (!DidRicochet)
+        //    {
+        //        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        //        if (enemies.Length > 0)
+        //        {
+        //            for (int i = 0; i < (3 > enemies.Length ? 3 : enemies.Length); i++)
+        //            {
+        //                float minDist = float.MaxValue;
+        //                GameObject closestObj = null;
+        //                foreach (GameObject obj in enemies)
+        //                {
+        //                    if (Vector2.Distance(transform.position, obj.transform.position) < minDist)
+        //                    {
+        //                        closestObj = obj;
+        //                        minDist = Vector2.Distance(transform.position, obj.transform.position);
+        //                    }
+        //                    targetList.Add(closestObj);
+        //                }
+        //            }
+        //            DidRicochet = true;
+        //        }
+        //    }
+        //} 
 
         if (collision.CompareTag("Border"))
         {

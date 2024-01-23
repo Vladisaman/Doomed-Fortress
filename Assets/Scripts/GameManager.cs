@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public bool isGameActive;
     public GameObject gameOverObj;
     public bool isPaused = false;
     public bool isClicked = false;
@@ -14,7 +13,6 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverObj.SetActive(true);
-        isGameActive = false;
         //RestartButton.gameObject.SetActive(true);
         //PauseButton.gameObject.SetActive(false);
     }

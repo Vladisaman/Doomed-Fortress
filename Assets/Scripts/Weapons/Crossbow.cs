@@ -125,34 +125,35 @@ public class Crossbow : Weapon
                 return;
             }
         }
-        else if (skillsManager.crossbowPlusOneArrow)
-        {
-            CreateProjectile(projectile, FirstProjectileSpawnerTransform.position, Quaternion.Euler(0, 0, 30));
-        }
-        else if (skillsManager.crossbowPlusTwoArrow)
-        {
-            CreateProjectile(projectile, SecondProjectileSpawnerTransform.position, Quaternion.Euler(0, 0, -30));
-        }
-        else if (skillsManager.crossbowPlusThreeArrow)
-        {
-            CreateProjectile(projectile, ThirdProjectileSpawnerTransform.position, Quaternion.Euler(0, 0, 60));
-        }
-        else if (skillsManager.crossbowPlusFourArrow)
-        {
-            CreateAbilityProjectile(projectile, FirstProjectileSpawnerTransform.position, FirstProjectileSpawnerTransform.rotation, 30);
-            CreateAbilityProjectile(projectile, SecondProjectileSpawnerTransform.position, SecondProjectileSpawnerTransform.rotation, -30);
-            CreateAbilityProjectile(projectile, ThirdProjectileSpawnerTransform.position, ThirdProjectileSpawnerTransform.rotation, 30);
-            CreateAbilityProjectile(projectile, FourthProjectileSpawnerTransform.position, FourthProjectileSpawnerTransform.rotation, -30);
 
-            if (skillsManager.crossbowCanDoubleShot)
+        if (isCoroutine == true)
+        {
+            if (skillsManager.crossbowPlusOneArrow)
             {
-                DoubleShoot();
+                CreateAbilityProjectile(projectile, FirstProjectileSpawnerTransform.position, FirstProjectileSpawnerTransform.rotation, 30);
             }
-            else
+
+            if (skillsManager.crossbowPlusTwoArrow)
             {
-                CreateProjectile(projectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
+                CreateAbilityProjectile(projectile, SecondProjectileSpawnerTransform.position, SecondProjectileSpawnerTransform.rotation, -30);
+            }
+
+            if (skillsManager.crossbowPlusThreeArrow)
+            {
+                CreateAbilityProjectile(projectile, ThirdProjectileSpawnerTransform.position, ThirdProjectileSpawnerTransform.rotation, 30);
+            }
+
+            if (skillsManager.crossbowPlusFourArrow)
+            {
+                CreateAbilityProjectile(projectile, FourthProjectileSpawnerTransform.position, FourthProjectileSpawnerTransform.rotation, -30);
+            }
+
+            if (skillsManager.FanArrows)
+            {
+                StartCoroutine(FanArrows());
             }
         }
+
         if (skillsManager.crossbowCanDoubleShot)
         {
             DoubleShoot();
@@ -177,6 +178,16 @@ public class Crossbow : Weapon
     {
         yield return new WaitForSeconds(0.25f);
         Shoot(true);
+    }
+
+    private IEnumerator FanArrows()
+    {
+        yield return new WaitForSeconds(0.25f);
+
+        CreateAbilityProjectile(projectile, FirstProjectileSpawnerTransform.position, FirstProjectileSpawnerTransform.rotation, 30);
+        CreateAbilityProjectile(projectile, SecondProjectileSpawnerTransform.position, SecondProjectileSpawnerTransform.rotation, -30);
+        CreateAbilityProjectile(projectile, ThirdProjectileSpawnerTransform.position, ThirdProjectileSpawnerTransform.rotation, 30);
+        CreateAbilityProjectile(projectile, FourthProjectileSpawnerTransform.position, FourthProjectileSpawnerTransform.rotation, -30);
     }
 
     private void DoubleShoot()

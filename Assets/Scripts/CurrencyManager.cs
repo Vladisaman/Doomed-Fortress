@@ -135,6 +135,11 @@ public class CurrencyManager : MonoBehaviour
         return coins;
     }
 
+    public void LoadUpgradeData()
+    {
+
+    }
+
     //public void BalanceEnergy()
     //{
     //    if (CurrEnergy >= MaxEnergy)

@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6926780845499057787, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UnlockFiveArrow
+      value: UnlockFanArrows
       objectReference: {fileID: 0}
     - target: {fileID: 7434037120385761725, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
       propertyPath: m_text
-      value: "+5 \u0441\u0442\u0440\u0435\u043B"
+      value: "\u0412\u0435\u0435\u0440 \u0441\u0442\u0440\u0435\u043B"
       objectReference: {fileID: 0}
     - target: {fileID: 7434037121067232580, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
       propertyPath: m_Name

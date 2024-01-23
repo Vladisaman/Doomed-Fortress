@@ -34,11 +34,11 @@ public class ShopUI : MonoBehaviour
     [SerializeField] private int firegunAbilityPrice;
     [SerializeField] private int crossbowAbilityPrice;
     [Space(5)]
-    private int firegunDamagePrice;
+    [SerializeField] private int firegunDamagePrice;
     [Space(10)]
-    private int crossbowDamagePrice;
+    [SerializeField] private int crossbowDamagePrice;
     [Space(10)]
-    private int mortarDamagePrice;
+    [SerializeField] private int mortarDamagePrice;
 
 
     [Header("----------FIREGUN----------")]
@@ -60,6 +60,7 @@ public class ShopUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI upgradeMortarDamagePriceText;
 
     CurrencyManager _currencyManager;
+    [SerializeField] SetupScript setupScript;
 
     private void Awake()
     {
@@ -69,15 +70,17 @@ public class ShopUI : MonoBehaviour
         crossbow.HandleUpgrading(upgradesMailman.CrossbowDamage, upgradesMailman.CrossbowDamageLevel);
         firegun.HandleUpgrading(upgradesMailman.FlamethrowerDamage, upgradesMailman.FlamethrowerDamageLevel);
 
-        firegunDamagePrice = 10;
-        crossbowDamagePrice = 10;
-        mortarDamagePrice = 10;
+        //firegunDamagePrice = 10;
+        //crossbowDamagePrice = 10;
+        //mortarDamagePrice = 10;
 
+        setupScript.Setup();
         UpdateAllButtons();
     }
 
     private void OnEnable()
     {
+        setupScript.Setup();
         UpdateCoinsAmount();
     }
 
@@ -238,5 +241,30 @@ public class ShopUI : MonoBehaviour
         upgradesMailman.CrossbowDamage = crossbow.GetCurrentDamage();
         upgradesMailman.MortarDamage = mortar.GetCurrentDamage();
         upgradesMailman.FlamethrowerDamage = firegun.GetCurrentDamage();
+
+        PlayerPrefs.SetInt("CrossbowLevel", crossbow.GetCurrentDamageLevel());
+        PlayerPrefs.SetInt("MortarLevel", mortar.GetCurrentDamageLevel());
+        PlayerPrefs.SetInt("FiregunLevel", firegun.GetCurrentDamageLevel());
+
+        PlayerPrefs.SetFloat("CrossbowDamage", crossbow.GetCurrentDamage());
+        PlayerPrefs.SetFloat("MortarDamage", mortar.GetCurrentDamage());
+        PlayerPrefs.SetFloat("FiregunDamage", firegun.GetCurrentDamage());
+
+        PlayerPrefs.SetInt("CrossbowCost", crossbowDamagePrice);
+        PlayerPrefs.SetInt("MortarCost", mortarDamagePrice);
+        PlayerPrefs.SetInt("FiregunCost", firegunDamagePrice);
+
+        PlayerPrefs.SetInt("CrossbowAbility", upgradesMailman.isCrossbowAbilityBought ? 1 : 2);
+        PlayerPrefs.SetInt("MortarAbility", upgradesMailman.isMortarAbilityBought ? 1 : 2);
+        PlayerPrefs.SetInt("FiregunAbility", upgradesMailman.isFireGunAbilityBought ? 1 : 2);
+    }
+
+    public void SetPrices(int ballista, int mortar, int firegun)
+    {
+        crossbowDamagePrice = ballista;
+        mortarDamagePrice = mortar;
+        firegunDamagePrice = firegun;
+
+        UpdateAllButtons();
     }
 }

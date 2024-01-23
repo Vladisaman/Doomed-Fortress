@@ -147,7 +147,7 @@ public abstract class Enemy : MonoBehaviour
         currentDamageResist = 1;
         switch (weaponName)
         {
-            case BALLISTA:
+            case "BALLISTA":
                 switch (arrowDamageResist)
                 {
                     case DamageResistance.WEAK:
@@ -161,7 +161,7 @@ public abstract class Enemy : MonoBehaviour
                         break;
                 }
                 break;
-            case MORTAR:
+            case "MORTAR":
                 switch (bombDamageResist)
                 {
                     case DamageResistance.WEAK:
@@ -175,7 +175,7 @@ public abstract class Enemy : MonoBehaviour
                         break;
                 }
                 break;
-            case FIREGUN:
+            case "FIREGUN":
                 switch (fireDamageResist)
                 {
                     case DamageResistance.WEAK:
@@ -299,6 +299,15 @@ public abstract class Enemy : MonoBehaviour
                     health -= 5f * Time.deltaTime;
                 }
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Wall"))
+        {
+            speed = DefaultSpeed;
+            isAttacking = false;
         }
     }
 

@@ -96,9 +96,9 @@ namespace Assets
             AppMetrica.Instance.SendEventsBuffer();
         }
 
-        public void UnlockFiveArrow()
+        public void UnlockFanArrows()
         {
-            skillManager.crossbowPlusFiveArrow = true;
+            skillManager.FanArrows = true;
 
             AppMetrica.Instance.ReportEvent("ballista_five_arrow_skill");
             AppMetrica.Instance.SendEventsBuffer();

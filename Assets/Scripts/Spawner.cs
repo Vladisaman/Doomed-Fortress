@@ -47,6 +47,23 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            SpawnEnemy(0, forSmallMinY, forSmallMaxY);
+        }
+        if (Input.GetKeyDown(KeyCode.F2))
+        {
+            SpawnEnemy(1, forSmallMinY, forSmallMaxY);
+        }
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            SpawnEnemy(2, forBigMinY, forBigMaxY);
+        }
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            SpawnEnemy(3, forBigMinY, forBigMaxY);
+        }
+
         _elapsedTime += Time.deltaTime;
         if (!isWaiting) {
             if (_elapsedTime >= nextSpawnTime)

@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5077538299874683318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -0.000015259}
-  m_SizeDelta: {x: 314.8497, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6715017174989047642
 CanvasRenderer:
@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0427\u0451\u0440\u043D\u044B\u0439 \u043E\u0433\u043E\u043D\u044C\n(\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0435\u0442
     \u043D\u0430\u043D\u043E\u0441\u0438\u0442\u044C \u0443\u0440\u043E\u043D \u0432\u0440\u0430\u0433\u0430\u043C
-    \u043F\u043E\u0441\u043B\u0435 \u0434\u0438\u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438)"
+    \u043F\u043E\u0441\u043B\u0435 \u0434\u0435\u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -170,10 +170,10 @@ RectTransform:
   - {fileID: 5315934636217632412}
   m_Father: {fileID: 5631472446952675956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4063448115065933427
 CanvasRenderer:
@@ -340,6 +340,3 @@ MonoBehaviour:
   crossbow: {fileID: 0}
   wall: {fileID: 0}
   enemy: {fileID: 0}
-  HPnow: {fileID: 0}
-  HPafter: {fileID: 0}
-  HP: 0
