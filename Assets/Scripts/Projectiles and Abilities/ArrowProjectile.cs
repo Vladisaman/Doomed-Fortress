@@ -11,7 +11,7 @@ public class ArrowProjectile : Projectile
     [SerializeField] GameObject holyAoe;
     [SerializeField] GameObject cursedAoe;
 
-    private readonly string NAME_OF_WEAPON = "Ballista";
+    private readonly string NAME_OF_WEAPON = "BALLISTA";
     private bool hasEntered = false;
     List<GameObject> targetList;
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SkillPanel : MonoBehaviour
 {
     [SerializeField] private Button exitButton;
-    [SerializeField] private List<SkillButton> skills;
+    [SerializeField] public List<SkillButton> skills;
     [SerializeField] private List<Transform> skillPlaces;
     [SerializeField] private GameObject Panel;
     [SerializeField] public Mortar mortar;
@@ -34,20 +34,13 @@ public class SkillPanel : MonoBehaviour
 
         while (randomSkills.Count < 3)
         {
-            SkillButton randomSkill = skills[Random.Range(0, skills.Count)];
+            Debug.Log(skills.Count);
+            SkillButton randomSkill = skills[Random.Range(0, skills.Count-1)];
 
             if (!randomSkills.Contains(randomSkill))
             {
                 randomSkills.Add(randomSkill);
             }
-        }
-        if (mortar.blessing == 3)
-        {
-            skills.RemoveAt(9);
-        }
-        if(crossbow.blessingForCrossbow == 3)
-        {
-            skills.RemoveAt(10);
         }
 
         return randomSkills.ToArray();
@@ -61,7 +54,6 @@ public class SkillPanel : MonoBehaviour
         {
             var instance = Instantiate(skills[i], skillPlaces[i]);
             instance.button.onClick.AddListener(() => { Panel.SetActive(false); Time.timeScale = 1; });
-
         }
     }
 }

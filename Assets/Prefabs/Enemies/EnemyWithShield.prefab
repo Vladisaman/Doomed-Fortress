@@ -721,8 +721,11 @@ MonoBehaviour:
   skillManager: {fileID: 0}
   burning: {fileID: 6310070181902518798}
   burn: {fileID: 5202251700424294649}
+  time: 0
   isAttacking: 0
   isAttracted: 0
+  StaggerDamage: 3
+  countHit: 0
   maxHealth: 37.5
   health: 0
   speed: 0.5
@@ -732,7 +735,6 @@ MonoBehaviour:
   score: 50
   gameManager: {fileID: 0}
   enemySpawner: {fileID: 0}
-  walkAnimationClip: {fileID: 7400000, guid: eb0fe023fb462734687d3b9791960d98, type: 2}
   coinsForDestroy: 2
   persentCount: 0
   animator: {fileID: 0}
@@ -748,7 +750,6 @@ MonoBehaviour:
   shieldHealth: 75
   shieldArmor: 0
   shieldBombDamageXAxisReduce: 0.2
-  shield: {fileID: 5406909853973987043}
 --- !u!61 &7801493622915064449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -903,7 +904,7 @@ GameObject:
   - component: {fileID: 5406909853973987071}
   - component: {fileID: 5406909853973987041}
   - component: {fileID: 5406909853973987070}
-  - component: {fileID: 5406909853973987043}
+  - component: {fileID: 5623987284292951183}
   - component: {fileID: 4309069794961391867}
   m_Layer: 0
   m_Name: Shield
@@ -1052,7 +1053,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5015526, y: 1.7251043}
   m_EdgeRadius: 0
---- !u!114 &5406909853973987043
+--- !u!114 &5623987284292951183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1061,7 +1062,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5406909853973987069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c041def0c9e84d940a745ee4585bd0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 86725831e39920a4bac6b8b313e137a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 5406909853168926469}
@@ -1069,8 +1070,11 @@ MonoBehaviour:
   skillManager: {fileID: 0}
   burning: {fileID: 0}
   burn: {fileID: 0}
+  time: 0
   isAttacking: 0
   isAttracted: 0
+  StaggerDamage: 3
+  countHit: 0
   maxHealth: 0
   health: 0
   speed: 0.5
@@ -1080,7 +1084,6 @@ MonoBehaviour:
   score: 0
   gameManager: {fileID: 0}
   enemySpawner: {fileID: 0}
-  walkAnimationClip: {fileID: 7400000, guid: 4bb92d8126bf46e48beda1d8271a6958, type: 2}
   coinsForDestroy: 0
   persentCount: 0
   animator: {fileID: 0}

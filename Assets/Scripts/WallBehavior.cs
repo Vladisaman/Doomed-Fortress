@@ -7,7 +7,6 @@ using System;
 public class WallBehavior : MonoBehaviour
 {
     public SkillManager skillManager;
-
     public Collision2D collision;
     [SerializeField] public float _health;
     [SerializeField] public float time;
@@ -27,6 +26,7 @@ public class WallBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _health = maxhealth;
         ignoredCollider = myGameObject.GetComponentInChildren<IgnoredCollider>().GetComponent<BoxCollider2D>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         healthBar.maxValue = _health;
@@ -35,7 +35,6 @@ public class WallBehavior : MonoBehaviour
         Physics2D.IgnoreLayerCollision(gameObject.layer, ignoredCollider.gameObject.layer, true);
 
         PlayTimeMetric = DateTime.Now;
-
     }
 
     void Update()
@@ -61,17 +60,6 @@ public class WallBehavior : MonoBehaviour
         StartCoroutine(BlinkCoroutine());
     }
 
-    public void WallAddHP()
-    {
-        if(skillManager.WallAddHP)
-        {
-            if(_health == maxhealth)
-            {
-                _health += 100f;
-                maxhealth = _health;
-            }
-        }
-    }
     private void Die()
     {
         TimeSpan secondsInGame = PlayTimeMetric - DateTime.Now;

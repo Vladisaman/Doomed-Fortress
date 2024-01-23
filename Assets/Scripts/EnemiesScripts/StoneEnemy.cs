@@ -47,44 +47,6 @@ public class StoneEnemy : Enemy
         CheckDeath();
     }
 
-    public override void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Wall")
-        {
-            speed = 0;
-        }
-        if (skillManager.ColdArrow)
-        {
-            if (collision.CompareTag("ColdProjectile"))
-            {
-                countHit++;
-                StartCoroutine(SpeedDown());
-                if (countHit == 5)
-                {
-                    StartCoroutine(Coldarrow());
-                }
-            }
-        }
-        if (skillManager.PoisonArrow)
-        {
-            StartCoroutine(PoisonProjectle());
-        }
-        if (skillManager.PoisonYadro)
-        {
-            StartCoroutine(PoisonProjectle());
-        }
-    }
-    public override void OnTriggerStay2D(Collider2D collision)
-    {
-        if (skillManager.ColdYadro)
-        {
-            if (collision.CompareTag("ColdYadro"))
-            {
-                StartCoroutine(Coldyadro());
-            }
-        }
-    }
-
     private void Stop()
     {
         animator.SetBool("IsThrowing", true);
@@ -110,52 +72,12 @@ public class StoneEnemy : Enemy
 
         if (once)
         {
-            gameManager.UpdateScore(score);
-            var tempSpawner = FindObjectOfType<TempSpawner>();
+            var tempSpawner = FindObjectOfType<Spawner>();
             tempSpawner.NewWave();
             tempSpawner.IncreaseKilledEnemyCount();
             once = false;
         }
 
         Destroy(gameObject, 1.5f);
-    }
-
-    public override IEnumerator Coldyadro()
-    {
-        GetStunned();
-        yield return new WaitForSeconds(time += 1f);
-        if (time > 1f)
-        {
-            GetUnstunned();
-            time = 0;
-            yield break;
-        }
-    }
-    public override IEnumerator Coldarrow()
-    {
-        GetStunned();
-        yield return new WaitForSeconds(time += 2f);
-        if (time > 1f)
-        {
-            GetUnstunned();
-            countHit = 0;
-            time = 0;
-            yield break;
-        }
-    }
-    public override IEnumerator SpeedDown()
-    {
-        speed = 0.7f;
-        yield return new WaitForSeconds(1f);
-        speed = 1f;
-        if (speed == 0)
-        {
-            yield break;
-        }
-    }
-    public override IEnumerator PoisonProjectle()
-    {
-        yield return new WaitForSeconds(0.4f);
-        health -= StaggerDamage % 10;
     }
 }

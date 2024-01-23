@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour
 {
+    private bool isAlive = true;
     protected bool once = true;
     [SerializeField] public Slider healthBar;
     [HideInInspector] public WallBehavior wall;
@@ -20,7 +21,7 @@ public abstract class Enemy : MonoBehaviour
 
     [Space]
     [Header("----------PROPERTIES----------")]
-    [SerializeField] public float StaggerDamage = 3f;
+    [SerializeField] public float StaggerDamage = 0f;
     [SerializeField] public int countHit;
     [SerializeField] public float maxHealth;
     [SerializeField] public float health;
@@ -28,11 +29,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] public float damage;
     [SerializeField] public int weight;
     [SerializeField] protected float attackCooldown = 2f;
-    [SerializeField]  protected int score;
-    [SerializeField] protected GameManager gameManager;
-    [SerializeField] protected TempSpawner enemySpawner;
     [SerializeField] private int coinsForDestroy;
-    [SerializeField] private int persentCount;
     [SerializeField] protected Animator animator;
 
     [Header("----------DAMAGE RESIST----------")]
@@ -46,7 +43,12 @@ public abstract class Enemy : MonoBehaviour
     public const string MORTAR = "Mortar";
     public const string FIREGUN= "FireGun";
 
-    float speedValue;
+    private Coroutine Slow;
+    private Coroutine Stun;
+    private float Stagger;
+    private int SlowStacks;
+
+    float DefaultSpeed;
 
     [HideInInspector] public float damageReduce;
     [HideInInspector] public float actualDamage;
@@ -72,11 +74,13 @@ public abstract class Enemy : MonoBehaviour
 
         health = maxHealth;
         healthBar.maxValue = maxHealth;
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        enemySpawner = GameObject.Find("Spawner").GetComponent<TempSpawner>();
 
         animator = GetComponent<Animator>();
-        speedValue = speed;
+        DefaultSpeed = speed;
+
+        StartCoroutine(PoisonDamage());
+        Stagger = 0;
+        SlowStacks = 0;
     }
 
     private void Update()
@@ -129,7 +133,7 @@ public abstract class Enemy : MonoBehaviour
 
     public void GetUnstunned()
     {
-        speed = speedValue;
+        speed = DefaultSpeed;
     }
 
     public virtual void TakeDamage(float damage)
@@ -137,6 +141,7 @@ public abstract class Enemy : MonoBehaviour
         health -= damage;
         healthBar.value = health;
     }
+
     public virtual void TakeDamage(float weaponDamage, string weaponName)
     {
         currentDamageResist = 1;
@@ -189,32 +194,75 @@ public abstract class Enemy : MonoBehaviour
         actualDamage = weaponDamage * currentDamageResist;
         health -= actualDamage;
         healthBar.value = health;
+
+        if (skillManager.PoisonArrow && weaponName == "BALLISTA")
+        {
+            Stagger += actualDamage * 0.2f;
+        }
+        if (skillManager.PoisonYadro && weaponName == "MORTAR")
+        {
+            Stagger += actualDamage * 0.2f;
+        }
+        if (skillManager.ColdArrow && weaponName == "BALLISTA")
+        {
+            SlowStacks += 1;
+            if (Slow != null)
+            {
+                StopCoroutine(Slow);
+                Slow = StartCoroutine(SlowDown());
+            }
+            else
+            {
+                Slow = StartCoroutine(SlowDown());
+            }
+
+            if (SlowStacks == 5)
+            {
+                SlowStacks = 0;
+                StopCoroutine(Slow);
+
+                if(Stun != null)
+                {
+                    StopCoroutine(Stun);
+                    Stun = StartCoroutine(Freeze());
+                } else
+                {
+                    Stun = StartCoroutine(Freeze());
+                }
+            }
+        }
+        if(skillManager.ColdYadro && weaponName == "MORTAR")
+        {
+            if (Stun != null)
+            {
+                StopCoroutine(Stun);
+                Stun = StartCoroutine(Freeze());
+            }
+            else
+            {
+                Stun = StartCoroutine(Freeze());
+            }
+        }
     }
     
     public virtual void Die()
     {
+        isAlive = false;
         animator.SetBool("IsDead", true);
-
-        if (once)
-        {
-            gameManager.UpdateScore(score);
-            //enemySpawner.DecreaseEnemiesCount();
-            once = false;
-        }
-
         Destroy(gameObject, 3);
     }
 
     public virtual void Move()
     {
-        //animationComponent.Play("Walk");
         transform.position += Vector3.left * speed * Time.deltaTime;
     }
 
     public virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Wall" ) {
+        if (collision.gameObject.name == "Wall")
+        {
             isAttacking = true;
+            speed = 0;
         }
 
         if (skillManager.BlackFire)
@@ -228,26 +276,6 @@ public abstract class Enemy : MonoBehaviour
             {
                 burn.enabled = false;
             }
-        }
-        if (skillManager.ColdArrow)
-        {
-            if (collision.CompareTag("ColdProjectile"))
-            {
-                countHit++;
-                StartCoroutine(SpeedDown());
-                if (countHit == 5)
-                {
-                    StartCoroutine(Coldarrow());
-                }
-            }
-        }
-        if(skillManager.PoisonArrow)
-        {
-            StartCoroutine(PoisonProjectle());
-        }
-        if (skillManager.PoisonYadro)
-        {
-            StartCoroutine(PoisonProjectle());
         }
     }
 
@@ -264,29 +292,61 @@ public abstract class Enemy : MonoBehaviour
 
         if(skillManager.BlackFire)
         {
-            if (burn.enabled == true)
+            if (collision.CompareTag("Burning"))
             {
-                health -= 5f * Time.deltaTime;
+                if (burn.enabled == true)
+                {
+                    health -= 5f * Time.deltaTime;
+                }
+            }
+        }
+    }
+
+    public IEnumerator Freeze()
+    {
+        bool wasAttacking = isAttacking;
+        speed = 0;
+        isAttacking = false;
+        GetComponent<SpriteRenderer>().color = new Color(0, 165, 222);
+
+        yield return new WaitForSeconds(1f);
+
+        GetComponent<SpriteRenderer>().color = Color.white;
+        isAttacking = wasAttacking;
+        speed = DefaultSpeed;
+    }
+
+    public IEnumerator SlowDown()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(0, 165, 222);
+        speed *= 0.75f;
+
+        yield return new WaitForSeconds(2F);
+
+        GetComponent<SpriteRenderer>().color = Color.white;
+        speed = DefaultSpeed;
+    }
+
+    public IEnumerator PoisonDamage()
+    {
+        while (isAlive)
+        {
+            yield return new WaitForSeconds(0.5f);
+            if (Stagger > 0.5f)
+            {
+                TakeDamage(Stagger % 10f);
+                Stagger -= Stagger % 10f;
+                healthBar.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                health = healthBar.value;
+                TakeDamage(Stagger);
+                Stagger = 0;
+                healthBar.GetComponent<Image>().color = new Color(255, 0, 0);
             }
         }
-        if (skillManager.ColdYadro)
-        {
-            if (collision.CompareTag("ColdYadro"))
-            {
-                StartCoroutine(Coldyadro());
-            }
-        }
-
     }
 
-    public abstract IEnumerator Coldyadro();
-    public abstract IEnumerator Coldarrow();
-    public abstract IEnumerator SpeedDown();
-    public abstract IEnumerator PoisonProjectle();
     public virtual void Attack()
     {
         if(Time.time - lastAttackTime < attackCooldown) {
@@ -296,14 +356,10 @@ public abstract class Enemy : MonoBehaviour
         wall.GetComponent<WallBehavior>().TakeDamage(damage);
     }
 
-    public virtual int GetWeight()
-    {
-        return weight;
-    }
     public void IncreasePower()
     {
-        maxHealth += 5 * TempSpawner.WaveNumber;
-        damage += 5 * TempSpawner.WaveNumber;
+        maxHealth += 5 * Spawner.WaveNumber;
+        damage += 5 * Spawner.WaveNumber;
     }
 }
 

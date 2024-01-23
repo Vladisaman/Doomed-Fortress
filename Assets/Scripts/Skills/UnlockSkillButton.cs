@@ -15,9 +15,6 @@ namespace Assets
         public Crossbow crossbow;
         public WallBehavior wall;
         public Enemy enemy;
-        [SerializeField] TextMeshProUGUI HPnow;
-        [SerializeField] TextMeshProUGUI HPafter;
-        public float HP;
 
         private void Awake()
         {
@@ -161,29 +158,24 @@ namespace Assets
 
             AppMetrica.Instance.ReportEvent("crossbow_cursed_arrow_skill");
 		}
-		
-        public void UnlockAddHP()
-        {
-            skillManager.WallAddHP = true;
-            HP = wall.maxhealth;
-            HPnow.text = HP.ToString();
-            HP = wall._health;
-            if(skillManager.WallAddHP)
-            {
-                HP = wall.maxhealth + 100f;
-                HPafter.text = HP.ToString();
-                HP = wall._health;
-            }
 
-            AppMetrica.Instance.ReportEvent("WallAddHP");
-            AppMetrica.Instance.SendEventsBuffer();
-        }
-		
         public void UnlockThorns()
         {
             skillManager.Thorns = true;
 
             AppMetrica.Instance.ReportEvent("Thorns");
+            AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        /////////////////////////////////////////////////////////////////////////////////
+
+        public void UnlockAddHP()
+        {
+            skillManager.WallHp += 1;
+            wall.maxhealth += 100;
+            wall._health += 100;
+
+            AppMetrica.Instance.ReportEvent("WallAddHP");
             AppMetrica.Instance.SendEventsBuffer();
         }
 		
@@ -195,14 +187,16 @@ namespace Assets
             AppMetrica.Instance.SendEventsBuffer();
         }
 		
-        public void UnlockBlessing()
+        public void UnlockMortarBlessing()
         {
-            skillManager.Blessing = true;
-            mortar.blessing++;
-            if(skillManager.Blessing)
+            skillManager.MortarBlessing += 1;
+
+            mortar.projectileSpeed += 1.3f;
+            mortar.projectileDamage *= 1.3f;
+
+            if (skillManager.MortarBlessing >= 3)
             {
-                mortar.projectileSpeed += 1.3f;
-                mortar.projectileDamage += 1.3f;
+                GameObject.FindGameObjectWithTag("SkillPanel").GetComponent<SkillPanel>().skills.Remove(GetComponentInParent<SkillButton>());
             }
 
             AppMetrica.Instance.ReportEvent("Blessing");
@@ -211,12 +205,14 @@ namespace Assets
 		
         public void UnlockBlessingForCrossbow()
         {
-            skillManager.BlessingForCrossbow = true;
-            crossbow.blessingForCrossbow++;
-            if(skillManager.BlessingForCrossbow)
+            skillManager.CrossbowBlessing += 1;
+
+            crossbow.projectileSpeed += 1.3f;
+            crossbow.projectileDamage *= 1.3f;
+
+            if (skillManager.MortarBlessing >= 3)
             {
-                crossbow.projectileSpeed += 1.3f;
-                crossbow.projectileDamage += 1.3f;
+                GameObject.FindGameObjectWithTag("SkillPanel").GetComponent<SkillPanel>().skills.Remove(GetComponentInParent<SkillButton>());
             }
 
             AppMetrica.Instance.ReportEvent("BlessingForCrossbow");

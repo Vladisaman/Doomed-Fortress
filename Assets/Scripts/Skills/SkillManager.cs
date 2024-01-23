@@ -11,10 +11,10 @@ public class SkillManager : MonoBehaviour
     public bool RicochetArrow;
     public bool cursedArrow;
     public bool holyArrow;
-    public bool BlessingForCrossbow;
     public bool ColdArrow;
     public bool PhantomArrow;
     public bool PoisonArrow;
+    public int CrossbowBlessing;
 
     public bool fireGunleftFireEnable;
     public bool fireGunrightFireEnable;
@@ -27,11 +27,18 @@ public class SkillManager : MonoBehaviour
     public bool holyBomb;
     public bool cursedBomb;
     public bool fireBomb;
-    public bool Blessing;
     public bool ColdYadro;
     public bool PoisonYadro;
+    public int MortarBlessing;
 
-    public bool WallAddHP;
+    public int WallHp;
     public bool Vampirism;
     public bool Thorns;
+
+    private void Start()
+    {
+        MortarBlessing = 0;
+        CrossbowBlessing = 0;
+        WallHp = 0;
+    }
 }

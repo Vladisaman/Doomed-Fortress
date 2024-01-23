@@ -14,7 +14,7 @@ public class BombProjectile : Projectile
 
     Mortar mortar;
     Vector3 projectileTarget;
-    private string NAME_OF_WEAPON = "Mortar";
+    private string NAME_OF_WEAPON = "MORTAR";
 
     private bool once = true;
 
@@ -95,8 +95,9 @@ public class BombProjectile : Projectile
     public void DestroyAfterAnimation()
     {
         GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
 
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 0.5f);
     }
 
     public IEnumerator KnockbackEnemeis()

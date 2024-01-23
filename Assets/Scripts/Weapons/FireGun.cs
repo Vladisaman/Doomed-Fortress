@@ -19,7 +19,7 @@ public class FireGun : Weapon
     [SerializeField] PolygonCollider2D rightfireCollider;
     [SerializeField] PolygonCollider2D BlackFireCollider;
     [SerializeField] BoxCollider2D burn;
-    private string NAME_OF_WEAPON = "FireGun";
+    private string NAME_OF_WEAPON = "FIREGUN";
 
     [Header("----------DOT PROPERTIES----------")]
     [SerializeField] public float dotDamage;
@@ -43,7 +43,6 @@ public class FireGun : Weapon
         Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
-
     }
 
     private void Update()
@@ -179,8 +178,6 @@ public class FireGun : Weapon
 
             Vector3 explosionPosition = new Vector3(2.5f, 0.25f, 0f);
             Instantiate(explosionPrefab, explosionPosition, Quaternion.identity);
-
-            
         }
     }
 

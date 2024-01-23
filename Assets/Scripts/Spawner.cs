@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using TMPro;
 using UnityEngine.UI;
 
-public class TempSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private Slider UpgradeSlider;
     [SerializeField] private List<Enemy> enemyPrefabs;
@@ -78,7 +78,7 @@ public class TempSpawner : MonoBehaviour
                 }
                 else
                 {
-                    SpawnEnemy(4, forBigMinY, forBigMaxY); //BOSS
+                    SpawnEnemy(3, forBigMinY, forBigMaxY); //BOSS
                     isGolemSpawned = true;
                     currentEnemies++;
                     _elapsedTime = 0;
@@ -108,7 +108,6 @@ public class TempSpawner : MonoBehaviour
     {
         panel.gameObject.SetActive(true);
         Time.timeScale = 0;
-        Debug.Log("Ready");
     }
 
     public void IncreaseEnemyPower()
@@ -133,7 +132,6 @@ public class TempSpawner : MonoBehaviour
                 maxEnemies++;
             }
         }
-
     }
 
     private void SpawnEnemy(int number, float minY, float maxY)
@@ -144,7 +142,7 @@ public class TempSpawner : MonoBehaviour
         Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
     }
 
-    private GameObject GetPrefabByNumber(string tag)
+    private GameObject GetPrefabByTag(string tag)
     {
         foreach (Enemy prefab in enemyPrefabs)
         {

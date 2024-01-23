@@ -33,10 +33,10 @@ RectTransform:
   - {fileID: 6437357650760292312}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 314, y: -2.1100277e-10}
-  m_SizeDelta: {x: 401.984, y: 401.984}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6244875705121735692
 MonoBehaviour:
@@ -69,6 +69,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mortar: {fileID: 0}
   crossbow: {fileID: 0}
+  wall: {fileID: 0}
+  enemy: {fileID: 0}
+  HPnow: {fileID: 0}
+  HPafter: {fileID: 0}
+  HP: 0
 --- !u!1 &4189309129308265108
 GameObject:
   m_ObjectHideFlags: 0

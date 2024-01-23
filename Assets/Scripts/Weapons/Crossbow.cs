@@ -11,7 +11,6 @@ public class Crossbow : Weapon
     public SkillManager skillsManager;
 
     [HideInInspector] public Vector3 target;
-    [SerializeField] public ParticleSystem cold;
     //GameObject sentProjectile;
     //bool isSentProjectileDropped = true;
 
@@ -20,8 +19,6 @@ public class Crossbow : Weapon
     [SerializeField] public float projectileSpeed = 10f;
     [SerializeField] float reloadTime = 2f;
     [SerializeField] public int blessingForCrossbow;
-    [SerializeField] public GameObject coldProjectile;
-    [SerializeField] public GameObject poisonProjectile;
 
     [SerializeField] GameObject superProjectile;
     [SerializeField] SpriteRenderer spriteRenderer;
@@ -117,10 +114,6 @@ public class Crossbow : Weapon
             isSuperPowerActivated = false;
             StartCoroutine(Cooldown());
         }
-        if (skillsManager.ColdArrow)
-        {
-            cold.Play();
-        }
     }
 
     public void Shoot(bool isCoroutine = false)
@@ -169,21 +162,12 @@ public class Crossbow : Weapon
             CreateProjectile(projectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
         }
 
-        if (skillsManager.ColdArrow)
-        {
-            CreateProjectile(coldProjectile, ProjectileForCold.position, projectileSpawnerTransform.rotation);
-        }
-
         isReloading = true;
         StartCoroutine(Reload());
 
         if (skillsManager.PhantomArrow && !isCoroutine)
         {
             StartCoroutine(PhantomArrowShoot());
-        }
-        if (skillsManager.PoisonArrow)
-        {
-            CreateProjectile(poisonProjectile, ProjectileForPoison.position, projectileSpawnerTransform.rotation);
         }
 
         OnBallistaDefaultShot?.Invoke();

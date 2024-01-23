@@ -21,9 +21,6 @@ public class Mortar : Weapon
         [SerializeField] GameObject superProjectile;
         [SerializeField] GameObject smallProjectile;
         [SerializeField] GameObject BigProjectile;
-        [SerializeField] GameObject ColdProjectile;
-        [SerializeField] GameObject poisonProjectile;
-        [SerializeField] ParticleSystem Cold;
 
         [SerializeField] float coolDownTime;
         [SerializeField] int superShootsCount = 3;
@@ -136,7 +133,6 @@ public class Mortar : Weapon
         {
             return;
         }
-
         else if (skillsManager.bigYadroEnable)
         {
             GameObject.Instantiate(BigProjectile, projectileSpawnerTransform.position, transform.rotation);
@@ -147,22 +143,12 @@ public class Mortar : Weapon
             GameObject.Instantiate(smallProjectile, projectileSpawnerTransform.position, transform.rotation);
             isReloading = true;
         }
-        else if(skillsManager.ColdYadro)
-        {
-            GameObject.Instantiate(ColdProjectile, projectileSpawnerTransform.position, transform.rotation);
-            Cold.Play();
-            isReloading = true;
-        }
         else
         {
             GameObject.Instantiate(projectile, projectileSpawnerTransform.position, transform.rotation);
             isReloading = true;
         }
-        if(skillsManager.PoisonYadro)
-        {
-            GameObject.Instantiate(poisonProjectile, projectileSpawnerTransform.position, transform.rotation);
-            isReloading = true;
-        }
+        
 
         OnMortarShot?.Invoke();
 

@@ -211,20 +211,18 @@ MonoBehaviour:
   skillManager: {fileID: 0}
   burning: {fileID: 5061619539809214748}
   burn: {fileID: 2942033018431149891}
+  time: 0
   isAttacking: 0
   isAttracted: 0
+  StaggerDamage: 0
+  countHit: 0
   maxHealth: 25
   health: 0
   speed: 1
   damage: 3
   weight: 1
   attackCooldown: 0.2
-  score: 10
-  gameManager: {fileID: 0}
-  enemySpawner: {fileID: 0}
-  walkAnimationClip: {fileID: 7400000, guid: bdcd5bb6b061b7042ac2b9bcbf623705, type: 2}
   coinsForDestroy: 1
-  persentCount: 0
   animator: {fileID: 0}
   armor: 5
   arrowDamageResist: 0

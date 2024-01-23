@@ -4890,8 +4890,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 877477754979023433}
   - {fileID: 2406319517412999862}
+  - {fileID: 877477754979023433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7223831912674187993
@@ -4921,6 +4921,7 @@ MonoBehaviour:
   smallProjectile: {fileID: 2636280917176346884, guid: de28007f8bb6ac646997e2fff3201d30, type: 3}
   BigProjectile: {fileID: 8795174540069309325, guid: 81eba327b021f0049ad40521622d7099, type: 3}
   ColdProjectile: {fileID: 0}
+  poisonProjectile: {fileID: 0}
   Cold: {fileID: 460076793823857240}
   coolDownTime: 6
   superShootsCount: 1

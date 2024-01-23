@@ -20,6 +20,9 @@ TagManager:
   - TapIgnoreArea
   - Weapon
   - SkillManager
+  - Burning
+  - SkillPanel
+  - Thorns
   layers:
   - Default
   - TransparentFX
