@@ -4,19 +4,55 @@ using UnityEngine;
 
 public class BorderScript : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        // Check if the other collider has a Rigidbody2D component
         if (other.CompareTag("Enemy"))
         {
-            // Calculate the direction from this object to the other object
-            Vector2 pushDirection = other.transform.position - transform.position;
-            pushDirection.Normalize();
+            StartCoroutine(KnockbackEnemeis());
+        }
+    }
 
-            // Set a force to push the other object away
-            float pushForce = 5f; // Adjust the force as needed
-            Rigidbody2D otherRigidbody = other.GetComponent<Rigidbody2D>();
-            otherRigidbody.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+    public IEnumerator KnockbackEnemeis()
+    {
+        ContactFilter2D filter2D = new ContactFilter2D().NoFilter();
+        List<Collider2D> hitColliders = new List<Collider2D>();
+        GetComponent<BoxCollider2D>().OverlapCollider(filter2D, hitColliders);
+        List<Enemy> enemies = new List<Enemy>();
+
+        foreach (var hitCollider in hitColliders)
+        {
+            if (hitCollider.GetComponent<Enemy>() != null)
+            {
+                enemies.Add(hitCollider.GetComponent<Enemy>());
+            }
+        }
+
+        foreach (Enemy enemy in enemies)
+        {
+            enemy.GetComponent<Enemy>().speed = 0;
+
+            Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                Vector2 direction = enemy.transform.position - transform.position;
+                rb.AddForce(direction * 5f, ForceMode2D.Impulse);
+            }
+        }
+
+        yield return new WaitForSeconds(0.05F);
+
+        foreach (Enemy enemy in enemies)
+        {
+            enemy.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            if (enemy.GetComponent<ShieldEnemy>() != null)
+            {
+                enemy.GetComponent<Enemy>().speed = 0.5F;
+            }
+            else
+            {
+                enemy.GetComponent<Enemy>().speed = 1;
+            }
         }
     }
 }

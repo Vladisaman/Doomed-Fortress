@@ -15,7 +15,7 @@ public class Mortar : Weapon
         [Space]
         [Header("----------PROPERTIES----------")]
         [SerializeField] public float projectileSpeed = 10f;
-        [SerializeField] float reloadTime = 2f;
+        [SerializeField] public float reloadTime = 1f;
         [SerializeField] public int blessing;
 
         [SerializeField] GameObject superProjectile;

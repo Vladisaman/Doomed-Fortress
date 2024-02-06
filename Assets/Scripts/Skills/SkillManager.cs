@@ -27,7 +27,6 @@ public class SkillManager : MonoBehaviour
     public bool bigYadroEnable;
     public bool smallYadroEnable;
     public bool knockbackCannonball;
-    public bool suckingCannonball;
     public bool holyBomb;
     public bool cursedBomb;
     public bool fireBomb;

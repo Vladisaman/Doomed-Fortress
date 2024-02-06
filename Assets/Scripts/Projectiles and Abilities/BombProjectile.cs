@@ -80,11 +80,6 @@ public class BombProjectile : Projectile
                 StartCoroutine(KnockbackEnemeis());
             }
 
-            if (skillManager.suckingCannonball == true)
-            {
-                StartCoroutine(SuckEnemies());
-            }
-
             if (skillManager.cursedBomb)
             {
                 Instantiate(cursedAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity).GetComponent<CursedAoeScript>().FollowedObject = enemy.transform;
@@ -124,51 +119,6 @@ public class BombProjectile : Projectile
             if (rb != null)
             {
                 Vector2 direction = enemy.transform.position - transform.position;
-                rb.AddForce(direction.normalized * 2.5f, ForceMode2D.Impulse);
-            }
-        }
-
-        yield return new WaitForSeconds(0.25F);
-
-        foreach (Enemy enemy in enemies)
-        {
-            enemy.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-            if (enemy.GetComponent<ShieldEnemy>() != null)
-            {
-                enemy.GetComponent<Enemy>().speed = 0.5F;
-            }
-            else
-            {
-                enemy.GetComponent<Enemy>().speed = 1;
-            }
-        }
-    }
-
-    public IEnumerator SuckEnemies()
-    {
-        ContactFilter2D filter2D = new ContactFilter2D().NoFilter();
-        List<Collider2D> hitColliders = new List<Collider2D>();
-        GetComponent<CircleCollider2D>().OverlapCollider(filter2D, hitColliders);
-        List<Enemy> enemies = new List<Enemy>();
-        foreach (var hitCollider in hitColliders)
-        {
-            if (hitCollider.GetComponent<Enemy>() != null)
-            {
-                enemies.Add(hitCollider.GetComponent<Enemy>());
-            }
-        }
-
-        GetComponent<CircleCollider2D>().enabled = false;
-
-        foreach (Enemy enemy in enemies)
-        {
-            enemy.GetComponent<Enemy>().speed = 0;
-
-            Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                Vector2 direction =  transform.position - enemy.transform.position;
                 rb.AddForce(direction.normalized * 2.5f, ForceMode2D.Impulse);
             }
         }

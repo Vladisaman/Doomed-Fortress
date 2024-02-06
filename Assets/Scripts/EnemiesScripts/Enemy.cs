@@ -247,6 +247,11 @@ public abstract class Enemy : MonoBehaviour
     
     public virtual void Die()
     {
+        if (skillManager.Vampirism)
+        {
+
+        }
+
         isAlive = false;
         animator.SetBool("IsDead", true);
         Destroy(gameObject, 3);
@@ -288,6 +293,7 @@ public abstract class Enemy : MonoBehaviour
                 health -= 2 * Time.deltaTime;
             }
         }
+
         healthBar.value = health;
 
         if(skillManager.BlackFire)

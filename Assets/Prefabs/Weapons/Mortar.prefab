@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &877477754979023433
 Transform:
   m_ObjectHideFlags: 0
@@ -4870,6 +4870,7 @@ GameObject:
   - component: {fileID: 750759449676566190}
   - component: {fileID: 7223831912674187993}
   - component: {fileID: 3744219403658576731}
+  - component: {fileID: 7930033523057679937}
   m_Layer: 3
   m_Name: Mortar
   m_TagString: Weapon
@@ -4920,9 +4921,6 @@ MonoBehaviour:
   superProjectile: {fileID: 4972140678034856437, guid: daccb1cae4864794a9854973fe02d6f0, type: 3}
   smallProjectile: {fileID: 2636280917176346884, guid: de28007f8bb6ac646997e2fff3201d30, type: 3}
   BigProjectile: {fileID: 8795174540069309325, guid: 81eba327b021f0049ad40521622d7099, type: 3}
-  ColdProjectile: {fileID: 0}
-  poisonProjectile: {fileID: 0}
-  Cold: {fileID: 460076793823857240}
   coolDownTime: 6
   superShootsCount: 1
   superProjectileSpeed: 10
@@ -4984,3 +4982,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7930033523057679937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8335681714311024045}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.2457142, y: 2.08}
+    newSize: {x: 3.93, y: 3.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2457142, y: 2.08}
+  m_EdgeRadius: 0

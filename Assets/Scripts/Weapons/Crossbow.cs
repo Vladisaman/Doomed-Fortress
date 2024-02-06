@@ -17,7 +17,7 @@ public class Crossbow : Weapon
     [Space]
     [Header("----------PROPERTIES----------")]
     [SerializeField] public float projectileSpeed = 10f;
-    [SerializeField] float reloadTime = 2f;
+    [SerializeField] public float reloadTime = 0.7f;
     [SerializeField] public int blessingForCrossbow;
 
     [SerializeField] GameObject superProjectile;
@@ -163,11 +163,15 @@ public class Crossbow : Weapon
             CreateProjectile(projectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
         }
 
-        isReloading = true;
-        StartCoroutine(Reload());
+        if (!isCoroutine)
+        {
+            isReloading = true;
+            StartCoroutine(Reload());
+        }
 
         if (skillsManager.PhantomArrow && !isCoroutine)
         {
+            
             StartCoroutine(PhantomArrowShoot());
         }
 
