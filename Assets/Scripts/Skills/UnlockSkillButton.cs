@@ -14,7 +14,6 @@ namespace Assets
         public Mortar mortar;
         public Crossbow crossbow;
         public WallBehavior wall;
-        public Enemy enemy;
 
         private void Awake()
         {
@@ -23,6 +22,7 @@ namespace Assets
             crossbow = GameObject.Find("Crossbow").GetComponent<Crossbow>();
             wall = GameObject.Find("Wall").GetComponent<WallBehavior>();
         }
+
         public void UnlockDoubleShotForCrossbow()
         {
             skillManager.crossbowCanDoubleShot = true;

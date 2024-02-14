@@ -373,8 +373,9 @@ public abstract class Enemy : MonoBehaviour
 
     public void IncreasePower()
     {
-        maxHealth += 5 * Spawner.WaveNumber;
-        damage += 5 * Spawner.WaveNumber;
+        maxHealth += 0.25f * Spawner.WaveNumber;
+        damage += 0.25f * Spawner.WaveNumber;
+        coinsForDestroy += Spawner.WaveNumber * 5;
     }
 }
 

@@ -33,9 +33,10 @@ public class FireGun : Weapon
     [SerializeField] private FiregunAbilityButton abilityButton;
     [SerializeField] private GameObject explosionPrefab;
 
-    [Header("----------UPGRADING----------")]
-    [SerializeField] private int currentDamageLevel;
-    [SerializeField] public float damage;
+    private void Awake()
+    {
+        dotDamage = projectileDamage * 0.05F;
+    }
 
     public override void Aim()
     {
@@ -139,14 +140,14 @@ public class FireGun : Weapon
         if (enemy != null) {
             if (collision.tag == "Enemy With Shield") {
                 if (collision.GetComponent<ShieldEnemy>().isShieldAlive == false) {
-                    collision.GetComponent<ShieldEnemy>().TakeDamage(damage * Time.fixedDeltaTime, NAME_OF_WEAPON);
+                    collision.GetComponent<ShieldEnemy>().TakeDamage(projectileDamage * Time.fixedDeltaTime, NAME_OF_WEAPON);
 
                     if (!collision.GetComponent<FireDot>()) {
                         collision.gameObject.AddComponent<FireDot>();
                     }
                 }
             } else {
-                collision.GetComponent<Enemy>().TakeDamage(damage * Time.fixedDeltaTime, NAME_OF_WEAPON);
+                collision.GetComponent<Enemy>().TakeDamage(projectileDamage * Time.fixedDeltaTime, NAME_OF_WEAPON);
 
                 if (!collision.GetComponent<FireDot>()) {
                     collision.gameObject.AddComponent<FireDot>();
@@ -183,21 +184,14 @@ public class FireGun : Weapon
 
     public void SetDamage(float newDamage)
     {
-        damage = newDamage;
+        projectileDamage = newDamage;
     }
 
     public void HandleUpgrading(float newDamage, int newLevel)
     {
         currentDamageLevel = newLevel;
-        damage = newDamage;
-        dotDamage = damage * 0.05F;
-    }
-
-    public void UpgradeDamageLevel()
-    {
-        currentDamageLevel++;
-        damage += damage * 0.25F * currentDamageLevel;
-        dotDamage = damage * 0.05F;
+        projectileDamage = newDamage;
+        dotDamage = projectileDamage * 0.05F;
     }
 
     public int GetCurrentDamageLevel()
@@ -207,11 +201,16 @@ public class FireGun : Weapon
 
     public float GetCurrentDamage()
     {
-        return damage;
+        return projectileDamage;
     }
 
     public float GetCurrentDotDamage()
     {
         return dotDamage;
+    }
+
+    private void OnDisable()
+    {
+        dotDamage = projectileDamage * 0.05F;
     }
 }

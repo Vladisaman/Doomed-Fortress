@@ -7,37 +7,39 @@ public class SetupScript : MonoBehaviour
     [SerializeField] UpgradesMailmanSO mailman;
     [SerializeField] ShopUI shop;
 
-    private void Awake()
+    private void Start()
     {
         Setup();
     }
 
     public void Setup()
     {
-        mailman.CrossbowDamageLevel = PlayerPrefs.GetInt("CrossbowLevel", 1);
-        mailman.MortarDamageLevel = PlayerPrefs.GetInt("MortarLevel", 1);
-        mailman.FlamethrowerDamageLevel = PlayerPrefs.GetInt("FiregunLevel", 1);
+        if (System.IO.File.Exists(CurrencyManager.filePath) == false)
+        {
+            PlayerData data = new PlayerData(8, 10, 1, 9, 10, 1, 7, 10, 1);
+            string jayson = JsonUtility.ToJson(data);
+            System.IO.File.WriteAllText(CurrencyManager.filePath, jayson);
+            Debug.Log("BALLS");
+        }
+
+        string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
+        PlayerData playerData = JsonUtility.FromJson<PlayerData>(json);
+
+        mailman.CrossbowDamageLevel = playerData.crossbowLevel == 0 ? 1 : playerData.crossbowLevel;
+        mailman.MortarDamageLevel = playerData.mortarLevel == 0 ? 1 : playerData.mortarLevel;
+        mailman.FiregunDamageLevel = playerData.firegunLevel == 0 ? 1 : playerData.firegunLevel;
+
+        mailman.CrossbowDamage = playerData.crossbowDamage == 0 ? 8 : playerData.crossbowDamage;
+        mailman.MortarDamage = playerData.mortarDamage == 0 ? 9 : playerData.mortarDamage;
+        mailman.FiregunDamage = playerData.firegunDamage == 0 ? 7 : playerData.firegunDamage;
                   
-        mailman.CrossbowDamage = PlayerPrefs.GetFloat("CrossbowDamage", 8);
-        mailman.MortarDamage = PlayerPrefs.GetFloat("MortarDamage", 9);
-        mailman.FlamethrowerDamage = PlayerPrefs.GetFloat("FiregunDamage", 7);
-                  
-        shop.SetPrices(PlayerPrefs.GetInt("CrossbowCost", 10), PlayerPrefs.GetInt("MortarCost", 10), PlayerPrefs.GetInt("FiregunCost", 10));
+        shop.SetPrices(playerData.crossbowCost, playerData.mortarCost, playerData.firegunCost);
 
         mailman.isCrossbowAbilityBought = PlayerPrefs.GetInt("CrossbowAbility", 0) == 1? true : false;
         mailman.isMortarAbilityBought = PlayerPrefs.GetInt("MortarAbility", 0) == 1 ? true : false;
         mailman.isFireGunAbilityBought = PlayerPrefs.GetInt("FiregunAbility", 0) == 1 ? true : false;
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        json = JsonUtility.ToJson(playerData);
+        System.IO.File.WriteAllText(CurrencyManager.filePath, json);
     }
 }

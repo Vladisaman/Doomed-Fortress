@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
 
         topGunObj.GetComponent<Mortar>().HandleUpgrading(upgradesMailman.MortarDamage, upgradesMailman.MortarDamageLevel);
         midGunObj.GetComponent<Crossbow>().HandleUpgrading(upgradesMailman.CrossbowDamage, upgradesMailman.CrossbowDamageLevel);
-        botGunObj.GetComponent<FireGun>().HandleUpgrading(upgradesMailman.FlamethrowerDamage, upgradesMailman.FlamethrowerDamageLevel);
+        botGunObj.GetComponent<FireGun>().HandleUpgrading(upgradesMailman.FiregunDamage, upgradesMailman.FiregunDamageLevel);
         CheckBallistaSkill(upgradesMailman.isCrossbowAbilityBought);
         CheckFiregunSkill(upgradesMailman.isFireGunAbilityBought);
         CheckMortarSkill(upgradesMailman.isMortarAbilityBought);
@@ -183,5 +183,56 @@ public class Player : MonoBehaviour
     {
         hasMortarAbility = isActive;
         mortarAbility.SetActive(isActive);
+    }
+}
+
+[System.Serializable]
+public class PlayerData
+{
+    public float crossbowDamage;
+    public int crossbowCost;
+    public int crossbowLevel;
+
+    public float mortarDamage;
+    public int mortarCost;
+    public int mortarLevel;
+
+    public float firegunDamage;
+    public int firegunCost;
+    public int firegunLevel;
+
+    //public int crossbowUltLevel;
+    //public int mortarUltLevel;
+    //public int firegunUltLevel;
+
+    public int skillAmount;
+    public int waveNumber;
+
+    public PlayerData(float cD, int cC, int cL, float mD, int mC, int mL, float fD, int fC, int fL, int sA = 0, int wN = 1)
+    {
+        crossbowDamage = cD;
+        crossbowCost = cC;
+        crossbowLevel = cL;
+
+        mortarDamage = mD;
+        mortarCost = mC;
+        mortarLevel = mL;
+
+        firegunDamage = fD;
+        firegunCost = fC;
+        firegunLevel = fL;
+
+        skillAmount = 0;
+        waveNumber = 1;
+    }
+
+    public void increaseSkillAmount()
+    {
+        skillAmount += 1;
+    }
+
+    public void setWaveNumber(int wN)
+    {
+        waveNumber = wN;
     }
 }

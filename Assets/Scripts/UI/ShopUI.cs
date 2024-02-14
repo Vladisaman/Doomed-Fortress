@@ -68,7 +68,7 @@ public class ShopUI : MonoBehaviour
 
         mortar.HandleUpgrading(upgradesMailman.MortarDamage, upgradesMailman.MortarDamageLevel);
         crossbow.HandleUpgrading(upgradesMailman.CrossbowDamage, upgradesMailman.CrossbowDamageLevel);
-        firegun.HandleUpgrading(upgradesMailman.FlamethrowerDamage, upgradesMailman.FlamethrowerDamageLevel);
+        firegun.HandleUpgrading(upgradesMailman.FiregunDamage, upgradesMailman.FiregunDamageLevel);
 
         //firegunDamagePrice = 10;
         //crossbowDamagePrice = 10;
@@ -115,7 +115,7 @@ public class ShopUI : MonoBehaviour
             {
                 _currencyManager.SpendCoins(firegunDamagePrice);
                 firegun.UpgradeDamageLevel();
-                firegunDamagePrice += 2 * firegun.GetCurrentDamageLevel();
+                firegunDamagePrice += 10 * (firegun.GetCurrentDamageLevel() + 1);
                 UpdateEverything();
             }
             else
@@ -130,7 +130,7 @@ public class ShopUI : MonoBehaviour
             {
                 _currencyManager.SpendCoins(crossbowDamagePrice);
                 crossbow.UpgradeDamageLevel();
-                crossbowDamagePrice += 2 * crossbow.GetCurrentDamageLevel();
+                crossbowDamagePrice += 10 * (crossbow.GetCurrentDamageLevel() + 1);
                 UpdateEverything();
             }
             else
@@ -145,7 +145,7 @@ public class ShopUI : MonoBehaviour
             {
                 _currencyManager.SpendCoins(mortarDamagePrice);
                 mortar.UpgradeDamageLevel();
-                mortarDamagePrice += 2 * mortar.GetCurrentDamageLevel();
+                mortarDamagePrice += 10 * (mortar.GetCurrentDamageLevel() + 1);
                 UpdateEverything();
             }
             else
@@ -234,25 +234,27 @@ public class ShopUI : MonoBehaviour
 
     private void OnDisable()
     {
+        string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
+        PlayerData oldData = JsonUtility.FromJson<PlayerData>(json);
+
+        PlayerData data = new PlayerData(
+            crossbow.GetCurrentDamage(), crossbowDamagePrice, crossbow.GetCurrentDamageLevel(), 
+            mortar.GetCurrentDamage(), mortarDamagePrice, mortar.GetCurrentDamageLevel(),
+            firegun.GetCurrentDamage(), firegunDamagePrice, firegun.GetCurrentDamageLevel(), 
+            oldData.skillAmount, oldData.waveNumber
+            );
+
+        json = JsonUtility.ToJson(data);
+        System.IO.File.WriteAllText(CurrencyManager.filePath, json);
+
+
         upgradesMailman.CrossbowDamageLevel = crossbow.GetCurrentDamageLevel();
         upgradesMailman.MortarDamageLevel = mortar.GetCurrentDamageLevel();
-        upgradesMailman.FlamethrowerDamageLevel = firegun.GetCurrentDamageLevel();
+        upgradesMailman.FiregunDamageLevel = firegun.GetCurrentDamageLevel();
 
         upgradesMailman.CrossbowDamage = crossbow.GetCurrentDamage();
         upgradesMailman.MortarDamage = mortar.GetCurrentDamage();
-        upgradesMailman.FlamethrowerDamage = firegun.GetCurrentDamage();
-
-        PlayerPrefs.SetInt("CrossbowLevel", crossbow.GetCurrentDamageLevel());
-        PlayerPrefs.SetInt("MortarLevel", mortar.GetCurrentDamageLevel());
-        PlayerPrefs.SetInt("FiregunLevel", firegun.GetCurrentDamageLevel());
-
-        PlayerPrefs.SetFloat("CrossbowDamage", crossbow.GetCurrentDamage());
-        PlayerPrefs.SetFloat("MortarDamage", mortar.GetCurrentDamage());
-        PlayerPrefs.SetFloat("FiregunDamage", firegun.GetCurrentDamage());
-
-        PlayerPrefs.SetInt("CrossbowCost", crossbowDamagePrice);
-        PlayerPrefs.SetInt("MortarCost", mortarDamagePrice);
-        PlayerPrefs.SetInt("FiregunCost", firegunDamagePrice);
+        upgradesMailman.FiregunDamage = firegun.GetCurrentDamage();
 
         PlayerPrefs.SetInt("CrossbowAbility", upgradesMailman.isCrossbowAbilityBought ? 1 : 2);
         PlayerPrefs.SetInt("MortarAbility", upgradesMailman.isMortarAbilityBought ? 1 : 2);

@@ -30,12 +30,7 @@ public class Crossbow : Weapon
     [SerializeField] private CrossbowAbilityButton abilityButton;
 
     bool isReloading = false;
-    bool isCoroutineShoot = false;
     bool isSuperPowerActivated = false;
-
-    [Header("----------UPGRADING----------")]
-    [SerializeField] private int currentDamageLevel;
-    [SerializeField] public float projectileDamage;
 
     [SerializeField] private Transform ProjectileForCold;
     [SerializeField] private Transform ProjectileForPoison;
@@ -289,12 +284,6 @@ public class Crossbow : Weapon
     {
         currentDamageLevel = newLevel;
         projectileDamage = newDamage;
-    }
-
-    public void UpgradeDamageLevel()
-    {
-        currentDamageLevel++;
-        projectileDamage += projectileDamage * 0.25F * currentDamageLevel;
     }
 
     public int GetCurrentDamageLevel()

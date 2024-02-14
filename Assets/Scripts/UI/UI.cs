@@ -96,5 +96,7 @@ public class UI : MonoBehaviour
     public void DeleteAll()
     {
         PlayerPrefs.DeleteAll();
+
+        System.IO.File.Delete(CurrencyManager.filePath);
     }
 }

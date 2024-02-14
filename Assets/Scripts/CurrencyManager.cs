@@ -17,8 +17,16 @@ public class CurrencyManager : MonoBehaviour
 
     private DateTime SessionTimeMetric;
 
+    public static PlayerData playerData;
+    public static string filePath;
+
     private void Awake()
     {
+        filePath = System.IO.Path.Combine(Application.persistentDataPath, "playerData.json");
+        string json = System.IO.File.ReadAllText(filePath);
+        PlayerData playerData = JsonUtility.FromJson<PlayerData>(json);
+
+
         SessionTimeMetric = DateTime.Now;
 
         //_energyTextUpdated = FindObjectOfType<EnergyTextUpdater>();

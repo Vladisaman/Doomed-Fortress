@@ -30,13 +30,21 @@ public class Spawner : MonoBehaviour
     private int enemyKillCount;
     private bool isWaiting;
 
+    public static PlayerData playerData;
+
+    private void Awake()
+    {
+        string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
+        playerData = JsonUtility.FromJson<PlayerData>(json);
+    }
+
     private void Start()
     {
         _elapsedTime = nextSpawnTime;
         isWaiting = false;
-        if (PlayerPrefs.GetInt("WaveNumber") > 1)
+        if (playerData.waveNumber > 1)
         {
-            WaveNumber = PlayerPrefs.GetInt("WaveNumber");
+            WaveNumber = playerData.waveNumber;
             IncreaseEnemyPower(WaveNumber);
         }
 
@@ -107,6 +115,7 @@ public class Spawner : MonoBehaviour
             if (enemyKillCount >= enemiesKillCountToOpenPanel)
             {
                 ShowAbilityPanel();
+                playerData.increaseSkillAmount();
                 enemyKillCount = 0;
                 UpgradeSlider.value = enemyKillCount;
             }
@@ -181,7 +190,7 @@ public class Spawner : MonoBehaviour
 
         if(WaveNumber % 5 == 0)
         {
-            PlayerPrefs.SetInt("WaveNumber", WaveNumber);
+            playerData.setWaveNumber(WaveNumber);
             maxEnemies++;
         }
 
@@ -195,5 +204,11 @@ public class Spawner : MonoBehaviour
     {
         yield return new WaitForSeconds(3.0F);
         isWaiting = false;
+    }
+
+    private void OnDestroy()
+    {
+        string json = JsonUtility.ToJson(playerData);
+        System.IO.File.WriteAllText(CurrencyManager.filePath, json);
     }
 }

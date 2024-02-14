@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class UpgradesMailmanSO : ScriptableObject
 {
-    public int FlamethrowerDamageLevel;
-    public float FlamethrowerDamage;
+    public int FiregunDamageLevel;
+    public float FiregunDamage;
 
     public int CrossbowDamageLevel;
     public float CrossbowDamage;

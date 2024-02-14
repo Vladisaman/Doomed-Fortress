@@ -12,7 +12,7 @@ public abstract class Weapon : MonoBehaviour
 
     [SerializeField] public Transform projectileSpawnerTransform;
     [SerializeField] private List<SkillButton> skill;
-    
+
     public abstract void Aim();
 
     public abstract void Shoot();
@@ -23,6 +23,9 @@ public abstract class Weapon : MonoBehaviour
 
     [Range(1, 2)]
     [SerializeField] protected float buttonScale;
+    [SerializeField] public int currentDamageLevel;
+    [SerializeField] public float projectileDamage;
+
 
     private void Start()
     {
@@ -34,7 +37,7 @@ public abstract class Weapon : MonoBehaviour
 
         projectileSpawnerTransform = gameObject.transform.GetChild(0);
     }
- 
+
     public void CrosshairUnHide()
     {
         crosshair.GetComponent<Renderer>().enabled = true;
@@ -48,5 +51,11 @@ public abstract class Weapon : MonoBehaviour
     public void Crosshair()
     {
         crosshair.transform.position = new Vector3(Mathf.Clamp(Utils.GetMouseWorldPosition().x, -4.84f, 10f), Mathf.Clamp(Utils.GetMouseWorldPosition().y, -4.5f, 4.5f), 0);
+    }
+
+    public void UpgradeDamageLevel()
+    {
+        currentDamageLevel++;
+        projectileDamage += 0.5F * currentDamageLevel;
     }
 }
