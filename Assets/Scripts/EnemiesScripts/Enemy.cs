@@ -22,15 +22,13 @@ public abstract class Enemy : MonoBehaviour
     [Space]
     [Header("----------PROPERTIES----------")]
     [SerializeField] public float StaggerDamage = 0f;
-    [SerializeField] public int countHit;
     [SerializeField] public float maxHealth;
     [SerializeField] public float health;
     [SerializeField] public float speed = 0.5f;
     [SerializeField] public float damage;
-    [SerializeField] public int weight;
     [SerializeField] protected float attackCooldown = 2f;
     [SerializeField] private int coinsForDestroy;
-    [SerializeField] protected Animator animator;
+    protected Animator animator;
 
     [Header("----------DAMAGE RESIST----------")]
     [SerializeField] public float armor;
@@ -45,7 +43,8 @@ public abstract class Enemy : MonoBehaviour
 
     private Coroutine Slow;
     private Coroutine Stun;
-    private float Stagger;
+    //private float Stagger;
+    private int PoisonStacks;
     private int SlowStacks;
 
     float DefaultSpeed;
@@ -78,8 +77,8 @@ public abstract class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         DefaultSpeed = speed;
 
-        StartCoroutine(PoisonDamage());
-        Stagger = 0;
+        //StartCoroutine(PoisonDamage());
+        //Stagger = 0;
         SlowStacks = 0;
     }
 
@@ -191,19 +190,26 @@ public abstract class Enemy : MonoBehaviour
                 break;
         }
 
+        if (health <= 0 && weaponName == "BALLISTA" && skillManager.Vampirism)
+        {
+            wall._health += wall.maxhealth * 0.05f;
+        }
+
         actualDamage = weaponDamage * currentDamageResist;
         health -= actualDamage;
         healthBar.value = health;
 
-        if (skillManager.PoisonArrow && weaponName == "BALLISTA")
+        if ((skillManager.PoisonArrow && weaponName == "BALLISTA") || (skillManager.PoisonYadro && weaponName == "MORTAR"))
         {
-            Stagger += actualDamage * 0.2f;
+            //Stagger += actualDamage * 0.2f;
+            PoisonStacks++;
+            if(PoisonStacks >= 3)
+            {
+                PoisonStacks = 0;
+                TakeDamage(5.0f);
+            }
         }
-        if (skillManager.PoisonYadro && weaponName == "MORTAR")
-        {
-            Stagger += actualDamage * 0.2f;
-        }
-        if (skillManager.ColdArrow && weaponName == "BALLISTA")
+        if(skillManager.ColdArrow && weaponName == "BALLISTA")
         {
             SlowStacks += 1;
             if (Slow != null)
@@ -244,14 +250,9 @@ public abstract class Enemy : MonoBehaviour
             }
         }
     }
-    
+
     public virtual void Die()
     {
-        if (skillManager.Vampirism)
-        {
-
-        }
-
         isAlive = false;
         animator.SetBool("IsDead", true);
         Destroy(gameObject, 3);
@@ -342,25 +343,25 @@ public abstract class Enemy : MonoBehaviour
         speed = DefaultSpeed;
     }
 
-    public IEnumerator PoisonDamage()
-    {
-        while (isAlive)
-        {
-            yield return new WaitForSeconds(0.5f);
-            if (Stagger > 0.5f)
-            {
-                TakeDamage(Stagger % 10f);
-                Stagger -= Stagger % 10f;
-                healthBar.GetComponent<Image>().color = Color.green;
-            }
-            else
-            {
-                TakeDamage(Stagger);
-                Stagger = 0;
-                healthBar.GetComponent<Image>().color = new Color(255, 0, 0);
-            }
-        }
-    }
+    //public IEnumerator PoisonDamage()
+    //{
+    //    while (isAlive)
+    //    {
+    //        yield return new WaitForSeconds(0.5f);
+    //        if (Stagger > 0.5f)
+    //        {
+    //            TakeDamage(Stagger % 10f);
+    //            Stagger -= Stagger % 10f;
+    //            healthBar.GetComponent<Image>().color = Color.green;
+    //        }
+    //        else
+    //        {
+    //            TakeDamage(Stagger);
+    //            Stagger = 0;
+    //            healthBar.GetComponent<Image>().color = new Color(255, 0, 0);
+    //        }
+    //    }
+    //}
 
     public virtual void Attack()
     {

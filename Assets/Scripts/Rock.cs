@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Rock : MonoBehaviour
 {
+    [SerializeField] Sprite[] sprites;
     public Transform target;
     public float speed = 5f;
     [SerializeField] protected GameObject _wall;
@@ -11,6 +12,8 @@ public class Rock : MonoBehaviour
 
     private void Awake()
     {
+        GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0,3)];
+
         target = FindObjectOfType<WallBehavior>().transform;
         _wall = FindObjectOfType<WallBehavior>().gameObject;
     }

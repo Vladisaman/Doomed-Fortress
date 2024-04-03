@@ -48,7 +48,7 @@ public class Mortar : Weapon
 
     private void Update()
     {
-        if (playerScript.activeGun == Player.Weapon.Mortar)
+        if (playerScript.activeGun == Player.Weapon.Mortar && !isFrozen)
         {
             abilityButtonUI.transform.localScale = new Vector3(buttonScale, buttonScale, 1);
 

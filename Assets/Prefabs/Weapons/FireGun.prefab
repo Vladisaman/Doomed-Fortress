@@ -41,6 +41,7 @@ Transform:
   - {fileID: 9126141171813629735}
   - {fileID: 6405790017090169192}
   - {fileID: 5559873444841606599}
+  - {fileID: 419464043749376062}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3675721799222994631
@@ -57,7 +58,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crosshair: {fileID: 0}
   projectile: {fileID: 0}
-  projectileSpawnerTransform: {fileID: 0}
+  projectileSpawnerTransform: {fileID: 419464043749376062}
   skill: []
   abilityButtonUI: {fileID: 0}
   buttonScale: 1.3
@@ -76,11 +77,12 @@ MonoBehaviour:
   dotDamage: 2
   dotTicks: 5
   dotDelay: 1
-  percentOfSmallEnemies: 100
-  percentOfBigEnemies: 80
+  SuperProjectile: {fileID: 8087183071419443934, guid: 011ff2092e973a0449c57d44df4f25af, type: 3}
+  superProjectileSpeed: 10
   abilityCooldown: 6
   abilityButton: {fileID: 0}
   explosionPrefab: {fileID: 7015979258467953329, guid: d384cee296ee64248a4d43bbf3fcb011, type: 3}
+  burnEffect: {fileID: 2376800978548742657, guid: 06f5a6e4f7e5b944d9842a682d48d14e, type: 3}
 --- !u!60 &4488642514004613248
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -238,7 +240,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298705865067784128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -288,7 +290,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298705865067784128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -5277,6 +5279,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &3274380158836425488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419464043749376062}
+  m_Layer: 3
+  m_Name: ProjectileSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &419464043749376062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3274380158836425488}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3333335, y: 0.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4693627208901677879}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4365648432992316082
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,11 +27,13 @@ public class FireGun : Weapon
     [SerializeField] public float dotDelay;
 
     [Header("----------ULT PROPERTIES----------")]
-    [SerializeField] private float percentOfSmallEnemies;
-    [SerializeField] private float percentOfBigEnemies;
+    [SerializeField] private GameObject SuperProjectile;
+    private bool isUltActive = false;
+    [SerializeField] public float superProjectileSpeed = 100f;
     [SerializeField] private float abilityCooldown;
     [SerializeField] private FiregunAbilityButton abilityButton;
     [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private GameObject burnEffect;
 
     private void Awake()
     {
@@ -48,23 +50,38 @@ public class FireGun : Weapon
 
     private void Update()
     {
-        if (playerScript.activeGun == Player.Weapon.FireGun) {
+        if (playerScript.activeGun == Player.Weapon.FireGun && !isFrozen) {
             abilityButtonUI.transform.localScale = new Vector3(buttonScale, buttonScale, 1);
             if (Application.isMobilePlatform)
             {
                 if (Utils.GetTouchedObject() == null || !Utils.GetTouchedObject().CompareTag("Weapon"))
                 {
+                    
                     Aim();
                     if (Input.GetMouseButtonDown(0))
                     {
-                        Shoot();
+                        if (!isUltActive)
+                        {
+                            Shoot();
+                        }
+                        else
+                        {
+                            AbilityShoot();
+                        }
                     }
                 }
             } 
             else if (Input.GetMouseButton(1)) {
                 Aim();
                 if (Input.GetMouseButtonDown(0)) {
-                    Shoot();
+                    if (!isUltActive)
+                    {
+                        Shoot();
+                    }
+                    else
+                    {
+                        AbilityShoot();
+                    }
                 }
             }
             if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) {
@@ -106,7 +123,6 @@ public class FireGun : Weapon
             fireCollider.enabled = true;
         }
         OnFireGunStartShooting?.Invoke();
-
     }
 
     public void StopShoot()
@@ -151,6 +167,7 @@ public class FireGun : Weapon
 
                 if (!collision.GetComponent<FireDot>()) {
                     collision.gameObject.AddComponent<FireDot>();
+                    Instantiate(burnEffect, collision.transform);
                 }
             }
         }
@@ -161,24 +178,34 @@ public class FireGun : Weapon
         return abilityCooldown;
     }
 
+    public void AbilityShoot()
+    {
+        OnAbilityAction?.Invoke();
+        var sentProjectile = Instantiate(SuperProjectile, projectileSpawnerTransform.position + new Vector3(0, 0.5f, 0), transform.rotation);
+        sentProjectile.GetComponent<Rigidbody2D>().AddForce(projectileSpawnerTransform.right * superProjectileSpeed, ForceMode2D.Impulse);
+
+        isUltActive = false;
+    }
     public void FireGunAbility()
     {
         if (playerScript.activeGun == Player.Weapon.FireGun) {
-
             OnAbilityAction?.Invoke();
-            Enemy[] enemies = FindObjectsOfType<Enemy>();
-            foreach (Enemy enemy in enemies) {
-                if (enemy.GetComponent<ShieldEnemy>() != null || enemy.GetComponent<StoneEnemy>() != null) {
-                    float onePercentHealth = enemy.maxHealth / 100;
-                    enemy.health -= onePercentHealth * percentOfBigEnemies;
-                } else {
-                    float onePercentHealth = enemy.maxHealth / 100;
-                    enemy.health -= onePercentHealth * percentOfSmallEnemies;
-                }
-            }
 
-            Vector3 explosionPosition = new Vector3(2.5f, 0.25f, 0f);
-            Instantiate(explosionPrefab, explosionPosition, Quaternion.identity);
+            isUltActive = true;
+
+            //Enemy[] enemies = FindObjectsOfType<Enemy>();
+            //foreach (Enemy enemy in enemies) {
+            //    if (enemy.GetComponent<ShieldEnemy>() != null || enemy.GetComponent<StoneEnemy>() != null) {
+            //        float onePercentHealth = enemy.maxHealth / 100;
+            //        enemy.health -= onePercentHealth * percentOfBigEnemies;
+            //    } else {
+            //        float onePercentHealth = enemy.maxHealth / 100;
+            //        enemy.health -= onePercentHealth * percentOfSmallEnemies;
+            //    }
+            //}
+
+            //Vector3 explosionPosition = new Vector3(2.5f, 0.25f, 0f);
+            //Instantiate(explosionPrefab, explosionPosition, Quaternion.identity);
         }
     }
 

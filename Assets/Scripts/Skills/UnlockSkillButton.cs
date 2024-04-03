@@ -69,42 +69,6 @@ namespace Assets
             AppMetrica.Instance.SendEventsBuffer();
         }
 
-        public void UnlockOneArrow()
-        {
-            skillManager.crossbowPlusOneArrow = true;
-            GameObject.FindGameObjectWithTag("SkillPanel").GetComponent<SkillPanel>().skills.Remove(GetComponentInParent<SkillButton>());
-
-            AppMetrica.Instance.ReportEvent("ballista_one_arrow_skill");
-            AppMetrica.Instance.SendEventsBuffer();
-        }
-
-        public void UnlockTwoArrow()
-        {
-            skillManager.crossbowPlusTwoArrow = true;
-            GameObject.FindGameObjectWithTag("SkillPanel").GetComponent<SkillPanel>().skills.Remove(GetComponentInParent<SkillButton>());
-
-            AppMetrica.Instance.ReportEvent("ballista_two_arrow_skill");
-            AppMetrica.Instance.SendEventsBuffer();
-        }
-
-        public void UnlockThreeArrow()
-        {
-            skillManager.crossbowPlusThreeArrow = true;
-            GameObject.FindGameObjectWithTag("SkillPanel").GetComponent<SkillPanel>().skills.Remove(GetComponentInParent<SkillButton>());
-
-            AppMetrica.Instance.ReportEvent("ballista_three_arrow_skill");
-            AppMetrica.Instance.SendEventsBuffer();
-        }
-
-        public void UnlockFourArrow()
-        {
-            skillManager.crossbowPlusFourArrow = true;
-            GameObject.FindGameObjectWithTag("SkillPanel").GetComponent<SkillPanel>().skills.Remove(GetComponentInParent<SkillButton>());
-
-            AppMetrica.Instance.ReportEvent("ballista_four_arrow_skill");
-            AppMetrica.Instance.SendEventsBuffer();
-        }
-
         public void UnlockFanArrows()
         {
             skillManager.FanArrows = true;

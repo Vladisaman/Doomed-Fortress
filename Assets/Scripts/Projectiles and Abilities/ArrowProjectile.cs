@@ -7,17 +7,14 @@ public class ArrowProjectile : Projectile
 {
     public Action OnArrowHit;
     private SkillManager skillManager;
-    private bool DidRicochet;
     [SerializeField] GameObject holyAoe;
     [SerializeField] GameObject cursedAoe;
 
     private readonly string NAME_OF_WEAPON = "BALLISTA";
     private bool hasEntered = false;
-    List<GameObject> targetList;
 
     private void Start()
     {
-        targetList = new List<GameObject>();
         skillManager = GameObject.FindGameObjectWithTag("SkillManager").GetComponent<SkillManager>();
         Destroy(gameObject, 10f);
     }
@@ -41,6 +38,8 @@ public class ArrowProjectile : Projectile
             {
                 Instantiate(cursedAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity).GetComponent<CursedAoeScript>().FollowedObject = enemy.transform;
             }
+
+            Destroy(gameObject, 0.05f);
         }
         else if (hasEntered)
         {
@@ -82,25 +81,6 @@ public class ArrowProjectile : Projectile
         if (collision.CompareTag("Rock"))
         {
             Destroy(collision.gameObject);
-        }
-    }
-
-    private void Update()
-    {
-        if (DidRicochet)
-        {
-            if (targetList.Count > 0)
-            {
-                Vector2.Lerp(transform.position, targetList[targetList.Count - 1].transform.position, Time.deltaTime);
-                if (Vector2.Distance(transform.position, targetList[targetList.Count - 1].transform.position) <= 0.01)
-                {
-                    targetList.RemoveAt(targetList.Count - 1);
-                }
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
         }
     }
 }

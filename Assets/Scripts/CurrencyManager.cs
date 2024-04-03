@@ -11,7 +11,7 @@ public class CurrencyManager : MonoBehaviour
     //[SerializeField] public int MaxEnergy;
     //[SerializeField] public int EnergyForRun;
     //public int CurrEnergy;
-    [SerializeField] private int coins;
+    [SerializeField] public static int coins;
     private Coroutine myCoroutine;
     //EnergyTextUpdater _energyTextUpdated;
 
@@ -20,11 +20,19 @@ public class CurrencyManager : MonoBehaviour
     public static PlayerData playerData;
     public static string filePath;
 
-    private void Awake()
+    private void Start()
     {
+        var otherCurrencyManagers = FindObjectsOfType<CurrencyManager>();
+        if(otherCurrencyManagers.Length > 1)
+        {
+            Debug.LogError("currencyManager error log");
+            Destroy(this.gameObject);
+        }
+
         filePath = System.IO.Path.Combine(Application.persistentDataPath, "playerData.json");
         string json = System.IO.File.ReadAllText(filePath);
-        PlayerData playerData = JsonUtility.FromJson<PlayerData>(json);
+        Debug.Log(filePath);
+        playerData = JsonUtility.FromJson<PlayerData>(json);
 
 
         SessionTimeMetric = DateTime.Now;
@@ -38,17 +46,7 @@ public class CurrencyManager : MonoBehaviour
             TimeSpan timeSpentOutside = DateTime.Now - appExitTime;
             //CurrEnergy += (int)((int)timeSpentOutside.TotalMinutes / MinsForEnergy * EnergyPerTick);
         }
-        //BalanceEnergy();
-    }
 
-    private void Start()
-    {
-        var otherCurrencyManagers = FindObjectsOfType<CurrencyManager>();
-        if(otherCurrencyManagers.Length > 1)
-        {
-            Debug.LogError("currencyManager error log");
-            Destroy(this.gameObject);
-        }
         //myCoroutine = StartCoroutine(MyCoroutine());
         DontDestroyOnLoad(gameObject);
     }

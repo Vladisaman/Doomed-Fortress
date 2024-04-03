@@ -104,6 +104,7 @@ public class ShieldEnemy : Enemy
         speed = 0;
         //shield.Die();
 
+        animator.SetBool("IsAttacking", false);
         animator.SetBool("IsDead", true);
 
         if (once)

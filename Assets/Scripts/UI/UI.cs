@@ -23,6 +23,9 @@ public class UI : MonoBehaviour
         isPauseActive = false;
         Time.timeScale = 1;
 
+        string json = JsonUtility.ToJson(Spawner.playerData);
+        System.IO.File.WriteAllText(CurrencyManager.filePath, json);
+
         TimeSpan secondsInGame = SessionTimeMetric - DateTime.Now;
         Dictionary<string, object> parameters = new Dictionary<string, object>() { { "time_seconds", secondsInGame.TotalSeconds } };
         AppMetrica.Instance.ReportEvent("session_play_time", parameters);
@@ -60,7 +63,6 @@ public class UI : MonoBehaviour
         //}
     }
 
-
     public void OpenPauseMenu()
     {
         if (!isPauseActive)
@@ -93,9 +95,11 @@ public class UI : MonoBehaviour
         AppMetrica.Instance.ReportEvent("open_shop_button_click");
         AppMetrica.Instance.SendEventsBuffer();
     }
+
     public void DeleteAll()
     {
         PlayerPrefs.DeleteAll();
+        CurrencyManager.coins = 0;
 
         System.IO.File.Delete(CurrencyManager.filePath);
     }

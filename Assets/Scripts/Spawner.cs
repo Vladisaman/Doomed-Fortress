@@ -36,12 +36,19 @@ public class Spawner : MonoBehaviour
     {
         string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
         playerData = JsonUtility.FromJson<PlayerData>(json);
+
+        if(playerData.skillAmount > 0)
+        {
+            panel.gameObject.SetActive(true);
+            panel.GiveSkills(0);
+            Time.timeScale = 0;
+        }
     }
 
     private void Start()
     {
         _elapsedTime = nextSpawnTime;
-        isWaiting = false;
+        //isWaiting = true; //////////////////////////////////////////////////////////////////////////////
         if (playerData.waveNumber > 1)
         {
             WaveNumber = playerData.waveNumber;
@@ -70,6 +77,18 @@ public class Spawner : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F4))
         {
             SpawnEnemy(3, forBigMinY, forBigMaxY);
+        }
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            SpawnEnemy(4, forSmallMinY, forSmallMaxY);
+        }
+        if (Input.GetKeyDown(KeyCode.F6))
+        {
+            SpawnEnemy(5, forSmallMinY, forSmallMaxY);
+        }
+        if (Input.GetKeyDown(KeyCode.F7))
+        {
+            SpawnEnemy(5, forSmallMinY, forSmallMaxY);
         }
 
         _elapsedTime += Time.deltaTime;
@@ -133,6 +152,7 @@ public class Spawner : MonoBehaviour
     public void ShowAbilityPanel()
     {
         panel.gameObject.SetActive(true);
+        panel.CreateSkills();
         Time.timeScale = 0;
     }
 

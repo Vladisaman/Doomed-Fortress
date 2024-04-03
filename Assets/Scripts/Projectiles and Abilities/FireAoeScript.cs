@@ -7,13 +7,7 @@ public class FireAoeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 1.5F);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Invoke("EndZone", 2.5F);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -24,5 +18,13 @@ public class FireAoeScript : MonoBehaviour
         {
             enemy.TakeDamage(0.1f);
         }
+    }
+
+    public void EndZone()
+    {
+        GetComponent<CircleCollider2D>().enabled = false;
+        GetComponent<Animator>().SetBool("Die", true);
+
+        Destroy(gameObject, 0.5f);
     }
 }

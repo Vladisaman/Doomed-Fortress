@@ -10,7 +10,7 @@ public class FlyingEnemy : Enemy
     //[SerializeField] float amplitude = 1f;
     [SerializeField] int upOrDown;
     [SerializeField] private float waveSpeed = 1f; // Higher make the wave faster
-    [SerializeField] private float bonusHeight = 1f; // Set higher if you want more wave intensity    
+    [SerializeField] private float bonusHeight = 1f; // Set higher if you want more wave intensity
     
     private float cycle; // This variable increases with time and allows the sine to produce numbers between -1 and 1
     private Vector3 basePosition; // This variable maintains the location of the object without applying sine changes
@@ -20,25 +20,6 @@ public class FlyingEnemy : Enemy
     {
         target = wall.transform;
         basePosition = transform.position;
-        
-    }
-    private void Update()
-    {
-        
-        if (!isAttacking && !isAttracted) 
-        {
-            Move();
-        } 
-        else if (isAttacking) 
-        {
-            Attack();
-        }
-        else if (isAttracted)
-        {
-            BeAttracted();
-        }
-
-        CheckDeath();
     }
     public override void Move()
     {
@@ -66,6 +47,7 @@ public class FlyingEnemy : Enemy
     public override void Die()
     {
         speed = 0;
+        animator.SetBool("IsAttacking", false);
         animator.SetBool("IsDead", true);
 
         if (once)

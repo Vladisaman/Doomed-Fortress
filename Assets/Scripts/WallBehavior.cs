@@ -22,9 +22,14 @@ public class WallBehavior : MonoBehaviour
     [SerializeField] private Slider healthBar;
     private bool isAlive;
 
+    bool isPoisoned;
+    int PoisonAmount;
+
     // Start is called before the first frame update
     void Start()
     {
+        isPoisoned = false;
+        PoisonAmount = 0;
         isAlive = true;
         _health = maxhealth;
         ignoredCollider = myGameObject.GetComponentInChildren<IgnoredCollider>().GetComponent<BoxCollider2D>();
@@ -82,5 +87,43 @@ public class WallBehavior : MonoBehaviour
             _renderer.material.color = Color.gray;
             yield return new WaitForSeconds(0.5f);
         }
+    }
+
+    public void Poison()
+    {
+        if (!isPoisoned)
+        {
+            PoisonAmount += 1;
+
+            if (PoisonAmount >= 3)
+            {
+                StopCoroutine(PoisonTimer());
+                StartCoroutine(PoisonedDOT());
+            }
+            else
+            {
+                StartCoroutine(PoisonTimer());
+            }
+        }
+    }
+
+    private IEnumerator PoisonTimer()
+    {
+        yield return new WaitForSeconds(50.0f);
+        PoisonAmount -= 1;
+    }
+
+    public IEnumerator PoisonedDOT()
+    {
+        isPoisoned = true;
+        //GetComponent<SpriteRenderer>().color = Color.;
+
+
+        _health -= 10;
+        yield return new WaitForSeconds(1.5F);
+
+        PoisonAmount = 0;
+        isPoisoned = false;
+        //GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

@@ -55,7 +55,6 @@ public class BombProjectile : Projectile
                         Instantiate(fireAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
                     }
                 }
-                
             }
         }
     }

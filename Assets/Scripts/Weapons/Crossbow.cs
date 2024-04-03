@@ -47,7 +47,7 @@ public class Crossbow : Weapon
 
     private void Update()
     {
-        if (playerScript.activeGun == Player.Weapon.Crossbow)
+        if (playerScript.activeGun == Player.Weapon.Crossbow && !isFrozen)
         {
             abilityButtonUI.transform.localScale = new Vector3(buttonScale, buttonScale, 1);
 
@@ -121,34 +121,6 @@ public class Crossbow : Weapon
             }
         }
 
-        if (isCoroutine == true)
-        {
-            if (skillsManager.crossbowPlusOneArrow)
-            {
-                CreateAbilityProjectile(projectile, FirstProjectileSpawnerTransform.position, FirstProjectileSpawnerTransform.rotation, 30);
-            }
-
-            if (skillsManager.crossbowPlusTwoArrow)
-            {
-                CreateAbilityProjectile(projectile, SecondProjectileSpawnerTransform.position, SecondProjectileSpawnerTransform.rotation, -30);
-            }
-
-            if (skillsManager.crossbowPlusThreeArrow)
-            {
-                CreateAbilityProjectile(projectile, ThirdProjectileSpawnerTransform.position, ThirdProjectileSpawnerTransform.rotation, 30);
-            }
-
-            if (skillsManager.crossbowPlusFourArrow)
-            {
-                CreateAbilityProjectile(projectile, FourthProjectileSpawnerTransform.position, FourthProjectileSpawnerTransform.rotation, -30);
-            }
-
-            if (skillsManager.FanArrows)
-            {
-                StartCoroutine(FanArrows());
-            }
-        }
-
         if (skillsManager.crossbowCanDoubleShot)
         {
             DoubleShoot();
@@ -160,6 +132,11 @@ public class Crossbow : Weapon
 
         if (!isCoroutine)
         {
+            if (skillsManager.FanArrows)
+            {
+                StartCoroutine(FanArrows());
+            }
+
             isReloading = true;
             StartCoroutine(Reload());
         }
@@ -228,7 +205,7 @@ public class Crossbow : Weapon
         if (!isReloading)
         {
             OnAbilityAction?.Invoke();
-            var sentProjectile = GameObject.Instantiate(superProjectile, projectileSpawnerTransform.position, transform.rotation);
+            var sentProjectile = Instantiate(superProjectile, projectileSpawnerTransform.position, transform.rotation);
             sentProjectile.GetComponent<Rigidbody2D>().AddForce(projectileSpawnerTransform.right * superProjectileSpeed, ForceMode2D.Impulse);
             isReloading = true;
             superShootsCount--;

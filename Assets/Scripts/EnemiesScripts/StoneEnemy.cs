@@ -4,70 +4,51 @@ using System.Collections.Generic;
 
 public class StoneEnemy : Enemy
 {
-    [Header("----------DO !NOT! TOUCH----------")]
     [SerializeField] private GameObject _rockPrefab;
-    [SerializeField] private Transform _throwPoint;
+    private float defaultSpeed;
+    private Coroutine rock;
 
-    [Header("----------MOVEMENT PROPERTIES----------")]
-    [SerializeField] private int _stopSteps = 600;
-    [SerializeField] private float _stopDuration = 7f;
-    [SerializeField] private int _steps = 0;
-    private bool _isStopping = false;
-    private float _stopTime = 0f;
-
-    private bool isAllowedThrowing = true;
-
-    private void Update()
+    private void Start()
     {
-        healthBar.value = health;
-        //if (!_isStopping)
-        //{
-            Move();
-            _steps++;
+        defaultSpeed = speed;
+        rock = StartCoroutine(RockThrowCoroutine());
+    }
 
-        if (isAllowedThrowing)
+    public override void Attack()
+    {
+        if (Time.time - lastAttackTime < attackCooldown)
         {
-            Invoke("Stop", 2);
-            isAllowedThrowing = false;
+            return;
         }
 
-        //    if (_steps >= _stopSteps)
-        //    {
-
-        //    }
-        //}
-        //else
-        //{
-        //    if (Time.time >= _stopTime)
-        //    {
-        //        _isStopping = false;
-        //    }
-        //}
-
-        CheckDeath();
+        animator.SetBool("IsAttacking", true);
+        lastAttackTime = Time.time;
+        wall.GetComponent<WallBehavior>().TakeDamage(damage);
     }
 
-    private void Stop()
+    private IEnumerator RockThrowCoroutine()
     {
-        animator.SetBool("IsThrowing", true);
-        _isStopping = true;
-        _steps = 0;
-        _stopTime = Time.time + _stopDuration;
-        ThrowRock();
-    }
+        while (!isAttacking)
+        {
+            speed = 0;
+            animator.SetBool("IsThrowing", true);
+            GameObject rock = Instantiate(_rockPrefab, transform.position, Quaternion.identity);
+            Debug.Log("THROW");
+            Rigidbody2D rockRigidbody = rock.GetComponent<Rigidbody2D>();
+            rockRigidbody.AddForce(Vector2.left * 500f);
+            yield return new WaitForSeconds(0.5f);
+            animator.SetBool("IsThrowing", false);
+            speed = defaultSpeed;
+            yield return new WaitForSeconds(2);
+        }
 
-    private void ThrowRock()
-    {
-        GameObject rock = Instantiate(_rockPrefab, transform.position, Quaternion.identity);
-        Rigidbody2D rockRigidbody = rock.GetComponent<Rigidbody2D>();
-        rockRigidbody.AddForce(Vector2.left * 500f);
-        animator.SetBool("IsThrowing", false);
-        isAllowedThrowing = true;
+        StopCoroutine(rock);
     }
 
     public override void Die()
     {
         speed = 0;
+        animator.SetBool("IsAttacking", false);
         animator.SetBool("IsDead", true);
 
         if (once)
