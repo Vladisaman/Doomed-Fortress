@@ -22,6 +22,7 @@ public class WallBehavior : MonoBehaviour
     [SerializeField] private Slider healthBar;
     private bool isAlive;
 
+    [SerializeField] private Slider poisonBar;
     bool isPoisoned;
     int PoisonAmount;
 
@@ -30,6 +31,7 @@ public class WallBehavior : MonoBehaviour
     {
         isPoisoned = false;
         PoisonAmount = 0;
+        poisonBar.value = PoisonAmount;
         isAlive = true;
         _health = maxhealth;
         ignoredCollider = myGameObject.GetComponentInChildren<IgnoredCollider>().GetComponent<BoxCollider2D>();
@@ -94,6 +96,7 @@ public class WallBehavior : MonoBehaviour
         if (!isPoisoned)
         {
             PoisonAmount += 1;
+            poisonBar.value = PoisonAmount;
 
             if (PoisonAmount >= 3)
             {
@@ -111,18 +114,24 @@ public class WallBehavior : MonoBehaviour
     {
         yield return new WaitForSeconds(50.0f);
         PoisonAmount -= 1;
+        poisonBar.value = PoisonAmount;
     }
 
     public IEnumerator PoisonedDOT()
     {
         isPoisoned = true;
+        int secondsAmount = 0;
         //GetComponent<SpriteRenderer>().color = Color.;
 
-
-        _health -= 10;
-        yield return new WaitForSeconds(1.5F);
+        while (secondsAmount <= 150)
+        {
+            _health -= _health * 0.005f;
+            yield return new WaitForSeconds(1F);
+            secondsAmount++;
+        }
 
         PoisonAmount = 0;
+        poisonBar.value = PoisonAmount;
         isPoisoned = false;
         //GetComponent<SpriteRenderer>().color = Color.white;
     }

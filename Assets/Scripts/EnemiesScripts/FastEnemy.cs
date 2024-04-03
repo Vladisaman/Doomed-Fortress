@@ -10,7 +10,7 @@ public class FastEnemy : Enemy
     private void Start()
     {
         int random = Random.Range(0, 3);
-        GetComponent<SpriteRenderer>().sprite = Sprites[random];
+        //GetComponent<SpriteRenderer>().sprite = Sprites[random];
         animator = Animators[random];
     }
 

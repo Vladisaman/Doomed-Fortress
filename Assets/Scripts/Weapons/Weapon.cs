@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Weapon : MonoBehaviour
 {
+    [SerializeField] public Slider FreezeBar;
     public int FreezeAmount;
     public bool isFrozen;
     public Transform playerTransform { get; private set; }
@@ -32,6 +34,7 @@ public abstract class Weapon : MonoBehaviour
     private void Start()
     {
         FreezeAmount = 0;
+        FreezeBar.value = FreezeAmount;
         playerTransform = GameObject.Find("Player").transform;
         playerScript = playerTransform.GetComponent<Player>();
         crosshair = GameObject.Find("Crosshair");
@@ -67,6 +70,7 @@ public abstract class Weapon : MonoBehaviour
         if (!isFrozen)
         {
             FreezeAmount += 1;
+            FreezeBar.value = FreezeAmount;
 
             if (FreezeAmount >= 3)
             {
@@ -84,6 +88,7 @@ public abstract class Weapon : MonoBehaviour
     {
         yield return new WaitForSeconds(50.0f);
         FreezeAmount -= 1;
+        FreezeBar.value = FreezeAmount;
     }
 
     public IEnumerator FrozenStun()
@@ -94,6 +99,7 @@ public abstract class Weapon : MonoBehaviour
         yield return new WaitForSeconds(1.5F);
 
         FreezeAmount = 0;
+        FreezeBar.value = FreezeAmount;
         isFrozen = false;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
