@@ -8,9 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5203956311081003411, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ef8285b015d2b24ab362770b65302b4, type: 3}
     - target: {fileID: 6926780845499057787, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: UnlockSmallYadro
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968588981565095713, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
+      propertyPath: m_SortingLayer
+      value: 32709
       objectReference: {fileID: 0}
     - target: {fileID: 7434037120385761725, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
       propertyPath: m_text
@@ -105,7 +113,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5178846774684290218, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b200f3da827f51459f0ec6f8db44638, type: 3}

@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 public class ShieldEnemy : Enemy
 {
 
@@ -9,14 +11,20 @@ public class ShieldEnemy : Enemy
     [Header("----------SHIELD PROPERTIES----------")]
     [SerializeField] public float shieldHealth;
     [SerializeField] public float shieldArmor;
-    [SerializeField] private float shieldBombDamageXAxisReduce = 0.2f;
+    [SerializeField] public Slider shieldBar;
 
-    public virtual void TakeDamage(float weaponDamage, string weaponName, GameObject projectile)
+    private void Start()
+    {
+        shieldBar.maxValue = shieldHealth;
+        shieldBar.value = shieldHealth;
+    }
+
+    public override void TakeDamage(float weaponDamage, string weaponName)
     {
         currentDamageResist = 1;
         switch (weaponName)
         {
-            case BALLISTA:
+            case "BALLISTA":
                 switch (arrowDamageResist)
                 {
                     case DamageResistance.WEAK:
@@ -30,7 +38,7 @@ public class ShieldEnemy : Enemy
                         break;
                 }
                 break;
-            case MORTAR:
+            case "MORTAR":
                 switch (bombDamageResist)
                 {
                     case DamageResistance.WEAK:
@@ -44,7 +52,7 @@ public class ShieldEnemy : Enemy
                         break;
                 }
                 break;
-            case FIREGUN:
+            case "FIREGUN":
                 switch (fireDamageResist)
                 {
                     case DamageResistance.WEAK:
@@ -61,25 +69,29 @@ public class ShieldEnemy : Enemy
         }
 
         actualDamage = weaponDamage * currentDamageResist;
-        health -= actualDamage;
 
-        if (weaponName == MORTAR)
+
+        if (isShieldAlive)
         {
-            if (isShieldAlive)
+            shieldHealth -= actualDamage;
+            shieldBar.value = shieldHealth;
+
+            if (shieldHealth <= 0)
             {
-                if (projectile.transform.position.x > transform.position.x - shieldBombDamageXAxisReduce)
-                {
-                    health -= actualDamage;
-                    healthBar.value = health;
-                }
+                isShieldAlive = false;
             }
-            else
+
+            if(weaponName == "MORTAR")
             {
                 health -= actualDamage;
-                healthBar.value = health;
             }
 
+        } else
+        {
+            health -= actualDamage;
         }
+
+        Debug.Log(shieldHealth + " " + isShieldAlive);
 
         healthBar.value = health;
     }

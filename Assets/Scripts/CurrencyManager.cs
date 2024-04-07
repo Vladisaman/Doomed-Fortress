@@ -20,6 +20,8 @@ public class CurrencyManager : MonoBehaviour
     public static PlayerData playerData;
     public static string filePath;
 
+    public static string storyFilePath;
+
     private void Start()
     {
         var otherCurrencyManagers = FindObjectsOfType<CurrencyManager>();

@@ -139,6 +139,11 @@ public class Player : MonoBehaviour
             midGunObj = topGunObj;
             topGunObj = bridgeObj;
         }
+
+        if(midGun == Weapon.FireGun)
+        {
+            midGunObj.GetComponent<FireGun>().CrosshairHide();
+        }
     }
 
     public bool CheckAbility(Weapon weapon)

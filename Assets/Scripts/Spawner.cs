@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
     public static int WaveNumber = 1;
 
     private int currentEnemies = 0;
-    private float nextSpawnTime = 5f;
+    public float nextSpawnTime = 3f;
     private float _elapsedTime = 0;
     private bool isGolemSpawned = false;
     private int enemyKillCount;
@@ -48,7 +48,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         _elapsedTime = nextSpawnTime;
-        //isWaiting = true; //////////////////////////////////////////////////////////////////////////////
+        isWaiting = true; //////////////////////////////////////////////////////////////////////////////
         if (playerData.waveNumber > 1)
         {
             WaveNumber = playerData.waveNumber;
@@ -64,27 +64,27 @@ public class Spawner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            SpawnEnemy(0, forSmallMinY, forSmallMaxY);
+            SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
         }
         if (Input.GetKeyDown(KeyCode.F2))
         {
-            SpawnEnemy(1, forSmallMinY, forSmallMaxY);
+            SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
         }
         if (Input.GetKeyDown(KeyCode.F3))
         {
-            SpawnEnemy(2, forBigMinY, forBigMaxY);
+            SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
         }
         if (Input.GetKeyDown(KeyCode.F4))
         {
-            SpawnEnemy(3, forBigMinY, forBigMaxY);
+            SpawnEnemy(3, forBigMinY, forBigMaxY); //GOLEM
         }
         if (Input.GetKeyDown(KeyCode.F5))
         {
-            SpawnEnemy(4, forSmallMinY, forSmallMaxY);
+            SpawnEnemy(4, forSmallMinY, forSmallMaxY); //ICE SKELETON
         }
         if (Input.GetKeyDown(KeyCode.F6))
         {
-            SpawnEnemy(5, forSmallMinY, forSmallMaxY);
+            SpawnEnemy(5, forSmallMinY, forSmallMaxY); //POISON TREANT
         }
         if (Input.GetKeyDown(KeyCode.F7))
         {
@@ -98,27 +98,35 @@ public class Spawner : MonoBehaviour
                 if (currentEnemies < maxEnemies && !isGolemSpawned)
                 {
                     int enemyIndex = Random.Range(1, 11);
-
                     if (enemyIndex >= 9)
                     {
                         SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
                         currentEnemies++;
-                        _elapsedTime = 0;
                     }
-
                     if (enemyIndex <= 8 && enemyIndex > 6)
                     {
                         SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
                         currentEnemies++;
-                        _elapsedTime = 0;
                     }
-
                     if (enemyIndex <= 6)
                     {
                         SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
                         currentEnemies++;
-                        _elapsedTime = 0;
                     }
+
+                    int extraIndex = Random.Range(1, 7);
+                    if (enemyIndex <= 2)
+                    {
+                        SpawnEnemy(4, forSmallMinY, forSmallMaxY);
+                        currentEnemies++;
+                    } 
+                    else if(enemyIndex == 3 || enemyIndex == 4)
+                    {
+                        SpawnEnemy(5, forSmallMinY, forSmallMaxY);
+                        currentEnemies++;
+                    }
+
+                    _elapsedTime = 0;
                 }
                 else
                 {

@@ -5,51 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class StoryScript : MonoBehaviour
 {
-    [SerializeField] Scene panelScene;
+    public int SceneNumber;
 
-    public void CloseStory1()
+    public void CloseStory(StoryScript story)
     {
-        PlayerPrefs.SetInt("ClosedStory", 0);
+        PlayerPrefs.SetInt("ClosedStory" + story.SceneNumber, 1);
         Time.timeScale = 1;
-        PlayerPrefs.SetInt("ClosedStory1", 1);
         gameObject.SetActive(false);
     }
-    public void CloseStory2()
-    {
-        PlayerPrefs.SetInt("ClosedStory", 1);
-        Time.timeScale = 1;
-        PlayerPrefs.SetInt("ClosedStory2", 1);
-        gameObject.SetActive(false);
-    }
-
     private void Awake()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0 && panelScene == Scene.zero)
+        if(PlayerPrefs.GetInt("ClosedStory" + SceneNumber) == 1)
         {
-            if (PlayerPrefs.GetInt("ClosedStory1") == 1)
-            {
-                gameObject.SetActive(false);
-            } 
-            else
-            {
-                Time.timeScale = 0;
-            }
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 1 && panelScene == Scene.one)
+            Time.timeScale = 1;
+            gameObject.SetActive(false);
+        } 
+        else
         {
-            if (PlayerPrefs.GetInt("ClosedStory2") == 1)
-            {
-                gameObject.SetActive(false);
-            } 
-            else
-            {
-                Time.timeScale = 0;
-            }
+            Time.timeScale = 0;
+            gameObject.SetActive(true);
         }
     }
-}
-
-enum Scene {
-    zero,
-    one
 }

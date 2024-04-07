@@ -64,15 +64,7 @@ public class BombProjectile : Projectile
         Enemy enemy = collision.GetComponent<Enemy>();
         if (enemy != null)
         {
-
-            if (collision.GetComponent<ShieldEnemy>() != null)
-            {
-                collision.GetComponent<ShieldEnemy>().TakeDamage(damage, NAME_OF_WEAPON, gameObject);
-            }
-            else
-            {
-                enemy.TakeDamage(damage, NAME_OF_WEAPON);
-            }
+            enemy.TakeDamage(damage, NAME_OF_WEAPON);
 
             if (skillManager.knockbackCannonball == true)
             {

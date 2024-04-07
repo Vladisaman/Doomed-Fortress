@@ -5254,7 +5254,7 @@ MonoBehaviour:
   StaggerDamage: 3
   maxHealth: 30
   health: 0
-  speed: 1.5
+  speed: 2
   damage: 6
   attackCooldown: 0.33
   coinsForDestroy: 3

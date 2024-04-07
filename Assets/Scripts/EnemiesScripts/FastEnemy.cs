@@ -11,7 +11,7 @@ public class FastEnemy : Enemy
     {
         int random = Random.Range(0, 3);
         //GetComponent<SpriteRenderer>().sprite = Sprites[random];
-        animator = Animators[random];
+        //animator = Animators[random];
     }
 
     public override void Attack()

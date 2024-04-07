@@ -46,6 +46,8 @@ public class FireGun : Weapon
         Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
+
+        CrosshairHide();
     }
 
     private void Update()

@@ -364,21 +364,18 @@ MonoBehaviour:
   healthBar: {fileID: 7560817472673788079}
   wall: {fileID: 0}
   skillManager: {fileID: 0}
-  burning: {fileID: 935222924955143213, guid: 35fb3523ea1146042ad917a51e60bb75, type: 3}
-  burn: {fileID: 1650012808886597846, guid: 35fb3523ea1146042ad917a51e60bb75, type: 3}
+  burning: {fileID: 2129473485044262413}
+  burn: {fileID: 7599248295346179442}
   time: 0
   isAttacking: 0
   isAttracted: 0
   StaggerDamage: 0
-  countHit: 0
   maxHealth: 25
   health: 0
-  speed: 1
+  speed: 1.5
   damage: 3
-  weight: 1
   attackCooldown: 0.2
   coinsForDestroy: 1
-  animator: {fileID: 0}
   armor: 0
   arrowDamageResist: 0
   bombDamageResist: 0

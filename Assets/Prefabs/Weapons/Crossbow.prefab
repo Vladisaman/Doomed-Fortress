@@ -135,7 +135,7 @@ MonoBehaviour:
   blessingForCrossbow: 0
   superProjectile: {fileID: 132967213884406870, guid: ce2792e8ee6a9354fb54edc915e0ceaa, type: 3}
   spriteRenderer: {fileID: 4266400997792953934}
-  defaultSprite: {fileID: 21300000, guid: c30d1decdef42894c907ef85a019caea, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 9092c6f5a357e0d40848335c371eb001, type: 3}
   superPowerSprite: {fileID: 21300000, guid: e5b8a480e3fabba4db41adb59cc7ebd4, type: 3}
   coolDownTime: 5
   superShootsCount: 3
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 3
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 3
   m_OnValueChanged:
     m_PersistentCalls:
