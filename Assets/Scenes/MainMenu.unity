@@ -2986,8 +2986,8 @@ MonoBehaviour:
     \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u043C\u0443 \u0431\u0440\u0430\u0442\u0443,
     \u0440\u0430\u0437\u0432\u044F\u0437\u0430\u0432 \u0433\u0440\u0430\u0436\u0434\u0430\u043D\u0441\u043A\u0443\u044E
     \u0432\u043E\u0439\u043D\u0443. \u0421 \u043E\u0433\u0440\u043E\u043C\u043D\u044B\u043C\u0438
-    \u043F\u043E\u0442\u0435\u0440\u044F\u043C\u0438 \u041A\u043E\u0440\u043E\u043B\u044E-\u0432\u043E\u0438\u043D\u0443
-    \u043E\u0434\u0435\u0440\u0436\u0430\u043B \u0432\u0432\u0435\u0440\u0445. \u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E,
+    \u043F\u043E\u0442\u0435\u0440\u044F\u043C\u0438 \u041A\u043E\u0440\u043E\u043B\u044C-\u0432\u043E\u0438\u043D
+    \u043E\u0434\u0435\u0440\u0436\u0430\u043B \u0432\u0435\u0440\u0445. \u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E
     \u0447\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0441
     \u043F\u0430\u0434\u0448\u0438\u043C \u0431\u0440\u0430\u0442\u043E\u043C, \u043D\u043E
     \u043C\u043D\u043E\u0433\u0438\u0435 \u0435\u0433\u043E \u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u0438
@@ -5102,7 +5102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6543e774461f63046bc885ab0a8a4460, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7df5a301e40fed40927e6b837db30a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12011,15 +12011,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8c0bb058db879fe4fb827829141c3b18, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12329,8 +12329,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

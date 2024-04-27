@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 132967213884406870}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  holyAoe: {fileID: 5897895055149592376, guid: 9072121132c9d5642b7bcef549166213, type: 3}
-  cursedAoe: {fileID: 318437849006416420, guid: 58f1d7e838e6136499d7f13bf178b334, type: 3}
+  holyAoe: {fileID: 9166569123974458717, guid: 83f20e40231d1bf409088cb79c65b8a5, type: 3}
+  cursedAoe: {fileID: 6871816553494589045, guid: fa3e8f22784d0bc4893c3f5dc25b704b, type: 3}
 --- !u!61 &5814033988766336440
 BoxCollider2D:
   m_ObjectHideFlags: 0

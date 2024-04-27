@@ -3,10 +3,10 @@ using UnityEngine;
 public class SkillManager : MonoBehaviour
 {
     public bool crossbowCanDoubleShot;
-    public bool crossbowPlusOneArrow;
-    public bool crossbowPlusTwoArrow;
-    public bool crossbowPlusThreeArrow;
-    public bool crossbowPlusFourArrow;
+    //public bool crossbowPlusOneArrow;
+    //public bool crossbowPlusTwoArrow;
+    //public bool crossbowPlusThreeArrow;
+    //public bool crossbowPlusFourArrow;
     public bool FanArrows;
     //public bool RicochetArrow;
     public bool cursedArrow;

@@ -55,8 +55,6 @@ public class Crossbow : Weapon
             {
                 if (Utils.GetTouchedObject() == null || !Utils.GetTouchedObject().CompareTag("Weapon"))
                 {
-                    Crosshair();
-                    CrosshairUnHide();
                     Aim();
                     if (!isReloading)
                     {
@@ -78,7 +76,6 @@ public class Crossbow : Weapon
             }
             else if (Input.GetMouseButton(1))
             {
-                Crosshair();
                 Aim();
                 if (Input.GetMouseButton(0))
                 {
@@ -191,7 +188,7 @@ public class Crossbow : Weapon
 
     private void CreateProjectile(GameObject projectile, Vector3 spawnPosition, Quaternion rotation)
     {
-        var sentProjectile = GameObject.Instantiate(projectile, spawnPosition, rotation);
+        var sentProjectile = Instantiate(projectile, spawnPosition, rotation);
         sentProjectile.GetComponent<Rigidbody2D>().AddForce(projectileSpawnerTransform.right * projectileSpeed, ForceMode2D.Impulse);
 
         if (sentProjectile.TryGetComponent(out ArrowProjectile arrowProjectile))
@@ -217,10 +214,19 @@ public class Crossbow : Weapon
 
     public override void Aim()
     {
-        Vector3 mousePosition = Utils.GetMouseWorldPosition();
-        Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
+        //Vector3 mousePosition = Utils.GetMouseWorldPosition();
+        //Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
+        //float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        //transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
+
+        float horizontalInput = playerScript.stick.Horizontal();
+        float verticalInput = playerScript.stick.Vertical();
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            float targetAngle = Mathf.Atan2(verticalInput, horizontalInput) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, RotationSpeed * Time.deltaTime);
+        }
     }
 
     public void ActivatePower()

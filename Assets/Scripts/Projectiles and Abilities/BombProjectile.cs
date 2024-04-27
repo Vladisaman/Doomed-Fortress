@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class BombProjectile : Projectile
 {
@@ -13,7 +12,6 @@ public class BombProjectile : Projectile
     [SerializeField] GameObject fireAoe;
 
     Mortar mortar;
-    Vector3 projectileTarget;
     private string NAME_OF_WEAPON = "MORTAR";
 
     private bool once = true;
@@ -21,42 +19,10 @@ public class BombProjectile : Projectile
     
     private void Start()
     {
+        mortar = FindFirstObjectByType<Mortar>();
         skillManager = GameObject.FindGameObjectWithTag("SkillManager").GetComponent<SkillManager>();
-        mortar = FindObjectOfType<Mortar>();
         damage = mortar.projectileDamage;
-        projectileTarget = mortar.target;
-    }
-
-    private void Update()
-    {
-        if(mortar != null) 
-        {
-            if(gameObject.transform.position != projectileTarget) 
-            {
-                transform.position = Vector3.MoveTowards(transform.position, projectileTarget, mortar.projectileSpeed * Time.deltaTime);
-            }
-            else
-            { 
-                transform.GetChild(0).GetComponent<Renderer>().enabled = false;
-                transform.GetComponent<Animator>().SetTrigger("Explosion");
-
-                if (once) {
-                    OnBombExplosion?.Invoke();
-                    once = false;
-                    GetComponent<CircleCollider2D>().enabled = true;
-
-                    if (skillManager.holyBomb)
-                    {
-                        Instantiate(holyAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
-                    }
-
-                    if (skillManager.fireBomb)
-                    {
-                        Instantiate(fireAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
-                    }
-                }
-            }
-        }
+        Destroy(gameObject, 10.0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -64,6 +30,28 @@ public class BombProjectile : Projectile
         Enemy enemy = collision.GetComponent<Enemy>();
         if (enemy != null)
         {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+            transform.GetComponent<Animator>().SetTrigger("Explosion");
+
+            if (once)
+            {
+                OnBombExplosion?.Invoke();
+                once = false;
+                GetComponent<CircleCollider2D>().enabled = true;
+
+                if (skillManager.holyBomb)
+                {
+                    Instantiate(holyAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
+                }
+
+                if (skillManager.fireBomb)
+                {
+                    Instantiate(fireAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
+                }
+            }
+
             enemy.TakeDamage(damage, NAME_OF_WEAPON);
 
             if (skillManager.knockbackCannonball == true)

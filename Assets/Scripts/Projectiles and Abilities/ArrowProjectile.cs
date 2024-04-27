@@ -31,7 +31,7 @@ public class ArrowProjectile : Projectile
 
             if (skillManager.holyArrow)
             {
-                Instantiate(holyAoe, new Vector3(transform.position.x, transform.position.y, 1), Quaternion.identity);
+                Instantiate(holyAoe, new Vector3(enemy.transform.position.x - 3, enemy.transform.position.y + 3, 1), Quaternion.identity);
             }
 
             if (skillManager.cursedArrow)

@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
     private float _elapsedTime = 0;
     private bool isGolemSpawned = false;
     private int enemyKillCount;
-    private bool isWaiting;
+    public bool isWaiting;
 
     public static PlayerData playerData;
 
@@ -48,7 +48,6 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         _elapsedTime = nextSpawnTime;
-        isWaiting = true; //////////////////////////////////////////////////////////////////////////////
         if (playerData.waveNumber > 1)
         {
             WaveNumber = playerData.waveNumber;

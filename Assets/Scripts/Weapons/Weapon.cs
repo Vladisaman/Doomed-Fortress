@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public abstract class Weapon : MonoBehaviour
 {
+    [SerializeField] protected float RotationSpeed;
     [SerializeField] public Slider FreezeBar;
     public int FreezeAmount;
+    public int MaxFreezeAmount;
     public bool isFrozen;
     public Transform playerTransform { get; private set; }
     public Player playerScript { get; private set; }
@@ -35,29 +37,30 @@ public abstract class Weapon : MonoBehaviour
     {
         FreezeAmount = 0;
         FreezeBar.value = FreezeAmount;
+        FreezeBar.maxValue = MaxFreezeAmount;
         playerTransform = GameObject.Find("Player").transform;
         playerScript = playerTransform.GetComponent<Player>();
         crosshair = GameObject.Find("Crosshair");
-        Crosshair();
-        CrosshairHide();
+        //Crosshair();
+        //CrosshairHide();
 
         projectileSpawnerTransform = gameObject.transform.GetChild(0);
     }
 
-    public void CrosshairUnHide()
-    {
-        crosshair.GetComponent<Renderer>().enabled = true;
-    }
+    //public void CrosshairUnHide()
+    //{
+    //    crosshair.GetComponent<Renderer>().enabled = true;
+    //}
 
-    public void CrosshairHide()
-    {
-        crosshair.GetComponent<Renderer>().enabled = false;
-    }
+    //public void CrosshairHide()
+    //{
+    //    crosshair.GetComponent<Renderer>().enabled = false;
+    //}
 
-    public void Crosshair()
-    {
-        crosshair.transform.position = new Vector3(Mathf.Clamp(Utils.GetMouseWorldPosition().x, -4.84f, 10f), Mathf.Clamp(Utils.GetMouseWorldPosition().y, -4.5f, 4.5f), 0);
-    }
+    //public void Crosshair()
+    //{
+    //    crosshair.transform.position = new Vector3(Mathf.Clamp(Utils.GetMouseWorldPosition().x, -4.84f, 10f), Mathf.Clamp(Utils.GetMouseWorldPosition().y, -4.5f, 4.5f), 0);
+    //}
     
     public void UpgradeDamageLevel()
     {
@@ -72,10 +75,10 @@ public abstract class Weapon : MonoBehaviour
             FreezeAmount += 1;
             FreezeBar.value = FreezeAmount;
 
-            if (FreezeAmount >= 3)
+            if (FreezeAmount >= MaxFreezeAmount)
             {
-                StopCoroutine(FrostTimer());
                 StartCoroutine(FrozenStun());
+                StopCoroutine(FrostTimer());
             } 
             else
             {
@@ -93,14 +96,29 @@ public abstract class Weapon : MonoBehaviour
 
     public IEnumerator FrozenStun()
     {
+        if (GetComponent<FireGun>())
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.blue;
+        } else
+        {
+            GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+
         isFrozen = true;
-        GetComponent<SpriteRenderer>().color = Color.blue;
 
         yield return new WaitForSeconds(1.5F);
 
         FreezeAmount = 0;
         FreezeBar.value = FreezeAmount;
         isFrozen = false;
-        GetComponent<SpriteRenderer>().color = Color.white;
+
+        if (GetComponent<FireGun>())
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+        }
     }
 }

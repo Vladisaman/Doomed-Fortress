@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour
 {
-    private bool isAlive = true;
+    protected bool isAlive;
     protected bool once = true;
     [SerializeField] public Slider healthBar;
     [HideInInspector] public WallBehavior wall;
@@ -27,7 +27,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] public float speed = 0.5f;
     [SerializeField] public float damage;
     [SerializeField] protected float attackCooldown = 2f;
-    [SerializeField] private int coinsForDestroy;
+    [SerializeField] protected int coinsForDestroy;
     protected Animator animator;
 
     [Header("----------DAMAGE RESIST----------")]
@@ -41,11 +41,11 @@ public abstract class Enemy : MonoBehaviour
     public const string MORTAR = "Mortar";
     public const string FIREGUN= "FireGun";
 
-    private Coroutine Slow;
-    private Coroutine Stun;
+    protected Coroutine Slow;
+    protected Coroutine Stun;
     //private float Stagger;
-    private int PoisonStacks;
-    private int SlowStacks;
+    protected int PoisonStacks;
+    protected int SlowStacks;
 
     float DefaultSpeed;
 
@@ -68,6 +68,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        isAlive = true;
         skillManager = GameObject.FindGameObjectWithTag("SkillManager").GetComponent<SkillManager>();
         wall = GameObject.Find("Wall").GetComponent<WallBehavior>();
 
@@ -190,14 +191,16 @@ public abstract class Enemy : MonoBehaviour
                 break;
         }
 
-        if (health <= 0 && weaponName == "BALLISTA" && skillManager.Vampirism)
-        {
-            wall._health += wall.maxhealth * 0.05f;
-        }
-
         actualDamage = weaponDamage * currentDamageResist;
         health -= actualDamage;
         healthBar.value = health;
+
+        if (health <= 0 && weaponName == "BALLISTA" && skillManager.Vampirism && isAlive == true)
+        {
+            wall._health += wall.maxhealth * 0.05f;
+            isAlive = false;
+        }
+
 
         if ((skillManager.PoisonArrow && weaponName == "BALLISTA") || (skillManager.PoisonYadro && weaponName == "MORTAR"))
         {
@@ -207,6 +210,8 @@ public abstract class Enemy : MonoBehaviour
             {
                 PoisonStacks = 0;
                 TakeDamage(5.0f);
+
+                StartCoroutine(BlinkPoison());
             }
         }
         if(skillManager.ColdArrow && weaponName == "BALLISTA")
@@ -249,6 +254,13 @@ public abstract class Enemy : MonoBehaviour
                 Stun = StartCoroutine(Freeze());
             }
         }
+    }
+
+    public IEnumerator BlinkPoison()
+    {
+        GetComponent<SpriteRenderer>().color = Color.green;
+        yield return new WaitForSeconds(0.5f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     public virtual void Die()
@@ -372,7 +384,7 @@ public abstract class Enemy : MonoBehaviour
         wall.GetComponent<WallBehavior>().TakeDamage(damage);
     }
 
-    public void IncreasePower()
+    public virtual void IncreasePower()
     {
         maxHealth += 0.25f * Spawner.WaveNumber;
         damage += 0.25f * Spawner.WaveNumber;

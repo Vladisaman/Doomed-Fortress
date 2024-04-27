@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Prefabs/CursedAOE.prefab.meta
-guid: 58f1d7e838e6136499d7f13bf178b334
-========
-guid: c4199f5fd795b5e48995ae90e97b8a28
->>>>>>>> origin/SEMYON:Assets/Prefabs/ColdArrowProjectile.prefab.meta
+guid: fa3e8f22784d0bc4893c3f5dc25b704b
 PrefabImporter:
   externalObjects: {}
   userData: 

@@ -70,7 +70,6 @@ public class ShieldEnemy : Enemy
 
         actualDamage = weaponDamage * currentDamageResist;
 
-
         if (isShieldAlive)
         {
             shieldHealth -= actualDamage;
@@ -91,7 +90,64 @@ public class ShieldEnemy : Enemy
             health -= actualDamage;
         }
 
-        Debug.Log(shieldHealth + " " + isShieldAlive);
+        if (health <= 0 && weaponName == "BALLISTA" && skillManager.Vampirism && isAlive == true)
+        {
+            wall._health += wall.maxhealth * 0.05f;
+            isAlive = false;
+        }
+        if ((skillManager.PoisonArrow && weaponName == "BALLISTA") || (skillManager.PoisonYadro && weaponName == "MORTAR"))
+        {
+            //Stagger += actualDamage * 0.2f;
+            PoisonStacks++;
+            if (PoisonStacks >= 3)
+            {
+                PoisonStacks = 0;
+                TakeDamage(5.0f);
+
+                StartCoroutine(BlinkPoison());
+            }
+        }
+        if (skillManager.ColdArrow && weaponName == "BALLISTA")
+        {
+            SlowStacks += 1;
+            if (Slow != null)
+            {
+                StopCoroutine(Slow);
+                Slow = StartCoroutine(SlowDown());
+            }
+            else
+            {
+                Slow = StartCoroutine(SlowDown());
+            }
+
+            if (SlowStacks == 5)
+            {
+                SlowStacks = 0;
+                StopCoroutine(Slow);
+
+                if (Stun != null)
+                {
+                    StopCoroutine(Stun);
+                    Stun = StartCoroutine(Freeze());
+                }
+                else
+                {
+                    Stun = StartCoroutine(Freeze());
+                }
+            }
+        }
+        if (skillManager.ColdYadro && weaponName == "MORTAR")
+        {
+            if (Stun != null)
+            {
+                StopCoroutine(Stun);
+                Stun = StartCoroutine(Freeze());
+            }
+            else
+            {
+                Stun = StartCoroutine(Freeze());
+            }
+        }
 
         healthBar.value = health;
     }
@@ -113,9 +169,8 @@ public class ShieldEnemy : Enemy
 
     public override void Die()
     {
+        GetComponent<BoxCollider2D>().enabled = false;
         speed = 0;
-        //shield.Die();
-
         animator.SetBool("IsAttacking", false);
         animator.SetBool("IsDead", true);
 

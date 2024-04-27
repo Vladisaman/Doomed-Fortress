@@ -5,9 +5,11 @@ using UnityEngine;
 public class IceEnemy : Enemy
 {
     private Player player;
+    private bool hasFrozen;
 
     private void Start()
     {
+        hasFrozen = false;
         player = FindObjectOfType<Player>();
     }
 
@@ -21,11 +23,16 @@ public class IceEnemy : Enemy
         animator.SetBool("IsAttacking", true);
         lastAttackTime = Time.time;
         wall.GetComponent<WallBehavior>().TakeDamage(damage);
-        player.midGunObj.GetComponent<Weapon>().Freeze();
+        if (!hasFrozen)
+        {
+            player.midGunObj.GetComponent<Weapon>().Freeze();
+            hasFrozen = true;
+        }
     }
 
     public override void Die()
     {
+        GetComponent<BoxCollider2D>().enabled = false;
         speed = 0;
         animator.SetBool("IsAttacking", false);
         animator.SetBool("IsDead", true);

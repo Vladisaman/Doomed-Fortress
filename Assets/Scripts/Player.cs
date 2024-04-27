@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject crossBowAbility;
     [SerializeField] private GameObject firegunAbility;
     [SerializeField] private GameObject mortarAbility;
+    [SerializeField] public MovementStick stick;
 
     public enum Weapon { Mortar = 1, Crossbow = 0, FireGun = -1 };
 
@@ -138,11 +139,6 @@ public class Player : MonoBehaviour
             botGunObj = midGunObj;
             midGunObj = topGunObj;
             topGunObj = bridgeObj;
-        }
-
-        if(midGun == Weapon.FireGun)
-        {
-            midGunObj.GetComponent<FireGun>().CrosshairHide();
         }
     }
 

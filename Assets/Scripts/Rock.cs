@@ -8,7 +8,7 @@ public class Rock : MonoBehaviour
     public Transform target;
     public float speed = 5f;
     [SerializeField] protected GameObject _wall;
-    [SerializeField] private float damage;
+    [SerializeField] public float damage;
 
     private void Awake()
     {

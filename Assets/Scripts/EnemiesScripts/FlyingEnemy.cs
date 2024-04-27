@@ -46,6 +46,7 @@ public class FlyingEnemy : Enemy
 
     public override void Die()
     {
+        GetComponent<BoxCollider2D>().enabled = false;
         speed = 0;
         animator.SetBool("IsAttacking", false);
         animator.SetBool("IsDead", true);

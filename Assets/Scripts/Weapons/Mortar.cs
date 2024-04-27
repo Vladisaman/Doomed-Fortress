@@ -40,10 +40,19 @@ public class Mortar : Weapon
 
     public override void Aim()
     {
-        Vector3 mousePosition = Utils.GetMouseWorldPosition();
-        Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
+        //Vector3 mousePosition = Utils.GetMouseWorldPosition();
+        //Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
+        //float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        //transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
+
+        float horizontalInput = playerScript.stick.Horizontal();
+        float verticalInput = playerScript.stick.Vertical();
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            float targetAngle = Mathf.Atan2(verticalInput, horizontalInput) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, RotationSpeed * Time.deltaTime);
+        }
     }
 
     private void Update()
@@ -56,8 +65,8 @@ public class Mortar : Weapon
             {
                 if (Utils.GetTouchedObject() == null || !Utils.GetTouchedObject().CompareTag("Weapon"))
                 {
-                    Crosshair();
-                    CrosshairUnHide();
+                    //Crosshair();
+                    //CrosshairUnHide();
                     Aim();
                     if (!isReloading)
                     {
@@ -79,8 +88,8 @@ public class Mortar : Weapon
             }
             else if (Input.GetMouseButton(1))
             {
-                Crosshair();
-                CrosshairUnHide();
+                //Crosshair();
+                //CrosshairUnHide();
                 Aim();
                 if (!isReloading)
                 {
@@ -101,7 +110,7 @@ public class Mortar : Weapon
             }
             if (Input.GetMouseButtonUp(1))
             {
-                CrosshairHide();
+                //CrosshairHide();
             }
 
 
@@ -129,21 +138,20 @@ public class Mortar : Weapon
         {
             return;
         }
-        else if (skillsManager.bigYadroEnable)
+        GameObject sentProjectile;
+        if (skillsManager.bigYadroEnable)
         {
-            GameObject.Instantiate(BigProjectile, projectileSpawnerTransform.position, transform.rotation);
-            isReloading = true;
+            CreateProjectile(BigProjectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
         }
         else if (skillsManager.smallYadroEnable)
         {
-            GameObject.Instantiate(smallProjectile, projectileSpawnerTransform.position, transform.rotation);
-            isReloading = true;
+            CreateProjectile(smallProjectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
         }
         else
         {
-            GameObject.Instantiate(projectile, projectileSpawnerTransform.position, transform.rotation);
-            isReloading = true;
+            CreateProjectile(projectile, projectileSpawnerTransform.position, projectileSpawnerTransform.rotation);
         }
+        isReloading = true;
 
 
         OnMortarShot?.Invoke();
@@ -163,6 +171,17 @@ public class Mortar : Weapon
             StartCoroutine(Reload());
 
             OnMortarShot?.Invoke();
+        }
+    }
+
+    private void CreateProjectile(GameObject projectile, Vector3 spawnPosition, Quaternion rotation)
+    {
+        var sentProjectile = Instantiate(projectile, spawnPosition, rotation);
+        sentProjectile.GetComponent<Rigidbody2D>().AddForce(projectileSpawnerTransform.right * projectileSpeed, ForceMode2D.Impulse);
+
+        if (sentProjectile.TryGetComponent(out ArrowProjectile arrowProjectile))
+        {
+            arrowProjectile.damage = projectileDamage;
         }
     }
 

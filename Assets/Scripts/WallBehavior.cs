@@ -23,6 +23,8 @@ public class WallBehavior : MonoBehaviour
     private bool isAlive;
 
     [SerializeField] private Slider poisonBar;
+    [SerializeField] private Sprite fullPoison;
+    [SerializeField] private Sprite notFullPoison;
     bool isPoisoned;
     int PoisonAmount;
 
@@ -100,7 +102,6 @@ public class WallBehavior : MonoBehaviour
 
             if (PoisonAmount >= 3)
             {
-                StopCoroutine(PoisonTimer());
                 StartCoroutine(PoisonedDOT());
             }
             else
@@ -113,15 +114,18 @@ public class WallBehavior : MonoBehaviour
     private IEnumerator PoisonTimer()
     {
         yield return new WaitForSeconds(50.0f);
-        PoisonAmount -= 1;
-        poisonBar.value = PoisonAmount;
+        if (!isPoisoned)
+        {
+            PoisonAmount -= 1;
+            poisonBar.value = PoisonAmount;
+        }
     }
 
     public IEnumerator PoisonedDOT()
     {
         isPoisoned = true;
         int secondsAmount = 0;
-        //GetComponent<SpriteRenderer>().color = Color.;
+        poisonBar.GetComponent<Image>().sprite = fullPoison;
 
         while (secondsAmount <= 150)
         {
@@ -130,6 +134,7 @@ public class WallBehavior : MonoBehaviour
             secondsAmount++;
         }
 
+        poisonBar.GetComponent<Image>().sprite = notFullPoison;
         PoisonAmount = 0;
         poisonBar.value = PoisonAmount;
         isPoisoned = false;
