@@ -33,6 +33,11 @@ public class Mortar : Weapon
 
     bool isSuperPowerActivated = false;
 
+    private void OnEnable()
+    {
+        isReloading = false;
+    }
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -40,19 +45,10 @@ public class Mortar : Weapon
 
     public override void Aim()
     {
-        //Vector3 mousePosition = Utils.GetMouseWorldPosition();
-        //Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
-        //float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        //transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
-
-        float horizontalInput = playerScript.stick.Horizontal();
-        float verticalInput = playerScript.stick.Vertical();
-        if (horizontalInput != 0 || verticalInput != 0)
-        {
-            float targetAngle = Mathf.Atan2(verticalInput, horizontalInput) * Mathf.Rad2Deg;
-            Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, RotationSpeed * Time.deltaTime);
-        }
+        Vector3 mousePosition = Utils.GetMouseWorldPosition();
+        Vector3 aimDirection = (mousePosition - playerTransform.transform.position).normalized;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -weaponRotationClamp, weaponRotationClamp));
     }
 
     private void Update()

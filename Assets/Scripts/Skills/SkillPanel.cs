@@ -19,9 +19,15 @@ public class SkillPanel : MonoBehaviour
         currentSkillNumber = 0;
     }
 
-    private void Start()
+    public void CreateTutorialSkills()
     {
-        
+        SkillButton[] skills = this.skills.ToArray();
+
+        for (int i = 0; i < skills.Length; i++)
+        {
+            var instance = Instantiate(skills[i], skillPlaces[i]);
+            instance.button.onClick.AddListener(() => { Panel.SetActive(false); Time.timeScale = 1; });
+        }
     }
 
     public void ExitPanel()

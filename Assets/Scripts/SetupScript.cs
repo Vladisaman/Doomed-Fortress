@@ -16,14 +16,18 @@ public class SetupScript : MonoBehaviour
     {
         if (System.IO.File.Exists(CurrencyManager.filePath) == false)
         {
-            PlayerData data = new PlayerData(8, 10, 1, 9, 10, 1, 7, 10, 1);
-            string jayson = JsonUtility.ToJson(data);
-            System.IO.File.WriteAllText(CurrencyManager.filePath, jayson);
-            Debug.Log("BALLS");
+            CreateNewSave();
         }
 
         string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
         PlayerData playerData = JsonUtility.FromJson<PlayerData>(json);
+
+        if(playerData == null || json == "")
+        {
+            CreateNewSave();
+            json = System.IO.File.ReadAllText(CurrencyManager.filePath);
+            playerData = JsonUtility.FromJson<PlayerData>(json);
+        }
 
         mailman.CrossbowDamageLevel = playerData.crossbowLevel == 0 ? 1 : playerData.crossbowLevel;
         mailman.MortarDamageLevel = playerData.mortarLevel == 0 ? 1 : playerData.mortarLevel;
@@ -41,5 +45,13 @@ public class SetupScript : MonoBehaviour
 
         json = JsonUtility.ToJson(playerData);
         System.IO.File.WriteAllText(CurrencyManager.filePath, json);
+    }
+
+    private void CreateNewSave()
+    {
+        PlayerData data = new PlayerData(8, 10, 1, 9, 10, 1, 7, 10, 1);
+        string jayson = JsonUtility.ToJson(data);
+        System.IO.File.WriteAllText(CurrencyManager.filePath, jayson);
+        Debug.Log("BALLS");
     }
 }

@@ -63,6 +63,12 @@ public class UI : MonoBehaviour
         //}
     }
 
+    public void OpenTutorial()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(2);
+    }
+
     public void OpenPauseMenu()
     {
         if (!isPauseActive)

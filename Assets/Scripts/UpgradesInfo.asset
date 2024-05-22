@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d88e463264558439984186c5d9ce97, type: 3}
   m_Name: UpgradesInfo
   m_EditorClassIdentifier: 
-  FlamethrowerDamageLevel: 1
-  FlamethrowerDamage: 7
+  FiregunDamageLevel: 1
+  FiregunDamage: 7
   CrossbowDamageLevel: 1
   CrossbowDamage: 8
   MortarDamageLevel: 1

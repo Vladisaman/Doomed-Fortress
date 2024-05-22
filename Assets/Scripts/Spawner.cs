@@ -34,14 +34,17 @@ public class Spawner : MonoBehaviour
 
     private void Awake()
     {
-        string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
-        playerData = JsonUtility.FromJson<PlayerData>(json);
-
-        if(playerData.skillAmount > 0)
+        if (!isWaiting)
         {
-            panel.gameObject.SetActive(true);
-            panel.GiveSkills(0);
-            Time.timeScale = 0;
+            string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
+            playerData = JsonUtility.FromJson<PlayerData>(json);
+
+            if (playerData.skillAmount > 0)
+            {
+                panel.gameObject.SetActive(true);
+                panel.GiveSkills(0);
+                Time.timeScale = 0;
+            }
         }
     }
 

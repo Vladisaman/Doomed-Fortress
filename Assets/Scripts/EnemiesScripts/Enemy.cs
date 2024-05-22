@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour
 {
-    protected bool isAlive;
+    public bool isAlive;
     protected bool once = true;
     [SerializeField] public Slider healthBar;
     [HideInInspector] public WallBehavior wall;

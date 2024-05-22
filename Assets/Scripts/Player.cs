@@ -12,15 +12,16 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject crossBowAbility;
     [SerializeField] private GameObject firegunAbility;
     [SerializeField] private GameObject mortarAbility;
-    [SerializeField] public MovementStick stick;
+
+    public bool canSwap;
 
     public enum Weapon { Mortar = 1, Crossbow = 0, FireGun = -1 };
 
     [SerializeField] public Weapon activeGun;
 
-     Weapon topGun;
-     Weapon midGun;
-     Weapon botGun;
+     public Weapon topGun;
+     public Weapon midGun;
+     public Weapon botGun;
 
      public GameObject topGunObj;
      public GameObject midGunObj;
@@ -44,6 +45,7 @@ public class Player : MonoBehaviour
 
     private void Setup()
     {
+        canSwap = true;
         crossBowAbility.SetActive(false);
         firegunAbility.SetActive(false);
         mortarAbility.SetActive(false);
@@ -86,59 +88,63 @@ public class Player : MonoBehaviour
 
     public void SwapWeapon(int i)
     {
-        TimeSpan WeaponUseTime = WeaponUseMetric - DateTime.Now;
-        Dictionary<string, object> parameters = new Dictionary<string, object>() { { "time_seconds", WeaponUseTime.TotalSeconds } };
-        AppMetrica.Instance.ReportEvent(activeGun + "_use_time", parameters);
-        AppMetrica.Instance.SendEventsBuffer();
-
-        WeaponUseMetric = DateTime.Now;
-
-        if (i == 1) //SwipeUP
+        if (canSwap)
         {
-            //Changing WEAPON
-            Weapon bridge;
-            bridge = topGun;
-            topGun = midGun;
-            midGun = botGun;
-            botGun = bridge;
+            TimeSpan WeaponUseTime = WeaponUseMetric - DateTime.Now;
+            Dictionary<string, object> parameters = new Dictionary<string, object>() { { "time_seconds", WeaponUseTime.TotalSeconds } };
+            AppMetrica.Instance.ReportEvent(activeGun + "_use_time", parameters);
+            AppMetrica.Instance.SendEventsBuffer();
 
-            //Changing OBJECTS' POSITION
-            Vector3 bridgeObjPos;
-            bridgeObjPos = topGunObj.transform.position;
-            topGunObj.transform.position = botGunObj.transform.position;
-            botGunObj.transform.position = midGunObj.transform.position;
-            midGunObj.transform.position = bridgeObjPos;
-            
+            WeaponUseMetric = DateTime.Now;
 
-            //Changing OBJECT
-            GameObject bridgeObj;
-            bridgeObj = topGunObj;
-            topGunObj = midGunObj;
-            midGunObj = botGunObj;
-            botGunObj = bridgeObj;
+            if (i == 1) //SwipeUP
+            {
+                //Changing WEAPON
+                Weapon bridge;
+                bridge = topGun;
+                topGun = midGun;
+                midGun = botGun;
+                botGun = bridge;
 
-        } else //SwipeDOWN
-        {
-            //Changing WEAPON
-            Weapon bridge;
-            bridge = botGun;
-            botGun = midGun;
-            midGun = topGun;
-            topGun = bridge;
+                //Changing OBJECTS' POSITION
+                Vector3 bridgeObjPos;
+                bridgeObjPos = topGunObj.transform.position;
+                topGunObj.transform.position = botGunObj.transform.position;
+                botGunObj.transform.position = midGunObj.transform.position;
+                midGunObj.transform.position = bridgeObjPos;
 
-            //Changing OBJECTS' POSITION
-            Vector3 bridgeObjPos;
-            bridgeObjPos = botGunObj.transform.position;
-            botGunObj.transform.position = topGunObj.transform.position;
-            topGunObj.transform.position = midGunObj.transform.position;
-            midGunObj.transform.position = bridgeObjPos;
 
-            //Changing OBJECT
-            GameObject bridgeObj;
-            bridgeObj = botGunObj;
-            botGunObj = midGunObj;
-            midGunObj = topGunObj;
-            topGunObj = bridgeObj;
+                //Changing OBJECT
+                GameObject bridgeObj;
+                bridgeObj = topGunObj;
+                topGunObj = midGunObj;
+                midGunObj = botGunObj;
+                botGunObj = bridgeObj;
+
+            }
+            else //SwipeDOWN
+            {
+                //Changing WEAPON
+                Weapon bridge;
+                bridge = botGun;
+                botGun = midGun;
+                midGun = topGun;
+                topGun = bridge;
+
+                //Changing OBJECTS' POSITION
+                Vector3 bridgeObjPos;
+                bridgeObjPos = botGunObj.transform.position;
+                botGunObj.transform.position = topGunObj.transform.position;
+                topGunObj.transform.position = midGunObj.transform.position;
+                midGunObj.transform.position = bridgeObjPos;
+
+                //Changing OBJECT
+                GameObject bridgeObj;
+                bridgeObj = botGunObj;
+                botGunObj = midGunObj;
+                midGunObj = topGunObj;
+                topGunObj = bridgeObj;
+            }
         }
     }
 
