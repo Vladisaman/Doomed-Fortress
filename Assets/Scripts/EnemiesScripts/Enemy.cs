@@ -18,10 +18,11 @@ public abstract class Enemy : MonoBehaviour
     public float time;
     [HideInInspector] public bool isAttacking = false;
     [HideInInspector] public bool isAttracted = false;
+    private bool wasBuffed;
 
     [Space]
     [Header("----------PROPERTIES----------")]
-    [SerializeField] public float StaggerDamage = 0f;
+    //[SerializeField] public float StaggerDamage = 0f;
     [SerializeField] public float maxHealth;
     [SerializeField] public float health;
     [SerializeField] public float speed = 0.5f;
@@ -68,6 +69,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        wasBuffed = false;
         isAlive = true;
         skillManager = GameObject.FindGameObjectWithTag("SkillManager").GetComponent<SkillManager>();
         wall = GameObject.Find("Wall").GetComponent<WallBehavior>();
@@ -389,6 +391,16 @@ public abstract class Enemy : MonoBehaviour
         maxHealth += 0.25f * Spawner.WaveNumber;
         damage += 0.25f * Spawner.WaveNumber;
         coinsForDestroy += Spawner.WaveNumber * 5;
+    }
+
+    public void BuffSpeed()
+    {
+        if (!wasBuffed)
+        {
+            wasBuffed = true;
+            DefaultSpeed += DefaultSpeed * 0.2f;
+            speed = DefaultSpeed;
+        }
     }
 }
 

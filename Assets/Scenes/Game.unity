@@ -27880,8 +27880,11 @@ MonoBehaviour:
   crossBowAbility: {fileID: 283509097}
   firegunAbility: {fileID: 1947172716}
   mortarAbility: {fileID: 511669890}
-  stick: {fileID: 0}
+  canSwap: 0
   activeGun: 0
+  topGun: 0
+  midGun: 0
+  botGun: 0
   topGunObj: {fileID: 575301020}
   midGunObj: {fileID: 1117500348}
   botGunObj: {fileID: 2054154973}
@@ -32584,6 +32587,71 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1001 &2319316976688045784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.040001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891177840900484584, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887378858879491770, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887378858879491770, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6141825515404303728, guid: f90a596227da0164ba139461e22c6e45, type: 3}
+      propertyPath: m_Name
+      value: NecromancerBoss
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f90a596227da0164ba139461e22c6e45, type: 3}
 --- !u!1001 &5605848230850063244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32920,3 +32988,4 @@ SceneRoots:
   - {fileID: 1608025300}
   - {fileID: 1382838687}
   - {fileID: 2131151252}
+  - {fileID: 2319316976688045784}

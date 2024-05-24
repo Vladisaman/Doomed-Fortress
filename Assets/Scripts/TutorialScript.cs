@@ -6,6 +6,7 @@ using TMPro;
 
 public class TutorialScript : MonoBehaviour
 {
+    [SerializeField] private Slider UpgradeSlider;
     [SerializeField] TMP_Text text;
     [SerializeField] Button nextButton;
     [SerializeField] private int enemiesKillCountToOpenPanel;
@@ -43,6 +44,9 @@ public class TutorialScript : MonoBehaviour
         mortar.gameObject.SetActive(false);
         crossbow.gameObject.SetActive(false);
         firegun.gameObject.SetActive(false);
+
+        UpgradeSlider.minValue = 0;
+        UpgradeSlider.maxValue = enemiesKillCountToOpenPanel;
     }
 
     private void Update()
@@ -59,7 +63,9 @@ public class TutorialScript : MonoBehaviour
             }
         }
 
-        if(!panelOnce && currEnemiesKillCount >= enemiesKillCountToOpenPanel)
+        UpgradeSlider.value = currEnemiesKillCount;
+
+        if (!panelOnce && currEnemiesKillCount >= enemiesKillCountToOpenPanel)
         {
             ShowAbilityPanel();
             panelOnce = true;
