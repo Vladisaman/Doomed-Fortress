@@ -29,11 +29,14 @@ public class Spawner : MonoBehaviour
     private bool isGolemSpawned = false;
     private int enemyKillCount;
     public bool isWaiting;
+    public static bool isBossAlive;
 
     public static PlayerData playerData;
 
     private void Awake()
     {
+        isBossAlive = false;
+
         if (!isWaiting)
         {
             string json = System.IO.File.ReadAllText(CurrencyManager.filePath);
@@ -94,51 +97,97 @@ public class Spawner : MonoBehaviour
         }
 
         _elapsedTime += Time.deltaTime;
-        if (!isWaiting) {
+        if (!isWaiting)
+        {
             if (_elapsedTime >= nextSpawnTime)
             {
-                if (currentEnemies < maxEnemies && !isGolemSpawned)
+                if (WaveNumber != 100)
                 {
-                    int enemyIndex = Random.Range(1, 11);
-                    if (enemyIndex >= 9)
+                    if (currentEnemies < maxEnemies && !isGolemSpawned)
                     {
-                        SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
-                        currentEnemies++;
-                    }
-                    if (enemyIndex <= 8 && enemyIndex > 6)
-                    {
-                        SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
-                        currentEnemies++;
-                    }
-                    if (enemyIndex <= 6)
-                    {
-                        SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
-                        currentEnemies++;
-                    }
+                        int enemyIndex = Random.Range(1, 11);
+                        if (enemyIndex >= 9)
+                        {
+                            SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
+                            currentEnemies++;
+                        }
+                        if (enemyIndex <= 8 && enemyIndex > 6)
+                        {
+                            SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
+                            currentEnemies++;
+                        }
+                        if (enemyIndex <= 6)
+                        {
+                            SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
+                            currentEnemies++;
+                        }
 
-                    int extraIndex = Random.Range(1, 7);
-                    if (enemyIndex <= 2)
-                    {
-                        SpawnEnemy(4, forSmallMinY, forSmallMaxY);
-                        currentEnemies++;
-                    } 
-                    else if(enemyIndex == 3 || enemyIndex == 4)
-                    {
-                        SpawnEnemy(5, forSmallMinY, forSmallMaxY);
-                        currentEnemies++;
-                    }
+                        int extraIndex = Random.Range(1, 7);
+                        if (enemyIndex <= 2)
+                        {
+                            SpawnEnemy(4, forSmallMinY, forSmallMaxY); //ICE
+                            currentEnemies++;
+                        }
+                        else if (enemyIndex == 3 || enemyIndex == 4)
+                        {
+                            SpawnEnemy(5, forSmallMinY, forSmallMaxY); //POISON
+                            currentEnemies++;
+                        }
 
-                    _elapsedTime = 0;
+                        _elapsedTime = 0;
+                    }
+                    else
+                    {
+                        SpawnEnemy(3, forBigMinY, forBigMaxY); //GOLEM
+                        isGolemSpawned = true;
+                        currentEnemies++;
+                        _elapsedTime = 0;
+                        isWaiting = true;
+                        Debug.Log(isWaiting);
+                    }
                 }
-                else
+                else if (WaveNumber == 100)
                 {
-                    SpawnEnemy(3, forBigMinY, forBigMaxY); //BOSS
-                    isGolemSpawned = true;
-                    currentEnemies++;
-                    _elapsedTime = 0;
-                    isWaiting = true;
-                    Debug.Log(isWaiting);
+                    if (isBossAlive == false)
+                    {
+                        SpawnEnemy(6, 0, 0); //BOSS
+                        isBossAlive = true;
+                    }
+                    else
+                    {
+                        int enemyIndex = Random.Range(1, 11);
+                        if (enemyIndex >= 9)
+                        {
+                            SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
+                            currentEnemies++;
+                        }
+                        if (enemyIndex <= 8 && enemyIndex > 6)
+                        {
+                            SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
+                            currentEnemies++;
+                        }
+                        if (enemyIndex <= 6)
+                        {
+                            SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
+                            currentEnemies++;
+                        }
+
+                        int extraIndex = Random.Range(1, 7);
+                        if (enemyIndex <= 2)
+                        {
+                            SpawnEnemy(4, forSmallMinY, forSmallMaxY); //ICE
+                            currentEnemies++;
+                        }
+                        else if (enemyIndex == 3 || enemyIndex == 4)
+                        {
+                            SpawnEnemy(5, forSmallMinY, forSmallMaxY); //POISON
+                            currentEnemies++;
+                        }
+
+                        _elapsedTime = 0;
+                    }
                 }
+
             }
 
             if (enemyKillCount >= enemiesKillCountToOpenPanel)
@@ -151,6 +200,11 @@ public class Spawner : MonoBehaviour
 
             //Debug.Log("enemyKillCount: " + enemyKillCount);
         }
+    }
+
+    public void BossKilled()
+    {
+        isWaiting = true;
     }
 
     public void IncreaseKilledEnemyCount()

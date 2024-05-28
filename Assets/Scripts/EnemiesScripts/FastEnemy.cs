@@ -4,16 +4,6 @@ using UnityEngine;
 
 public class FastEnemy : Enemy
 {
-    [SerializeField] Sprite[] Sprites;
-    [SerializeField] Animator[] Animators;
-
-    private void Start()
-    {
-        int random = Random.Range(0, 3);
-        //GetComponent<SpriteRenderer>().sprite = Sprites[random];
-        //animator = Animators[random];
-    }
-
     public override void Attack()
     {
         if (Time.time - lastAttackTime < attackCooldown)

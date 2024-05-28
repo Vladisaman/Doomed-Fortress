@@ -316,8 +316,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041E\u0431\u0440\u0430\u0442\u043D\u043E \u0432 \u043C\u0435\u043D\u044E"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
+  m_sharedMaterial: {fileID: 3253243610642115152, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1554,9 +1554,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillManager: {fileID: 0}
-  _health: 500
+  _health: 50000
   time: 0
-  maxhealth: 500
+  maxhealth: 50000
   ignoredCollider: {fileID: 0}
   myGameObject: {fileID: 5406909853707276214, guid: 6a9564692f1d1f445af51b44117b69a5, type: 3}
   gameManager: {fileID: 678270648}
@@ -1795,8 +1795,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
+  m_sharedMaterial: {fileID: 3253243610642115152, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1927,17 +1927,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0414\u0430\u043B\u0435\u0435"
+  m_text: "\u0414\u0430\u043B\u0435\u0435 >>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
+  m_sharedMaterial: {fileID: 3253243610642115152, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1954,8 +1954,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2347,8 +2347,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0412\u0430\u0448\u0430 \u0441\u0442\u0435\u043D\u0430 \u043F\u0430\u043B\u0430..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
+  m_sharedMaterial: {fileID: 3253243610642115152, guid: 52febcfe9dd97824eb8030704ad14b78, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3507,8 +3507,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8c0bb058db879fe4fb827829141c3b18, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4093,9 +4093,9 @@ RectTransform:
   - {fileID: 1311849255}
   - {fileID: 313505805}
   - {fileID: 1064435145}
-  - {fileID: 283752688}
   - {fileID: 1206236910}
   - {fileID: 813269603}
+  - {fileID: 283752688}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4115,6 +4115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f298d0e4e65464aa26accc1aedbae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UpgradeSlider: {fileID: 991105221}
   text: {fileID: 463436775}
   nextButton: {fileID: 813269604}
   enemiesKillCountToOpenPanel: 0
@@ -4821,6 +4822,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2801642646599582899, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c964536d3b7acfa46a650d5316ed3e1b, type: 3}
     - target: {fileID: 2801642646672131127, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4881,6 +4886,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2801642646854162685, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c964536d3b7acfa46a650d5316ed3e1b, type: 3}
     - target: {fileID: 2801642647015575667, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4985,6 +4994,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2801642647200558560, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c964536d3b7acfa46a650d5316ed3e1b, type: 3}
     - target: {fileID: 2801642647271074885, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
       propertyPath: m_SizeDelta.x
       value: 160
@@ -5009,6 +5022,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2801642647732142855, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c964536d3b7acfa46a650d5316ed3e1b, type: 3}
     - target: {fileID: 2801642647751283296, guid: 95688e568d896a44fb1caef1f2000fb4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 22.454544
@@ -7098,7 +7115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1838970916
 RectTransform:
   m_ObjectHideFlags: 0

@@ -5070,10 +5070,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1075432235747163255}
   - component: {fileID: 4144574605535599198}
-  - component: {fileID: 9193325544858586718}
   - component: {fileID: 2293490442049068538}
   - component: {fileID: 6166740840821494810}
   - component: {fileID: 4229459873086559673}
+  - component: {fileID: 9193325544858586718}
   m_Layer: 0
   m_Name: "Goblin_01_GOBLIN_ATTA\u0421K_2_006"
   m_TagString: Enemy
@@ -5150,27 +5150,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &9193325544858586718
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5686384816406029662}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1a5dd1a8f1a2a06449dd17e80f952801, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2293490442049068538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5183,6 +5162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9567bfbb7a451e1499928a942abdea56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAlive: 0
   healthBar: {fileID: 4296374190054979122}
   wall: {fileID: 0}
   skillManager: {fileID: 0}
@@ -5191,7 +5171,6 @@ MonoBehaviour:
   time: 0
   isAttacking: 0
   isAttracted: 0
-  StaggerDamage: 0
   maxHealth: 30
   health: 0
   speed: 1.5
@@ -5280,6 +5259,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 9}
   m_EdgeRadius: 0
+--- !u!95 &9193325544858586718
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686384816406029662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a5dd1a8f1a2a06449dd17e80f952801, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7329713679305813094
 GameObject:
   m_ObjectHideFlags: 0

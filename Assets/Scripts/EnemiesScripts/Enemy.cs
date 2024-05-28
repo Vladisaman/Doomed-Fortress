@@ -19,6 +19,7 @@ public abstract class Enemy : MonoBehaviour
     [HideInInspector] public bool isAttacking = false;
     [HideInInspector] public bool isAttracted = false;
     private bool wasBuffed;
+    private float BonusSpeed;
 
     [Space]
     [Header("----------PROPERTIES----------")]
@@ -69,6 +70,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        BonusSpeed = 1;
         wasBuffed = false;
         isAlive = true;
         skillManager = GameObject.FindGameObjectWithTag("SkillManager").GetComponent<SkillManager>();
@@ -274,7 +276,7 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void Move()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += Vector3.left * speed * BonusSpeed * Time.deltaTime;
     }
 
     public virtual void OnTriggerEnter2D(Collider2D collision)
@@ -395,11 +397,10 @@ public abstract class Enemy : MonoBehaviour
 
     public void BuffSpeed()
     {
-        if (!wasBuffed)
+        if (wasBuffed == false)
         {
             wasBuffed = true;
-            DefaultSpeed += DefaultSpeed * 0.2f;
-            speed = DefaultSpeed;
+            BonusSpeed += DefaultSpeed * 0.2f;
         }
     }
 }

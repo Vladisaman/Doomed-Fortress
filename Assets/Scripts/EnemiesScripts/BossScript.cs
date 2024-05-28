@@ -6,8 +6,13 @@ public class BossScript : Enemy
 {
     [SerializeField] Enemy Mob;
     CurrentWeakness currentWeakness;
+    Spawner spawner;
 
-    private int castWaitAmount = 10;
+    [SerializeField] GameObject arrowResistancePNG;
+    [SerializeField] GameObject bombResistancePNG;
+    [SerializeField] GameObject firegunResistancePNG;
+
+    public int castWaitAmount = 10;
 
 
     // Start is called before the first frame update
@@ -15,16 +20,39 @@ public class BossScript : Enemy
     {
         currentWeakness = CurrentWeakness.none;
         StartCoroutine(AbilityCastCoroutine());
+        spawner = (Spawner)FindObjectOfType(typeof(Spawner));
+
+        arrowResistancePNG.gameObject.SetActive(false);
+        bombResistancePNG.gameObject.SetActive(false);
+        firegunResistancePNG.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (transform.position.x <= 0.8)
+        {
+            speed = 0;
+            animator.SetBool("IsStanding", true);
+        } 
+        else
+        {
+            Move();
+            animator.SetBool("IsStanding", false);
+        }
+
+        CheckDeath();
+        healthBar.value = health;
+
+        if(isAlive == false)
+        {
+            spawner.BossKilled();
+        }
     }
 
     private void SummonMobs()
     {
+        animator.SetTrigger("CastSummon");
+
         Instantiate(Mob, transform.position + new Vector3(1, 1, 0), Quaternion.identity);
         Instantiate(Mob, transform.position + new Vector3(1, -1, 0), Quaternion.identity);
         Instantiate(Mob, transform.position + new Vector3(-1, 1, 0), Quaternion.identity);
@@ -33,11 +61,13 @@ public class BossScript : Enemy
 
     private void CycleResistance()
     {
+        animator.SetTrigger("CastSpell");
+
         arrowDamageResist = DamageResistance.IMMUNE;
         bombDamageResist = DamageResistance.IMMUNE;
         fireDamageResist = DamageResistance.IMMUNE;
 
-        int weakness = Random.Range(2, 4);
+        int weakness = Random.Range(1, 4);
         var v = System.Enum.GetValues(typeof(CurrentWeakness));
         currentWeakness = (CurrentWeakness) v.GetValue(weakness);
 
@@ -45,23 +75,40 @@ public class BossScript : Enemy
         {
             case CurrentWeakness.ballista:
                 arrowDamageResist = DamageResistance.WEAK;
+
+                arrowResistancePNG.gameObject.SetActive(false);
+                bombResistancePNG.gameObject.SetActive(true);
+                firegunResistancePNG.gameObject.SetActive(true);
                 break;
             case CurrentWeakness.mortar:
                 bombDamageResist = DamageResistance.WEAK;
+
+                arrowResistancePNG.gameObject.SetActive(true);
+                bombResistancePNG.gameObject.SetActive(false);
+                firegunResistancePNG.gameObject.SetActive(true);
                 break;
             case CurrentWeakness.firegun:
                 fireDamageResist = DamageResistance.WEAK;
+
+                arrowResistancePNG.gameObject.SetActive(true);
+                bombResistancePNG.gameObject.SetActive(true);
+                firegunResistancePNG.gameObject.SetActive(false);
                 break;
         }
     }
 
     private void BuffEnemies()
     {
-        Object[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        animator.SetTrigger("CastSpell");
+
+        Object[] enemies = FindObjectsOfType<Enemy>();
 
         foreach (Enemy enemy in enemies)
         {
-            enemy.BuffSpeed();
+            if (enemy != this)
+            {
+                enemy.BuffSpeed();
+            }
         }
     }
 
