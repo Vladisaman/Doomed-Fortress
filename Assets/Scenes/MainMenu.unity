@@ -3301,6 +3301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425387023}
   - component: {fileID: 425387022}
+  - component: {fileID: 425387024}
   m_Layer: 0
   m_Name: CurrencyManager
   m_TagString: Untagged
@@ -3336,6 +3337,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425387024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425387021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2975942edaef2c74ba3302adac06dd4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllSkills:
+  - name: "\u0423\u0441\u043A\u043E\u0440\u0435\u043D\u0438\u0435"
+    rarity: 0
+    weaponType: 0
+  - name: "\u0412\u0435\u0435\u0440 \u0441\u0442\u0440\u0435\u043B"
+    rarity: 1
+    weaponType: 0
+  - name: "\u0412\u0430\u043C\u043F\u0438\u0440\u0438\u0437\u043C"
+    rarity: 1
+    weaponType: 0
+  - name: "\u041A\u043B\u043E\u043D-\u0441\u0442\u0440\u0435\u043B\u0430"
+    rarity: 1
+    weaponType: 0
+  - name: "\u041C\u043E\u0440\u043E\u0437\u043D\u0430\u044F \u0441\u0442\u0440\u0435\u043B\u0430"
+    rarity: 2
+    weaponType: 0
+  - name: "\u0423\u0441\u043A\u043E\u0440\u0435\u043D\u0438\u0435"
+    rarity: 0
+    weaponType: 1
+  - name: "\u0412\u0437\u0440\u044B\u0432\u043D\u043E\u0435 \u044F\u0434\u0440\u043E"
+    rarity: 1
+    weaponType: 1
+  - name: "\u042F\u0434\u0440\u043E \u0442\u044C\u043C\u044B"
+    rarity: 1
+    weaponType: 1
+  - name: "\u041A\u0430\u0440\u0442\u0435\u0447\u044C"
+    rarity: 2
+    weaponType: 1
+  - name: "\u0414\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C"
+    rarity: 0
+    weaponType: 2
+  - name: "\u041D\u0430\u043F\u043E\u0440"
+    rarity: 1
+    weaponType: 2
+  - name: "\u0421\u0432\u044F\u0442\u043E\u0439 \u041E\u0433\u043E\u043D\u044C"
+    rarity: 1
+    weaponType: 2
+  - name: "\u041F\u0435\u0440\u0435\u0433\u0440\u0435\u0432"
+    rarity: 1
+    weaponType: 2
+  - name: "\u041C\u043E\u043B\u043E\u0442\u043E\u0432"
+    rarity: 2
+    weaponType: 2
+  - name: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u0447\u043D\u043E\u0441\u0442\u0438"
+    rarity: 1
+    weaponType: 3
+  - name: "\u0428\u0438\u043F\u044B"
+    rarity: 3
+    weaponType: 3
+  ActiveSkills: []
 --- !u!1 &426809842
 GameObject:
   m_ObjectHideFlags: 0
