@@ -10,7 +10,9 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private Slider UpgradeSlider;
     [SerializeField] private List<Enemy> enemyPrefabs;
+    private List<Enemy> AllowedEnemies;
     [SerializeField] private int maxEnemies;
+    [SerializeField] private int tempMaxEnemies;
     [SerializeField] private float forBigMinY = -0.27f;
     [SerializeField] private float forBigMaxY = 2.97f;    
     [SerializeField] private float forSmallMinY = -0.27f;
@@ -35,6 +37,8 @@ public class Spawner : MonoBehaviour
 
     private void Awake()
     {
+        AllowedEnemies = new List<Enemy>();
+        ChangeEnemies();
         isBossAlive = false;
 
         if (!isWaiting)
@@ -93,7 +97,7 @@ public class Spawner : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F7))
         {
-            SpawnEnemy(5, forSmallMinY, forSmallMaxY);
+            SpawnEnemy(6, forSmallMinY, forSmallMaxY); //BOSS
         }
 
         _elapsedTime += Time.deltaTime;
@@ -101,39 +105,13 @@ public class Spawner : MonoBehaviour
         {
             if (_elapsedTime >= nextSpawnTime)
             {
-                if (WaveNumber != 100)
+                if (WaveNumber != 50)
                 {
                     if (currentEnemies < maxEnemies && !isGolemSpawned)
                     {
-                        int enemyIndex = Random.Range(1, 11);
-                        if (enemyIndex >= 9)
-                        {
-                            SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
-                            currentEnemies++;
-                        }
-                        if (enemyIndex <= 8 && enemyIndex > 6)
-                        {
-                            SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
-                            currentEnemies++;
-                        }
-                        if (enemyIndex <= 6)
-                        {
-                            SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
-                            currentEnemies++;
-                        }
-
-                        int extraIndex = Random.Range(1, 7);
-                        if (enemyIndex <= 2)
-                        {
-                            SpawnEnemy(4, forSmallMinY, forSmallMaxY); //ICE
-                            currentEnemies++;
-                        }
-                        else if (enemyIndex == 3 || enemyIndex == 4)
-                        {
-                            SpawnEnemy(5, forSmallMinY, forSmallMaxY); //POISON
-                            currentEnemies++;
-                        }
-
+                        int enemyIndex = Random.Range(0, AllowedEnemies.Count);
+                        SpawnEnemy(enemyIndex, forBigMinY, forBigMaxY);
+                        currentEnemies++;
                         _elapsedTime = 0;
                     }
                     else
@@ -155,35 +133,9 @@ public class Spawner : MonoBehaviour
                     }
                     else
                     {
-                        int enemyIndex = Random.Range(1, 11);
-                        if (enemyIndex >= 9)
-                        {
-                            SpawnEnemy(2, forBigMinY, forBigMaxY); //SHIELD
-                            currentEnemies++;
-                        }
-                        if (enemyIndex <= 8 && enemyIndex > 6)
-                        {
-                            SpawnEnemy(1, forSmallMinY, forSmallMaxY); //FLYING
-                            currentEnemies++;
-                        }
-                        if (enemyIndex <= 6)
-                        {
-                            SpawnEnemy(0, forSmallMinY, forSmallMaxY); //FAST
-                            currentEnemies++;
-                        }
-
-                        int extraIndex = Random.Range(1, 7);
-                        if (enemyIndex <= 2)
-                        {
-                            SpawnEnemy(4, forSmallMinY, forSmallMaxY); //ICE
-                            currentEnemies++;
-                        }
-                        else if (enemyIndex == 3 || enemyIndex == 4)
-                        {
-                            SpawnEnemy(5, forSmallMinY, forSmallMaxY); //POISON
-                            currentEnemies++;
-                        }
-
+                        int enemyIndex = Random.Range(1, AllowedEnemies.Count+1);
+                        SpawnEnemy(enemyIndex, forBigMinY, forBigMaxY);
+                        currentEnemies++;
                         _elapsedTime = 0;
                     }
                 }
@@ -278,6 +230,8 @@ public class Spawner : MonoBehaviour
             maxEnemies++;
         }
 
+        ChangeEnemies();
+
         isWaiting = true;
         StartCoroutine(NewWaveTimer());
 
@@ -294,5 +248,65 @@ public class Spawner : MonoBehaviour
     {
         string json = JsonUtility.ToJson(playerData);
         System.IO.File.WriteAllText(CurrencyManager.filePath, json);
+    }
+    private void ChangeEnemies()
+    {
+        AllowedEnemies.Clear();
+        AllowedEnemies.Capacity = 0;
+
+        switch (WaveNumber)
+        {
+            case 1 or 2 or 3 or 4 or 5:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                break;
+            case 6 or 7 or 8 or 9 or 10:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                AllowedEnemies.Add(enemyPrefabs[5]);
+                break;
+            case 11 or 12 or 13 or 14 or 15:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[5]);
+                break;
+            case 16 or 17 or 18 or 19 or 20:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                break;
+            case 21 or 22 or 23 or 24 or 25:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                AllowedEnemies.Add(enemyPrefabs[4]);
+                break;
+            case 26 or 27 or 28 or 29 or 30:
+                AllowedEnemies.Add(enemyPrefabs[2]);
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[5]);
+                break;
+            case 31 or 32 or 33 or 34 or 35:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[4]);
+                break;
+            case 36 or 37 or 38 or 39 or 40:
+                AllowedEnemies.Add(enemyPrefabs[2]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                AllowedEnemies.Add(enemyPrefabs[5]);
+                break;
+            case 41 or 42 or 43 or 44 or 45:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                AllowedEnemies.Add(enemyPrefabs[2]);
+                AllowedEnemies.Add(enemyPrefabs[4]);
+                AllowedEnemies.Add(enemyPrefabs[5]);
+                break;
+            case 46 or 47 or 48 or 50:
+                AllowedEnemies.Add(enemyPrefabs[0]);
+                AllowedEnemies.Add(enemyPrefabs[1]);
+                AllowedEnemies.Add(enemyPrefabs[2]);
+                AllowedEnemies.Add(enemyPrefabs[3]);
+                AllowedEnemies.Add(enemyPrefabs[4]);
+                AllowedEnemies.Add(enemyPrefabs[5]);
+                break;
+        }
     }
 }

@@ -20,29 +20,14 @@ public class FireBallScript : Projectile
     {
         if (collision.CompareTag("Enemy"))
         {
+            collision.GetComponent<Enemy>().TakeDamage(damage, NAME_OF_WEAPON);
 
-            if (collision.tag == "Enemy With Shield")
+            if (!collision.GetComponent<FireDot>())
             {
-                if (collision.GetComponent<ShieldEnemy>().isShieldAlive == false)
-                {
-                    collision.GetComponent<ShieldEnemy>().TakeDamage(damage, NAME_OF_WEAPON);
-
-                    if (!collision.GetComponent<FireDot>())
-                    {
-                        collision.gameObject.AddComponent<FireDot>();
-                    }
-                }
+                collision.gameObject.AddComponent<FireDot>();
+                Instantiate(burnEffect, collision.transform);
             }
-            else
-            {
-                collision.GetComponent<Enemy>().TakeDamage(damage, NAME_OF_WEAPON);
-
-                if (!collision.GetComponent<FireDot>())
-                {
-                    collision.gameObject.AddComponent<FireDot>();
-                    Instantiate(burnEffect, collision.transform);
-                }
-            }
+            
 
             //animator.SetTrigger("isDead");
         }

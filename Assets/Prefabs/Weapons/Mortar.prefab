@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.3, y: 0}
-  m_SizeDelta: {x: 1.27, y: 0.25}
+  m_AnchoredPosition: {x: -4.442857, y: 0}
+  m_SizeDelta: {x: 2.54, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7278272875035484696
 Canvas:
@@ -5196,7 +5196,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.92, y: 2.44, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2406319517412999862}
@@ -5242,8 +5242,8 @@ MonoBehaviour:
   superProjectileSpeed: 10
   abilityButton: {fileID: 0}
   spriteRenderer: {fileID: 0}
-  defaultSprite: {fileID: 21300000, guid: 0e9554b3fe8fb514c970621617e0de5c, type: 3}
-  ReloadingSprite: {fileID: 21300000, guid: 0e9554b3fe8fb514c970621617e0de5c, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 1cac4fb776d4ffd4c963c1b0ab58a37f, type: 3}
+  ReloadingSprite: {fileID: 21300000, guid: 1cac4fb776d4ffd4c963c1b0ab58a37f, type: 3}
 --- !u!212 &3744219403658576731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5285,7 +5285,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 0e9554b3fe8fb514c970621617e0de5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cac4fb776d4ffd4c963c1b0ab58a37f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5332,12 +5332,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.27, y: 3.15}
+    oldSize: {x: 9.6, y: 9.6}
     newSize: {x: 3.93, y: 3.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.2, y: 3.2}
+  m_Size: {x: 8.4, y: 6.4}
   m_EdgeRadius: 0

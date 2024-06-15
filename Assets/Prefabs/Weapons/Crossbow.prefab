@@ -218,7 +218,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.05, y: -0.6711433, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3496888107168452908}
@@ -264,7 +264,7 @@ MonoBehaviour:
   blessingForCrossbow: 0
   superProjectile: {fileID: 132967213884406870, guid: ce2792e8ee6a9354fb54edc915e0ceaa, type: 3}
   spriteRenderer: {fileID: 4266400997792953934}
-  defaultSprite: {fileID: 21300000, guid: 9092c6f5a357e0d40848335c371eb001, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 21677a9f96b6a184aa5773269c0216fe, type: 3}
   superPowerSprite: {fileID: 21300000, guid: e5b8a480e3fabba4db41adb59cc7ebd4, type: 3}
   coolDownTime: 5
   superShootsCount: 3
@@ -317,7 +317,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 9092c6f5a357e0d40848335c371eb001, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 21677a9f96b6a184aa5773269c0216fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -364,7 +364,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.73, y: 4.08}
+    oldSize: {x: 8, y: 8}
     newSize: {x: 6.18, y: 7.33}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5511,8 +5511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.3, y: 0}
-  m_SizeDelta: {x: 1.27, y: 0.25}
+  m_AnchoredPosition: {x: -3.8, y: 0.00000011920929}
+  m_SizeDelta: {x: 2.54, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8283250629083615771
 Canvas:

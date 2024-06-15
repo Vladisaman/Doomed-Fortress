@@ -88,7 +88,7 @@ public class WallBehavior : MonoBehaviour
         {
             _renderer.material.color = Color.red;
             yield return new WaitForSeconds(0.5f);
-            _renderer.material.color = Color.gray;
+            _renderer.material.color = Color.white;
             yield return new WaitForSeconds(0.5f);
         }
     }

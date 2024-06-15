@@ -11,6 +11,7 @@ public class SkillPanel : MonoBehaviour
     [SerializeField] private GameObject Panel;
     [SerializeField] public Mortar mortar;
     [SerializeField] public Crossbow crossbow;
+    [SerializeField] private int rerollAmount;
 
     private int currentSkillNumber;
 
@@ -44,6 +45,15 @@ public class SkillPanel : MonoBehaviour
         {
             var instance = Instantiate(skills[i], skillPlaces[i]);
             instance.button.onClick.AddListener(() => { Panel.SetActive(false); Time.timeScale = 1; });
+        }
+    }
+
+    public void RerollSkills()
+    {
+        if(rerollAmount >= 1)
+        {
+            CreateSkills();
+            rerollAmount--;
         }
     }
 
